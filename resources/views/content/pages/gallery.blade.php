@@ -6,7 +6,7 @@
         <div class="gallery-banner-overlay">
             <div class="gallery-banner-content">
                 <div class="breadcrumb-nav">
-                    <a href="index.html">Home</a>
+                    <a href="index.html">Home</a>  
                     <span class="breadcrumb-divider">/</span>
                     <span class="current-page">Gallery</span>
                 </div>
