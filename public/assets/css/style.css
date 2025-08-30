@@ -4969,8 +4969,11 @@ header.th-header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 } */
 
-.header-layout1 .menu-area {
+/* .header-layout1 .menu-area {
     padding: 17px 0;
+} */
+.header-layout1 .menu-area {
+    padding: 17px 20px;
 }
 
 .header-layout1 .sticky-wrapper.sticky .menu-area {

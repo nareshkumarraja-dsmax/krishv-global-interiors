@@ -125,69 +125,65 @@
             <div class="sticky-active">
                 <div class="th-container container">
                     <div class="menu-area">
-                        <div class="row align-items-center justify-content-between">
-                            <div class="col-auto">
-                                <div class="header-logo">
-                                    <a href="index.html">
-                                        <img src="@assetPath('assets/img/krish1-removebg-preview.png')" alt="krish v"/>
-                                    </a>
-                                </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="header-logo">
+                                <a href="index.html">
+                                    <img src="@assetPath('assets/img/krish1-removebg-preview.png')" alt="krish v"/>
+                                </a>
                             </div>
-                            <div class="col-auto">
-                                <nav class="about main-menu d-none d-lg-inline-block">
-                                    <ul>
-                                        <li><a class="{{ request()->routeIs('home')? 'active': ''}}" href="{{route('home')}}">Home</a></li>
-                                        <li><a class="{{ request()->routeIs('about')? 'active': ''}}" href="{{route('about')}}">About Us</a></li>
-                                        <li class="menu-item-has-children">
-                                            <a class="{{ request()->routeIs('complete_home_interiors')
-                                                || request()->routeIs('renovation')
-                                                || request()->routeIs('home_automation')
-                                                || request()->routeIs('upvc')
-                                                || request()->routeIs('customized_interior_designs')
-                                                || request()->routeIs('flooring')
-                                                || request()->routeIs('false_ceiling')
-                                                || request()->routeIs('commercial_interiors')
-                                                || request()->routeIs('turnkey_projects')
-                                                ? 'active' : '' }}" href="#">
-                                                Services
-                                            </a>
-                                            <ul class="sub-menu">
-                                                <li><a class="{{ request()->routeIs('complete_home_interiors')? 'active': ''}}" href="{{route('complete_home_interiors')}}">Complete Home Interiors</a></li>
-                                                <li><a class="{{ request()->routeIs('renovation')? 'active': ''}}" href="{{route('renovation')}}">Renovation</a></li>
-                                                <li><a class="{{ request()->routeIs('home_automation')? 'active': ''}}" href="{{route('home_automation')}}">Home Automation</a></li>
-                                                <li><a class="{{ request()->routeIs('upvc')? 'active': ''}}" href="{{route('upvc')}}">UPVC & Aluminium - Doors & Windows</a></li>
-                                                <li><a class="{{ request()->routeIs('customized_interior_designs')? 'active': ''}}" href="{{route('customized_interior_designs')}}">Customized Interior Designs</a></li>
-                                                <li><a class="{{ request()->routeIs('flooring')? 'active': ''}}" href="{{route('flooring')}}">Flooring Solutions</a></li>
-                                                <li><a class="{{ request()->routeIs('false_ceiling')? 'active': ''}}" href="{{route('false_ceiling')}}">False Ceiling</a></li>
-                                                <li><a class="{{ request()->routeIs('commercial_interiors')? 'active': ''}}" href="{{route('commercial_interiors')}}">Commercial Interiors</a></li>
-                                                <li><a class="{{ request()->routeIs('turnkey_projects')? 'active': ''}}" href="{{route('turnkey_projects')}}">Complete Turnkey Projects</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="{{ request()->routeIs('tour')? 'active': ''}}" href="{{route('tour')}}">Virtual Tour</a></li>
-                                        <li><a class="{{ request()->routeIs('gallery')? 'active': ''}}" href="{{route('gallery')}}">Gallery</a></li>
-                                        <li class="menu-item-has-children">
-                                            <a class="{{ request()->routeIs('carrer')
-                                                || request()->routeIs('blog')
-                                                || request()->routeIs('contact')
-                                                || request()->routeIs('do_more')
-                                                ? 'active' : '' }}" href="#">
-                                                More
-                                            </a>
-                                            <ul class="sub-menu">
-                                                <li><a class="{{ request()->routeIs('carrer')? 'active': ''}}" href="{{route('carrer')}}">Careers</a></li>
-                                                <li><a class="{{ request()->routeIs('blog')? 'active': ''}}" href="{{route('blog')}}">Blog</a></li>
-                                                <li><a class="{{ request()->routeIs('contact')? 'active': ''}}" href="{{route('contact')}}">Contact</a></li>
-                                                <li><a class="{{ request()->routeIs('do_more')? 'active': ''}}" href="{{route('do_more')}}">Do More</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="col-auto">
-                                <a href="tel:+918880225544" class="btn btn-phone">
+                            <nav class="about main-menu d-none d-lg-inline-block">
+                                <ul>
+                                    <li><a class="{{ request()->routeIs('home')? 'active': ''}}" href="{{route('home')}}">Home</a></li>
+                                    <li><a class="{{ request()->routeIs('about')? 'active': ''}}" href="{{route('about')}}">About Us</a></li>
+                                    <li class="menu-item-has-children">
+                                        <a class="{{ request()->routeIs('complete_home_interiors')
+                                            || request()->routeIs('renovation')
+                                            || request()->routeIs('home_automation')
+                                            || request()->routeIs('upvc')
+                                            || request()->routeIs('customized_interior_designs')
+                                            || request()->routeIs('flooring')
+                                            || request()->routeIs('false_ceiling')
+                                            || request()->routeIs('commercial_interiors')
+                                            || request()->routeIs('turnkey_projects')
+                                            ? 'active' : '' }}" href="#">
+                                            Services
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li><a class="{{ request()->routeIs('complete_home_interiors')? 'active': ''}}" href="{{route('complete_home_interiors')}}">Complete Home Interiors</a></li>
+                                            <li><a class="{{ request()->routeIs('renovation')? 'active': ''}}" href="{{route('renovation')}}">Renovation</a></li>
+                                            <li><a class="{{ request()->routeIs('home_automation')? 'active': ''}}" href="{{route('home_automation')}}">Home Automation</a></li>
+                                            <li><a class="{{ request()->routeIs('upvc')? 'active': ''}}" href="{{route('upvc')}}">UPVC & Aluminium - Doors & Windows</a></li>
+                                            <li><a class="{{ request()->routeIs('customized_interior_designs')? 'active': ''}}" href="{{route('customized_interior_designs')}}">Customized Interior Designs</a></li>
+                                            <li><a class="{{ request()->routeIs('flooring')? 'active': ''}}" href="{{route('flooring')}}">Flooring Solutions</a></li>
+                                            <li><a class="{{ request()->routeIs('false_ceiling')? 'active': ''}}" href="{{route('false_ceiling')}}">False Ceiling</a></li>
+                                            <li><a class="{{ request()->routeIs('commercial_interiors')? 'active': ''}}" href="{{route('commercial_interiors')}}">Commercial Interiors</a></li>
+                                            <li><a class="{{ request()->routeIs('turnkey_projects')? 'active': ''}}" href="{{route('turnkey_projects')}}">Complete Turnkey Projects</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="{{ request()->routeIs('tour')? 'active': ''}}" href="{{route('tour')}}">Virtual Tour</a></li>
+                                    <li><a class="{{ request()->routeIs('gallery')? 'active': ''}}" href="{{route('gallery')}}">Gallery</a></li>
+                                    <li class="menu-item-has-children">
+                                        <a class="{{ request()->routeIs('carrer')
+                                            || request()->routeIs('blog')
+                                            || request()->routeIs('contact')
+                                            || request()->routeIs('do_more')
+                                            ? 'active' : '' }}" href="#">
+                                            More
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li><a class="{{ request()->routeIs('carrer')? 'active': ''}}" href="{{route('carrer')}}">Careers</a></li>
+                                            <li><a class="{{ request()->routeIs('blog')? 'active': ''}}" href="{{route('blog')}}">Blog</a></li>
+                                            <li><a class="{{ request()->routeIs('contact')? 'active': ''}}" href="{{route('contact')}}">Contact</a></li>
+                                            <li><a class="{{ request()->routeIs('do_more')? 'active': ''}}" href="{{route('do_more')}}">Do More</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="header-actions">
+                                <a href="tel:+918880225544" class="btn btn-phone d-none d-lg-inline-flex">
                                     <i class="fas fa-phone"></i> +91 888 022 5544
                                 </a>
-                                <button type="button" class="th-menu-toggle d-inline-block d-lg-none">
+                                <button type="button" class="th-menu-toggle d-inline-flex d-lg-none">
                                     <i class="far fa-bars"></i>
                                 </button>
                             </div>
