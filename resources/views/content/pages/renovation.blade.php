@@ -171,77 +171,69 @@
     @section('vendor-js')
     <!-- Before And After Slider -->
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const wrappers = document.querySelectorAll(".krishv-before-after-wrapper");
+        document.addEventListener('DOMContentLoaded', () => {
+        const clamp = (n,min,max)=>Math.max(min,Math.min(max,n));
 
-            wrappers.forEach(function (wrapper) {
-                const beforeImgWrapper = wrapper.querySelector(".krishv-before-img-wrapper");
-                const handle = wrapper.querySelector(".krishv-slider-handle");
-                const beforeLabel = wrapper.querySelector(".krishv-before-label");
-                const afterLabel = wrapper.querySelector(".krishv-after-label");
-                const sliderLineWrapper = wrapper.querySelector(".krishv-slider-line-wrapper");
+        document.querySelectorAll('.krishv-before-after-wrapper').forEach(wrapper => {
+            const handle = wrapper.querySelector('.krishv-slider-handle');
+            const beforeWrap = wrapper.querySelector('.krishv-before-img-wrapper');
 
-                function setSlider(xPosition) {
-                    const rect = wrapper.getBoundingClientRect();
-                    const offsetX = Math.min(Math.max(0, xPosition - rect.left), rect.width);
-                    const percent = (offsetX / rect.width) * 100;
-
-                    beforeImgWrapper.style.width = `${percent}%`;
-                    sliderLineWrapper.style.left = `${percent}%`;
-
-                    handle.style.left = `50%`;
-
-                    if (percent >= 75) {
-                        beforeLabel.style.display = "block";
-                        afterLabel.style.display = "none";
-                    } else if (percent <= 25) {
-                        beforeLabel.style.display = "none";
-                        afterLabel.style.display = "block";
-                    } else {
-                        beforeLabel.style.display = "block";
-                        afterLabel.style.display = "block";
-                    }
-
-                    const handleRect = handle.getBoundingClientRect();
-                    const afterLabelRect = afterLabel.getBoundingClientRect();
-                    const distance = afterLabelRect.left - handleRect.right;
-
-                    if (distance < 60) {
-                        afterLabel.classList.add("hide-label");
-                    } else {
-                        afterLabel.classList.remove("hide-label");
-                    }
-                }
-
-                let dragging = false;
-
-                const startDrag = (e) => {
-                    dragging = true;
-                    setSlider(e.pageX || e.touches[0].pageX);
-                };
-
-                const stopDrag = () => {
-                    dragging = false;
-                };
-
-                const drag = (e) => {
-                    if (dragging) {
-                        setSlider(e.pageX || e.touches[0].pageX);
-                    }
-                };
-
-                handle.addEventListener("mousedown", startDrag);
-                window.addEventListener("mouseup", stopDrag);
-                window.addEventListener("mousemove", drag);
-
-                handle.addEventListener("touchstart", startDrag, { passive: true });
-                window.addEventListener("touchend", stopDrag);
-                window.addEventListener("touchmove", drag, { passive: true });
-
-                setSlider(wrapper.offsetWidth / 2 + wrapper.getBoundingClientRect().left);
+            // ---- HARD RESET for old inline styles / listeners ----
+            if (beforeWrap) {
+            beforeWrap.style.width = '100%';
+            beforeWrap.style.overflow = 'visible';
+            }
+            // Remove any old width setter you might still have:
+            wrapper.querySelectorAll('*').forEach(el => {
+            if (el._kvOldHandlers) { el._kvOldHandlers.forEach(fn => el.removeEventListener(...fn)); }
             });
+
+            function setPercent(p){
+            p = clamp(p, 0, 100);
+            wrapper.style.setProperty('--pos', p + '%');
+            if (handle) handle.setAttribute('aria-valuenow', String(Math.round(p)));
+            toggleLabels(p);
+            }
+
+            function percentFromClientX(x){
+            const r = wrapper.getBoundingClientRect();
+            return clamp(((x - r.left) / r.width) * 100, 0, 100);
+            }
+
+            function toggleLabels(p){
+            const beforeLabel = wrapper.querySelector('.krishv-before-label');
+            const afterLabel  = wrapper.querySelector('.krishv-after-label');
+            if (!beforeLabel || !afterLabel) return;
+            if (p >= 75) { beforeLabel.style.opacity = '1'; afterLabel.style.opacity = '0'; }
+            else if (p <= 25) { beforeLabel.style.opacity = '0'; afterLabel.style.opacity = '1'; }
+            else { beforeLabel.style.opacity = '1'; afterLabel.style.opacity = '1'; }
+            }
+
+            // Pointer interactions (click/drag anywhere)
+            let dragging = false;
+            const down = e => { dragging = true; setPercent(percentFromClientX(e.clientX)); };
+            const move = e => { if (dragging) { setPercent(percentFromClientX(e.clientX)); e.preventDefault(); } };
+            const up   = () => { dragging = false; };
+
+            wrapper.addEventListener('pointerdown', down);
+            window.addEventListener('pointermove', move);
+            window.addEventListener('pointerup', up);
+
+            // Keyboard on the handle
+            handle?.addEventListener('keydown', (e) => {
+            const step = e.shiftKey ? 5 : 1;
+            const now = Number(handle.getAttribute('aria-valuenow') || 50);
+            if (e.key === 'ArrowLeft')  { setPercent(now - step); e.preventDefault(); }
+            if (e.key === 'ArrowRight') { setPercent(now + step); e.preventDefault(); }
+            if (e.key === 'Home')       { setPercent(0);         e.preventDefault(); }
+            if (e.key === 'End')        { setPercent(100);       e.preventDefault(); }
+            });
+
+            // Init (you can change to any default)
+            setPercent(50);
         });
-    </script>
+        });
+        </script>
 
     @endsection
 @endsection

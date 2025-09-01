@@ -24261,15 +24261,87 @@ input[type="time"].white-icon::-webkit-calendar-picker-indicator {
     height: auto;
 }
 
-.krishv-slider-line-wrapper {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 0;
-    left: 50%;
-    z-index: 4;
-    pointer-events: none;
+
+
+/* ==== HARD RESET (kills the old width-based clipping) ==== */
+.krishv-before-img-wrapper{
+  position: absolute;
+  inset: 0;
+  width: 100% !important;   /* force full width */
+  height: 100%;
+  overflow: visible !important; /* don't clip here */
+  z-index: 2;
 }
+
+/* Wrapper drives the position with a CSS var */
+.krishv-before-after-wrapper{
+  --pos: 50%;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;     /* or remove and give a fixed height */
+  overflow: hidden;
+  user-select: none;
+  touch-action: none;
+}
+
+/* Both images fixed, full-bleed */
+.krishv-after-img,
+.krishv-before-img-wrapper img{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+
+/* Clip ONLY the before image (single source of truth) */
+.krishv-before-img-wrapper img{
+  clip-path: inset(0 calc(100% - var(--pos)) 0 0);
+  will-change: clip-path;
+  transform: translateZ(0);  /* avoids hairline seams on some GPUs */
+}
+
+/* Divider line follows --pos */
+.krishv-slider-line-wrapper{
+  position: absolute;
+  top: 0; bottom: 0;
+  left: var(--pos);
+  width: 0;
+  z-index: 3;
+  pointer-events: none;
+  transform: translateX(-1px);
+}
+.krishv-slider-line{
+  position: absolute;
+  top: 0; bottom: 0; left: 0;
+  width: 2px;
+  background: #fecc52;
+}
+
+/* Handle follows --pos */
+.krishv-slider-handle{
+  position: absolute;
+  left: var(--pos);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  background: #fecc52;
+  box-shadow: 0 0 0 3px rgba(0,0,0,.15);
+  z-index: 4;
+  cursor: ew-resize;
+  display: grid; place-items: center;
+}
+.krishv-slider-icon{ pointer-events:none; }
+
+/* Labels (unchanged) */
+.krishv-label{ position:absolute; top:14px; padding:8px 12px; font-weight:700; font-size:13px; color:#ffd; background:#000; border-radius:8px; z-index:5; }
+.krishv-before-label{ left:14px; }
+.krishv-after-label{ right:14px; }
+
 
 .krishv-slider-line {
     position: absolute;
