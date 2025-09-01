@@ -1,4 +1,6 @@
 @extends('layouts.main')
+@section('title', 'Contact Krish-V Global Interiors Bangalore')
+@section('description', 'Start Your Design Journey')
 
 @section('main-container')
     {{-- Banner Section --}}

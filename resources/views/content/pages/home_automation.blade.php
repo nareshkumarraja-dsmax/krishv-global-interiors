@@ -1,4 +1,6 @@
 @extends('layouts.main')
+@section('title', 'Smart Interiors & Home Automation in Bangalore - Krish-V Global Interiors')
+@section('description', 'Experience tech-enabled living with smart home interiors by Krish-V Global Interiors. Control, comfort, and convenience for modern Bangalore homes.')
 
 @section('main-container')
     {{-- Banner Section --}}

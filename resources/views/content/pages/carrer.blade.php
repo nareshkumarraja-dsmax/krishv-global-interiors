@@ -1,4 +1,6 @@
 @extends('layouts.main')
+@section('title', 'Careers at Krish-V Global Interiors Bangalore')
+@section('description', 'Join Our Creative Team.')
 
 @section('main-container')
     {{-- Banner Section --}}

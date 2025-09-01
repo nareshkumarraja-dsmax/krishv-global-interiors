@@ -1,4 +1,6 @@
 @extends('layouts.main')
+@section('title', 'Interior Design Blog Bangalore - Krish-V Global Interiors')
+@section('description', 'Discover expert tips, industry trends, and design insights from Krish-V Global Interiors. Your go-to interior blog for inspiration in Bangalore.')
 
 @section('main-container')
     {{-- Banner Section --}}

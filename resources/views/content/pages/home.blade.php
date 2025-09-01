@@ -5,14 +5,14 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Best Interiors Designers in Bangalore - Krish-V Global interiors</title>
     <meta name="author" content="Themeholy" />
-    <meta name="description" content="Artraz - Architecture HTML Template" />
-    <meta name="keywords" content="Artraz - Architecture HTML Template" />
+    <meta name="description" content="Discover Krish-V Global Interiors, Bangalore’s trusted name in interior design. From luxury homes to stylish offices, we bring your dream spaces to life. Contact us for a free consultation!" />
+    <meta name="keywords" content="" />
     <meta name="robots" content="INDEX,FOLLOW" />
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"/>
     <link rel="icon" sizes="57x57" href="@assetPath('assets/img/1.png')">
     <link rel="manifest" href="@assetPath('assets/img/favicons/manifest.json')" />
     <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="@assetPath('assets/img/favicons/ms-icon-144x144.png')" />
+    {{-- <meta name="msapplication-TileImage" content="@assetPath('assets/img/favicons/ms-icon-144x144.png')" /> --}}
     <meta name="theme-color" content="#ffffff" />
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />

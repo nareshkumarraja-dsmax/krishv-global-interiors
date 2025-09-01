@@ -1,4 +1,6 @@
 @extends('layouts.main')
+@section('title', 'Home & Office Renovation Services in Bangalore - Krish-V Global Interiors')
+@section('description', 'Reimagine your interiors with expert renovation by Krish-V Global Interiors. From concept to execution, we revitalize homes and offices in Bangalore.')
 
 @section('main-container')
     {{-- Banner Section --}}

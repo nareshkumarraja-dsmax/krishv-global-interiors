@@ -1,4 +1,6 @@
 @extends('layouts.main')
+@section('title', 'Virtual Interior Tour - Krish-V Global Interiors Bangalore')
+@section('description', 'Step into our world of design excellence through a virtual tour. Explore stunning interiors by Krish-V Global Interiors, crafted across Bangalore.')
 
 @section('main-container')
     {{-- Banner Section --}}

@@ -1,4 +1,6 @@
 @extends('layouts.main')
+@section('title', 'Refer &amp; Partner - Krish-V Global Interiors Bangalore')
+@section('description', 'Join hands with Krish-V Global Interiors. Become a referral partner or channel associate and grow with Bangalore’s leading interiors brand.')
 
 @section('main-container')
     {{-- Banner Section --}}

@@ -1,4 +1,6 @@
 @extends('layouts.main')
+@section('title', 'UPVC Doors  Windows Solutions in Bangalore - Krish-V Global Interiors')
+@section('description', 'Choose Krish-V Global Interiors for premium UPVC doors and windows in Bangalore. Durable, stylish, and energy-efficient upgrades for your space.')
 
 @section('main-container')
     {{-- Banner Section --}}

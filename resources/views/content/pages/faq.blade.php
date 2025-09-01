@@ -1,4 +1,6 @@
 @extends('layouts.main')
+@section('title', 'FAQs - Interior Design by Krish-V Global Interiors Bangalore')
+@section('description', 'Have questions? Find answers to common queries about our services, timelines, pricing, and more at Krish-V Global Interiors, Bangalore.')
 
 @section('main-container')
     {{-- Banner Section --}}

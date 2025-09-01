@@ -1,4 +1,6 @@
 @extends('layouts.main')
+@section('title', 'About Krish-V Global Interiors - Shaping Bangalore Modern Interiors')
+@section('description', 'Learn how Krish-V Global Interiors is redefining spaces in Bangalore. Our visionary team blends creativity with functionality to deliver exceptional interior solutions.')
 
 @section('main-container')
     {{-- Banner Section --}}

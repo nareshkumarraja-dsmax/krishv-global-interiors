@@ -2,11 +2,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
 
 :root {
-    /* --theme-color: #800020;
-    --theme-color: #b03060; */
     --theme-color: #fecc52;
-    /* --theme-color: #A21232; */
-    /* --theme-color: #800080; */
     --theme-color3: #F4C430;
     --title-color: #fff;
     --title-black: #01000F;
@@ -23,12 +19,7 @@
     --border-color1: #fff;
     --icon-font: "Font Awesome 6 Pro";
     --title-font: "Poppins", sans-serif;
-    /* --body-font: "Roboto Serif", serif; */
-    /* --para-font:  "Source Sans 3", sans-serif;  */
-    /* --body-font: "Lato", sans-serif; */
     --body-font: "Inter", sans-serif;
-    /* --body-font: "Manrope", sans-serif; */
-    /* --para-font: "Raleway", sans-serif;  */
     --para-font: "Inter", sans-serif;
     --main-container: 1410px;
     --container-gutters: 30px;
@@ -999,12 +990,6 @@ textarea.is-invalid {
     --pos-x: 0;
     margin-top: 0;
 }
-/* @media (max-width: 991px) {
-    .slick-arrow.default {
-        --pos-x: 700px;
-        margin-top: -110px;
-    }
-} */
 .slick-arrow.slick-next {
     right: var(--pos-x, -100px);
     left: auto;
@@ -1106,7 +1091,6 @@ textarea.is-invalid {
 
 
 /*  -------marqueee----- */
-
 .slick-marquee {
     display: flex;
     overflow: hidden;
@@ -1136,17 +1120,11 @@ textarea.is-invalid {
     -webkit-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
     overflow: visible;
-    /* border: 2px solid #f5f5f5; */
 }
 .marque-text a {
     background: linear-gradient(to right, #ff3739 0%, #ffc300 47.92%, #ffffff 100%);
     background: linear-gradient(to right, #ffc300 0%, #ffffff 100%);
     background: linear-gradient(to right, #ffc300 0%, #ff9900 50%, #ffffff 100%);
-
-    /* background: linear-gradient(to right, #ff3739, #ffc300, #ffffff); */
-    /* background: linear-gradient(to right, #ff4e50, #f9d423, #ffffff); */
-    /* background: linear-gradient(to right, #ff6a00, #ffcc00, #ff003c); */
-    /* background: linear-gradient(to right, #fecc52, #ff9a3c, #ff6b6b); */
     background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1177,7 +1155,6 @@ textarea.is-invalid {
 }
 
 .marque-sec1 {
-    /* border-top: 1px solid var(--border-color); */
     border-bottom: 1px solid var(--border-color)
 }
 
@@ -1194,14 +1171,7 @@ textarea.is-invalid {
     justify-content: center;
     flex: 0 0 auto;
 }
-/* .slick-marquee-continuous img {
-    width: 120px;
-    gap: 30px !important;
-    margin-left: 20px !important;
-} */
 .slick-marquee-continuous .marque-text {
-    /* width: 120px;
-    height: 100px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1305,8 +1275,6 @@ textarea.is-invalid {
 
 .th-menu-wrapper .mobile-logo {
     padding: 20px 0;
-    /* padding-bottom: 30px;
-    padding-top: 40px; */
     display: block;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.1)
@@ -24190,7 +24158,6 @@ input[type="time"].white-icon::-webkit-calendar-picker-indicator {
 
 .usp-grid {
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); */
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
@@ -24603,27 +24570,6 @@ input[type="time"].white-icon::-webkit-calendar-picker-indicator {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .tabs {
     margin-bottom: 20px;
 }
@@ -24704,12 +24650,6 @@ input[type="time"].white-icon::-webkit-calendar-picker-indicator {
     align-items: center;
 }
 
-/* .lightbox img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 8px;
-} */
-
 .lightbox .close {
     position: absolute;
     top: 20px;
@@ -24742,10 +24682,10 @@ input[type="time"].white-icon::-webkit-calendar-picker-indicator {
 }
 
 .lightbox .prev {
-    left: 25%;
+    left: 10%;
 }
 .lightbox .next {
-    right: 25%;
+    right: 10%;
 }
 
 

@@ -1,4 +1,5 @@
 @extends('layouts.main')
+@section('title', 'Krishvglobalinteriors.com/privacy-policy')
 
 @section('main-container')
     {{-- Privacy policy section --}}
