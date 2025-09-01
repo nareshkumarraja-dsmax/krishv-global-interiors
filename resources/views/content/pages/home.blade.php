@@ -75,7 +75,7 @@
                             || request()->routeIs('false_ceiling')
                             || request()->routeIs('commercial_interiors')
                             || request()->routeIs('turnkey_projects')
-                            ? 'active' : '' }}" href="#">
+                            ? 'active' : '' }}" href="javascript:void(0)">
                             Services
                         </a>
                         <ul class="sub-menu">
@@ -97,7 +97,7 @@
                             || request()->routeIs('blog')
                             || request()->routeIs('contact')
                             || request()->routeIs('do_more')
-                            ? 'active' : '' }}" href="#">
+                            ? 'active' : '' }}" href="javascript:void(0)">
                             More
                         </a>
                         <ul class="sub-menu">
@@ -151,7 +151,7 @@
                                             || request()->routeIs('false_ceiling')
                                             || request()->routeIs('commercial_interiors')
                                             || request()->routeIs('turnkey_projects')
-                                            ? 'active' : '' }}" href="#">
+                                            ? 'active' : '' }}" href="javascript:void(0)">
                                             Services
                                         </a>
                                         <ul class="sub-menu">
@@ -173,7 +173,7 @@
                                             || request()->routeIs('blog')
                                             || request()->routeIs('contact')
                                             || request()->routeIs('do_more')
-                                            ? 'active' : '' }}" href="#">
+                                            ? 'active' : '' }}" href="javascript:void(0)">
                                             More
                                         </a>
                                         <ul class="sub-menu">
@@ -241,7 +241,7 @@
                 <div class="col-xl-6 mb-5 mb-xl-0 wow fadeInLeft" data-wow-delay="0.2s" >
                     <div class="img-box1">
                         <div class="img1">
-                            <img src="@assetPath('assets/img/Freepik-images/About/Compressed/About.webp')" alt="About" />
+                            <img src="@assetPath('assets/img/Images/About/Compressed/About.webp')" alt="About" />
                         </div>
                     </div>
                 </div>
@@ -372,7 +372,7 @@
             <div class="row service-card-grid">
                 <div class="col-md-6 col-lg-4 service-card">
                     <div class="service-card-inner">
-                        <img src="@assetPath('assets/img/Freepik-images/living-room/Compressed/l7.webp')" alt="Bedroom" class="service-img">
+                        <img src="@assetPath('assets/img/Images/living-room/Compressed/l7.webp')" alt="Bedroom" class="service-img">
                         <div class="service-content">
                             <img src="@assetPath('assets/img/icon/services/double-bed.svg')" alt="Bed Icon" class="service-icon svg-img">
                             <h3 class="service-title">Complete Home Interiors</h3>
@@ -382,7 +382,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 service-card">
                     <div class="service-card-inner">
-                        <img src="@assetPath('assets/img/Freepik-images/Renovation/Resizer/after03_optimized.webp')" alt="kitchen" class="service-img">
+                        <img src="@assetPath('assets/img/Images/Renovation/Resizer/after03_optimized.webp')" alt="kitchen" class="service-img">
                         <div class="service-content">
                             <img src="@assetPath('assets/img/icon/services/house.svg')" alt="Bed Icon" class="service-icon svg-img">
                             <h3 class="service-title">Renovation</h3>
@@ -392,7 +392,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 service-card">
                     <div class="service-card-inner">
-                        <img src="@assetPath('assets/img/Freepik-images/Home-automation/Compressed/H7.webp')" alt="kids-room" class="service-img">
+                        <img src="@assetPath('assets/img/Images/Home-automation/Compressed/H7.webp')" alt="kids-room" class="service-img">
                         <div class="service-content">
                             <img src="@assetPath('assets/img/icon/services/smart-home.svg')" alt="Bed Icon" class="service-icon svg-img">
                             <h3 class="service-title">Home Automation</h3>
@@ -402,7 +402,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 service-card">
                     <div class="service-card-inner">
-                        <img src="@assetPath('assets/img/Freepik-images/Bed-room/Compressed/br4.webp')" alt="living-room" class="service-img">
+                        <img src="@assetPath('assets/img/Images/Bed-room/Compressed/br4.webp')" alt="living-room" class="service-img">
                         <div class="service-content">
                             <img src="@assetPath('assets/img/icon/services/living.svg')" alt="Bed Icon" class="service-icon svg-img">
                             <h3 class="service-title">Customized Interior Designs</h3>
@@ -412,7 +412,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 service-card">
                     <div class="service-card-inner">
-                        <img src="@assetPath('assets/img/Freepik-images/Work-space/Compressed/w6.webp')" alt="home-automation" class="service-img">
+                        <img src="@assetPath('assets/img/Images/Work-space/Compressed/w6.webp')" alt="home-automation" class="service-img">
                         <div class="service-content">
                             <img src="@assetPath('assets/img/icon/services/workspace.svg')" alt="Bed Icon" class="service-icon svg-img">
                             <h3 class="service-title">Commercial Interiors </h3>
@@ -422,7 +422,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 service-card">
                     <div class="service-card-inner">
-                        <img src="@assetPath('assets/img/Freepik-images/Turnkey-projects/Compressed/T34.webp')" alt="upvc" class="service-img">
+                        <img src="@assetPath('assets/img/Images/Turnkey-projects/Compressed/T34.webp')" alt="upvc" class="service-img">
                         <div class="service-content">
                             <img src="@assetPath('assets/img/icon/services/protection.svg')" alt="Bed Icon" class="service-icon svg-img">
                             <h3 class="service-title">Complete Turnkey Projects</h3>
@@ -432,7 +432,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 service-card">
                     <div class="service-card-inner">
-                        <img src="@assetPath('assets/img/Freepik-images/Flooring/Compressed/F14.webp')" alt="renovation-img" class="service-img">
+                        <img src="@assetPath('assets/img/Images/Flooring/Compressed/F14.webp')" alt="renovation-img" class="service-img">
                         <div class="service-content">
                             <img src="@assetPath('assets/img/icon/services/tiles.svg')" alt="Bed Icon" class="service-icon svg-img">
                             <h3 class="service-title">Flooring Solutions</h3>
@@ -442,7 +442,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 service-card">
                     <div class="service-card-inner">
-                        <img src="@assetPath('assets/img/Freepik-images/False-ceiling/Compressed/F5.webp')" alt="Workspace" class="service-img">
+                        <img src="@assetPath('assets/img/Images/False-ceiling/Compressed/F5.webp')" alt="Workspace" class="service-img">
                         <div class="service-content">
                             <img src="@assetPath('assets/img/icon/services/ceiling.svg')" alt="Bed Icon" class="service-icon svg-img">
                             <h3 class="service-title">False Ceiling</h3>
@@ -452,7 +452,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 service-card">
                     <div class="service-card-inner">
-                        <img src="@assetPath('assets/img/Freepik-images/Upvc/Compressed/u8.webp')" alt="Dining" class="service-img">
+                        <img src="@assetPath('assets/img/Images/Upvc/Compressed/u8.webp')" alt="Dining" class="service-img">
                         <div class="service-content">
                             <img src="@assetPath('assets/img/icon/services/windows.svg')" alt="Bed Icon" class="service-icon svg-img">
                             <h3 class="service-title">UPVC & Aluminium - Doors & Windows</h3>
@@ -476,7 +476,7 @@
                 <div class="flip-card-wrapper">
                     <div class="flip-card">
                         <div class="flip-card-front">
-                            <img src="@assetPath('assets/img/Freepik-images/living-room/Compressed/l7.webp')" alt="Service Image" />
+                            <img src="@assetPath('assets/img/Images/living-room/Compressed/l7.webp')" alt="Service Image" />
                             <h3>Complete Home Interiors</h3>
                             <p>Interiors tailored to your lifestyle and comfort.</p>
                         </div>
@@ -498,7 +498,7 @@
                 <div class="flip-card-wrapper">
                     <div class="flip-card">
                         <div class="flip-card-front">
-                            <img src="@assetPath('assets/img/Freepik-images/Renovation/Resizer/after03_optimized.webp')" alt="Service Image" />
+                            <img src="@assetPath('assets/img/Images/Renovation/Resizer/after03_optimized.webp')" alt="Service Image" />
                             <h3>Renovation</h3>
                             <p>Transform and refresh your space with smart, modern renovation solutions.</p>
                         </div>
@@ -520,7 +520,7 @@
                 <div class="flip-card-wrapper">
                     <div class="flip-card">
                         <div class="flip-card-front">
-                            <img src="@assetPath('assets/img/Freepik-images/Home-automation/Compressed/H7.webp')" alt="Service Image" />
+                            <img src="@assetPath('assets/img/Images/Home-automation/Compressed/H7.webp')" alt="Service Image" />
                             <h3>Home Automation</h3>
                             <p>Seamless smart home solutions that bring comfort, control, and convenience.</p>
                         </div>
@@ -542,7 +542,7 @@
                 <div class="flip-card-wrapper">
                     <div class="flip-card">
                         <div class="flip-card-front">
-                            <img src="@assetPath('assets/img/Freepik-images/Bed-room/Compressed/bed7.webp')" alt="Service Image" />
+                            <img src="@assetPath('assets/img/Images/Bed-room/Compressed/bed7.webp')" alt="Service Image" />
                             <h3>Customized Interior Designs</h3>
                             <p>Smart, stylish interiors made for you.</p>
                         </div>
@@ -564,7 +564,7 @@
                 <div class="flip-card-wrapper">
                     <div class="flip-card">
                         <div class="flip-card-front">
-                            <img src="@assetPath('assets/img/Freepik-images/Work-space/Compressed/w16.webp')" alt="Service Image" />
+                            <img src="@assetPath('assets/img/Images/Work-space/Compressed/w16.webp')" alt="Service Image" />
                             <h3>Commercial Interiors</h3>
                             <p>Smart workspace design that boosts productivity and showcases your brand.</p>
                         </div>
@@ -586,7 +586,7 @@
                 <div class="flip-card-wrapper">
                     <div class="flip-card">
                         <div class="flip-card-front">
-                            <img src="@assetPath('assets/img/Freepik-images/Turnkey-projects/Compressed/T21.webp')" alt="Service Image" />
+                            <img src="@assetPath('assets/img/Images/Turnkey-projects/Compressed/T21.webp')" alt="Service Image" />
                             <h3>Complete Turnkey Projects</h3>
                             <p>End-to-end execution with quality and efficiency at every step.</p>
                         </div>
@@ -608,7 +608,7 @@
                 <div class="flip-card-wrapper">
                     <div class="flip-card">
                         <div class="flip-card-front">
-                            <img src="@assetPath('assets/img/Freepik-images/Flooring/Compressed/F17.webp')" alt="Service Image" />
+                            <img src="@assetPath('assets/img/Images/Flooring/Compressed/F17.webp')" alt="Service Image" />
                             <h3>Flooring Solutions</h3>
                             <p>Durable, precision-installed flooring that combines style and strength.</p>
                         </div>
@@ -630,7 +630,7 @@
                 <div class="flip-card-wrapper">
                     <div class="flip-card">
                         <div class="flip-card-front">
-                            <img src="@assetPath('assets/img/Freepik-images/False-ceiling/Compressed/F5.webp')" alt="Service Image" />
+                            <img src="@assetPath('assets/img/Images/False-ceiling/Compressed/F5.webp')" alt="Service Image" />
                             <h3>False Ceiling</h3>
                             <p>Stylish false ceilings that enhance lighting, acoustics, and overall ambiance.</p>
                         </div>
@@ -652,7 +652,7 @@
                 <div class="flip-card-wrapper">
                     <div class="flip-card">
                         <div class="flip-card-front">
-                            <img src="@assetPath('assets/img/Freepik-images/Upvc/Compressed/u8.webp')" alt="Service Image" />
+                            <img src="@assetPath('assets/img/Images/Upvc/Compressed/u8.webp')" alt="Service Image" />
                             <h3>UPVC & Aluminium - Doors & Windows</h3>
                             <p>Sleek, durable doors and windows built to last.</p>
                         </div>
@@ -681,7 +681,7 @@
     <section class="krish-experience-modern" >
         <div class="krish-experience-wrapper">
             <div class="krish-experience-left">
-                <div class="experience-image" style="background-image: url(@assetPath('assets/img/Freepik-images/About/Experience-center/Experience-center2.jpeg');"></div>
+                <div class="experience-image" style="background-image: url(@assetPath('assets/img/Images/About/Experience-center/Experience-center2.jpeg');"></div>
             </div>
             <div class="krish-experience-right">
                 <h2 class="site-section-heading mb-4">
@@ -713,7 +713,7 @@
                     </div>
                     <div class="krish-v-cta-text">
                         <h2>READY TO TRANSFORM YOUR SPACE?</h2>
-                        <a href="#" class="krish-v-cta-btn" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us Now <i class="fas fa-arrow-right"></i></a>
+                        <a href="" class="krish-v-cta-btn" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us Now <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -732,11 +732,11 @@
                 <div class="row align-items-center krishv-before-after-row mb-5">
                     <div class="col-md-7 order-2 order-md-1">
                         <div class="krishv-before-after-wrapper" data-start="50" aria-label="Before After Slider">
-                            <img src="@assetPath('assets/img/Freepik-images/Renovation/after01.png')"
+                            <img src="@assetPath('assets/img/Images/Renovation/after01.png')"
                                 alt="After Image" class="krishv-after-img" />
 
                             <div class="krishv-before-img-wrapper">
-                                <img src="@assetPath('assets/img/Freepik-images/Renovation/before01.png')"
+                                <img src="@assetPath('assets/img/Images/Renovation/before01.png')"
                                     alt="Before Image" class="krishv-before-img" />
                             </div>
 
@@ -905,7 +905,7 @@
             <div class="krish-v-cta-content">
                 <div class="krish-v-cta-text">
                     <h2>READY TO TRANSFORM YOUR SPACE?</h2>
-                    <a href="#" class="krish-v-cta-btn" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us Now <i class="fas fa-arrow-right"></i></a>
+                    <a href="" class="krish-v-cta-btn" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us Now <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="krish-v-cta-image">
                     <img src="@assetPath('assets/img/team/graphical-image/Dining.png')" alt="transform" />

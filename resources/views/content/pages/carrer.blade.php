@@ -4,7 +4,7 @@
 
 @section('main-container')
     {{-- Banner Section --}}
-    <section class="gallery-banner" style="background-image: url(@assetPath('assets/img/Freepik-images/Career/Compressed/Banner-career.webp'));">
+    <section class="gallery-banner" style="background-image: url(@assetPath('assets/img/Images/Career/Compressed/Banner-career.webp'));">
         <div class="gallery-banner-overlay">
             <div class="gallery-banner-content">
                 <div class="breadcrumb-nav">

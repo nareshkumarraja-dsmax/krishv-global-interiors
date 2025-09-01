@@ -2,7 +2,7 @@
 
 @section('main-container')
     {{-- Banner Section --}}
-    <section class="gallery-banner" style="background-image: url(@assetPath('assets/img/Freepik-images/interior-designs/compressed/Banner-interiorDesigns.webp'));">
+    <section class="gallery-banner" style="background-image: url(@assetPath('assets/img/Images/interior-designs/compressed/Banner-interiorDesigns.webp'));">
         <div class="gallery-banner-overlay">
             <div class="gallery-banner-content">
                 <div class="breadcrumb-nav">
@@ -24,7 +24,7 @@
                 <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
                     <div class="img-box3">
                         <div class="img1">
-                            <img src="@assetPath('assets/img/Freepik-images/interior-designs/compressed/About.webp')" alt="About" />
+                            <img src="@assetPath('assets/img/Images/interior-designs/compressed/About.webp')" alt="About" />
                         </div>
                     </div>
                 </div>
@@ -65,63 +65,63 @@
             <div class="swiper gallery-swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/interior-designs/compressed/living1.webp')" alt="Gallery Image 1" />
+                        <img src="@assetPath('assets/img/Images/interior-designs/compressed/living1.webp')" alt="Gallery Image 1" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/interior-designs/compressed/Bed-room1.webp')" alt="Gallery Image 2" />
+                        <img src="@assetPath('assets/img/Images/interior-designs/compressed/Bed-room1.webp')" alt="Gallery Image 2" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/interior-designs/compressed/living2.webp')" alt="Gallery Image 3" />
+                        <img src="@assetPath('assets/img/Images/interior-designs/compressed/living2.webp')" alt="Gallery Image 3" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/interior-designs/compressed/kitchen1.webp')" alt="Gallery Image 4" />
+                        <img src="@assetPath('assets/img/Images/interior-designs/compressed/kitchen1.webp')" alt="Gallery Image 4" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/interior-designs/compressed/living3.webp')" alt="Gallery Image 5" />
+                        <img src="@assetPath('assets/img/Images/interior-designs/compressed/living3.webp')" alt="Gallery Image 5" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/interior-designs/compressed/Bedroom2.webp')" alt="Gallery Image 6" />
+                        <img src="@assetPath('assets/img/Images/interior-designs/compressed/Bedroom2.webp')" alt="Gallery Image 6" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/interior-designs/compressed/False-ceiling1.webp')" alt="Gallery Image 7" />
+                        <img src="@assetPath('assets/img/Images/interior-designs/compressed/False-ceiling1.webp')" alt="Gallery Image 7" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/interior-designs/compressed/Kids-room1.webp')" alt="Gallery Image 8" />
+                        <img src="@assetPath('assets/img/Images/interior-designs/compressed/Kids-room1.webp')" alt="Gallery Image 8" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/interior-designs/compressed/false-ceiling2.webp')" alt="Gallery Image 9" />
+                        <img src="@assetPath('assets/img/Images/interior-designs/compressed/false-ceiling2.webp')" alt="Gallery Image 9" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/interior-designs/compressed/Dining2.webp')" alt="Gallery Image 10" />
+                        <img src="@assetPath('assets/img/Images/interior-designs/compressed/Dining2.webp')" alt="Gallery Image 10" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/interior-designs/compressed/interior4.webp')" alt="Gallery Image 11" />
+                        <img src="@assetPath('assets/img/Images/interior-designs/compressed/interior4.webp')" alt="Gallery Image 11" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/interior-designs/compressed/interior2.webp')" alt="Gallery Image 12" />
+                        <img src="@assetPath('assets/img/Images/interior-designs/compressed/interior2.webp')" alt="Gallery Image 12" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/interior-designs/compressed/interior3.webp')" alt="Gallery Image 13" />
+                        <img src="@assetPath('assets/img/Images/interior-designs/compressed/interior3.webp')" alt="Gallery Image 13" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/interior-designs/compressed/interior1.webp')" alt="Gallery Image 14" />
+                        <img src="@assetPath('assets/img/Images/interior-designs/compressed/interior1.webp')" alt="Gallery Image 14" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/interior-designs/compressed/interior5.webp')" alt="Gallery Image 15" />
+                        <img src="@assetPath('assets/img/Images/interior-designs/compressed/interior5.webp')" alt="Gallery Image 15" />
                     </div>
 
                 </div>

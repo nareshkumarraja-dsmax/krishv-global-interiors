@@ -4,7 +4,7 @@
 
 @section('main-container')
     {{-- Banner Section --}}
-    <section class="gallery-banner background" style="background-image: url(@assetPath('assets/img/Freepik-images/Renovation/Compressed/Banner-renovation.webp'));">
+    <section class="gallery-banner background" style="background-image: url(@assetPath('assets/img/Images/Renovation/Compressed/Banner-renovation.webp'));">
         <div class="gallery-banner-overlay">
             <div class="gallery-banner-content">
                 <div class="breadcrumb-nav">
@@ -34,9 +34,9 @@
                 <div class="row align-items-center krishv-before-after-row mb-5">
                     <div class="col-md-7 order-2 order-md-1">
                         <div class="krishv-before-after-wrapper">
-                            <img src="@assetPath('assets/img/Freepik-images/Renovation/after02.png')" alt="After Image" class="krishv-after-img" />
+                            <img src="@assetPath('assets/img/Images/Renovation/after02.png')" alt="After Image" class="krishv-after-img" />
                             <div class="krishv-before-img-wrapper">
-                                <img src="@assetPath('assets/img/Freepik-images/Renovation/before02.png')" alt="Before Image" />
+                                <img src="@assetPath('assets/img/Images/Renovation/before02.png')" alt="Before Image" />
                             </div>
                             <div class="krishv-slider-line-wrapper">
                                 <div class="krishv-slider-line"></div>
@@ -84,9 +84,9 @@
 
                     <div class="col-md-7 order-2">
                         <div class="krishv-before-after-wrapper">
-                            <img src="@assetPath('assets/img/Freepik-images/Renovation/Compressed/After04.webp')" alt="After Image" class="krishv-after-img" />
+                            <img src="@assetPath('assets/img/Images/Renovation/Compressed/After04.webp')" alt="After Image" class="krishv-after-img" />
                             <div class="krishv-before-img-wrapper">
-                                <img src="@assetPath('assets/img/Freepik-images/Renovation/Compressed/before04.webp')" alt="Before Image" />
+                                <img src="@assetPath('assets/img/Images/Renovation/Compressed/before04.webp')" alt="Before Image" />
                             </div>
                             <div class="krishv-slider-line-wrapper">
                                 <div class="krishv-slider-line"></div>

@@ -2,7 +2,7 @@
 
 @section('main-container')
     {{-- Banner Section --}}
-    <section class="gallery-banner" style="background-image: url(@assetPath('assets/img/Freepik-images/Turnkey-projects/Compressed/Banner-turnkeyprojects.webp'));">
+    <section class="gallery-banner" style="background-image: url(@assetPath('assets/img/Images/Turnkey-projects/Compressed/Banner-turnkeyprojects.webp'));">
         <div class="gallery-banner-overlay">
             <div class="gallery-banner-content">
                 <div class="breadcrumb-nav">
@@ -24,7 +24,7 @@
                 <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
                     <div class="img-box3">
                         <div class="img1">
-                            <img src="@assetPath('assets/img/Freepik-images/Turnkey-projects/Compressed/About.webp')" alt="About-turnkey-image" />
+                            <img src="@assetPath('assets/img/Images/Turnkey-projects/Compressed/About.webp')" alt="About-turnkey-image" />
                         </div>
                     </div>
                 </div>
@@ -64,43 +64,43 @@
             <div class="swiper gallery-swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/Turnkey-projects/Compressed/T34.webp')" alt="Gallery Turnkey Image 1" />
+                        <img src="@assetPath('assets/img/Images/Turnkey-projects/Compressed/T34.webp')" alt="Gallery Turnkey Image 1" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/Turnkey-projects/Compressed/T6.webp')" alt="Gallery Turnkey Image 2" />
+                        <img src="@assetPath('assets/img/Images/Turnkey-projects/Compressed/T6.webp')" alt="Gallery Turnkey Image 2" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/Turnkey-projects/Compressed/T11.webp')" alt="Gallery Turnkey Image 3" />
+                        <img src="@assetPath('assets/img/Images/Turnkey-projects/Compressed/T11.webp')" alt="Gallery Turnkey Image 3" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/Turnkey-projects/Compressed/T31.webp')" alt="Gallery Turnkey Image 4" />
+                        <img src="@assetPath('assets/img/Images/Turnkey-projects/Compressed/T31.webp')" alt="Gallery Turnkey Image 4" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/Turnkey-projects/Compressed/T15.webp')" alt="Gallery Turnkey Image 5" />
+                        <img src="@assetPath('assets/img/Images/Turnkey-projects/Compressed/T15.webp')" alt="Gallery Turnkey Image 5" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/Turnkey-projects/Compressed/T33.webp')" alt="Gallery Turnkey Image 6" />
+                        <img src="@assetPath('assets/img/Images/Turnkey-projects/Compressed/T33.webp')" alt="Gallery Turnkey Image 6" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/Turnkey-projects/Compressed/T18.webp')" alt="Gallery Turnkey Image 7" />
+                        <img src="@assetPath('assets/img/Images/Turnkey-projects/Compressed/T18.webp')" alt="Gallery Turnkey Image 7" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/Turnkey-projects/Compressed/T21.webp')" alt="Gallery Turnkey Image 8" />
+                        <img src="@assetPath('assets/img/Images/Turnkey-projects/Compressed/T21.webp')" alt="Gallery Turnkey Image 8" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/Turnkey-projects/Compressed/T22.webp')" alt="Gallery Turnkey Image 9" />
+                        <img src="@assetPath('assets/img/Images/Turnkey-projects/Compressed/T22.webp')" alt="Gallery Turnkey Image 9" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/Turnkey-projects/Compressed/T19.webp')" alt="Gallery Turnkey Image 10" />
+                        <img src="@assetPath('assets/img/Images/Turnkey-projects/Compressed/T19.webp')" alt="Gallery Turnkey Image 10" />
                     </div>
                 </div>
             </div>

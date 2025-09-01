@@ -5,7 +5,7 @@ return [
         'interior-lighting-design' => [
             'title'  => 'Illuminating Your Vision : Mastering Interior Lighting Design',
             'date'   => '2024-05-06',
-            'image'  => 'assets/img/Freepik-images/Blog/Compressed/Blog-details1.webp',
+            'image'  => 'assets/img/Images/Blog/Compressed/Blog-details1.webp',
             'intro'  => "Interior lighting design is much more than just flipping a switch. It’s the art of using light to create ambience and functionality and showcase the beauty of your space. A suitable lighting scheme can elevate a modern living room design from ordinary to extraordinary.",
             'sections' => [
                 [
@@ -39,7 +39,7 @@ return [
         'dream-cooking-space' => [
             'title'  => 'Spice Up Your Kitchen with Krish-V Interiors: Hot Trends for a Dream Cooking Space',
             'date'   => '2024-05-02',
-            'image'  => 'assets/img/Freepik-images/Blog/Compressed/Blog-details2.webp',
+            'image'  => 'assets/img/Images/Blog/Compressed/Blog-details2.webp',
             'intro'  => "The heart of the home, the kitchen, is where families gather, meals are prepared, and memories are made. But a dated kitchen can hinder the joy of cooking and entertaining. If you want to breathe new life into your kitchen space, look no further than the latest trends in kitchen interior design!",
             'sections' => [
                 [
@@ -72,7 +72,7 @@ return [
         'interior-design' => [
             'title'  => 'Enlightening Spaces: The Crucial Role of Lighting in Interior Design ',
             'date'   => '2024-02-20',
-            'image'  => 'assets/img/Freepik-images/Blog/Compressed/Blog-details3.webp',
+            'image'  => 'assets/img/Images/Blog/Compressed/Blog-details3.webp',
             'intro'  => "In the realm of interior design, lighting serves as both a functional necessity and a powerful tool for creating ambience and enhancing the aesthetic appeal of residential spaces. Let’s explore how thoughtful lighting design can illuminate residential areas, striking the perfect balance between function and atmosphere.",
             'sections' => [
                 [
@@ -93,7 +93,7 @@ return [
         'color-psychology' => [
             'title'  => 'The Art of Color Psychology: Transforming Homes with Emotion-evoking Hues',
             'date'   => '2023-08-21',
-            'image'  => 'assets/img/Freepik-images/Blog/Compressed/Blog-details4.webp',
+            'image'  => 'assets/img/Images/Blog/Compressed/Blog-details4.webp',
             'intro'  => "When creating an inviting and harmonious living space, the role of colour psychology cannot be underestimated. Colours profoundly impact our mood, emotions, and overall well-being. Understanding the theory of colours and harnessing their power can enable you to design a home that resonates with your desired atmosphere. This article will delve into colour psychology, exploring the best colours for different spaces, understanding their effects on emotions, and offering creative ideas to infuse your home with vibrant hues.",
             'sections' => [
                 [
@@ -136,7 +136,7 @@ return [
         'interior-design-company-in-bengaluru' => [
             'title'  => 'What to Look for in an Interior Design Company for Your 2 & 3 BHK Apartments in Bengaluru',
             'date'   => '2023-08-16',
-            'image'  => 'assets/img/Freepik-images/Blog/Compressed/Blog-details5.webp',
+            'image'  => 'assets/img/Images/Blog/Compressed/Blog-details5.webp',
             'intro'  => "Finding the right interior design company is crucial when designing your dream home. A well-designed space can transform your 2 & 3 BHK apartment in Bengaluru into a comfortable and stylish haven. However, with so many options available, choosing the perfect interior design company for your needs can take time and effort. In this blog, we will explore the key factors to consider when selecting an interior design company that can deliver unlimited design ideas for budget homes, authentic designs, and modern living spaces while ensuring a seamless and satisfying experience.",
             'sections' => [
                 [
@@ -173,7 +173,7 @@ return [
         'indoor-plant-decor' => [
             'title'  => 'Breathe Life into Your Space: Indoor Plant Decor for Every Room ',
             'date'   => '2024-05-03',
-            'image'  => 'assets/img/Freepik-images/Blog/Compressed/Blog-details6.webp',
+            'image'  => 'assets/img/Images/Blog/Compressed/Blog-details6.webp',
             'intro'  => "Indoor plant decor is more than just a trend; it’s a way to transform your living space into a vibrant oasis. Plants add a touch of nature’s beauty and improve air quality by purifying our air.",
             'sections' => [
                 [
@@ -211,7 +211,7 @@ return [
         'residential-interiors' => [
             'title'  => 'Infuse Your Personality: Tips for Personalizing Your Residential Interiors',
             'date'   => '2024-02-21',
-            'image'  => 'assets/img/Freepik-images/Blog/Compressed/Blog-details7.webp',
+            'image'  => 'assets/img/Images/Blog/Compressed/Blog-details7.webp',
             'intro'  => "Here are some tips to help you infuse your personality into your residential interiors:",
             'sections' => [
                 [
@@ -241,7 +241,7 @@ return [
         'office-layout' => [
             'title'  => 'Enhancing Efficiency: The Influence of Office Layout on Productivity ',
             'date'   => '2024-01-18',
-            'image'  => 'assets/img/Freepik-images/Blog/Compressed/Blog-details8.webp',
+            'image'  => 'assets/img/Images/Blog/Compressed/Blog-details8.webp',
             'intro'  => "In the fast-paced world of business, productivity is critical to success. However, many factors can affect productivity in the workplace, and one often overlooked aspect is office layout. The arrangement of desks, furniture, and common areas can significantly impact employee efficiency and performance. Let’s explore the impact of office layout on productivity and how to create an environment conducive to efficiency.",
             'sections' => [
                 [
@@ -259,7 +259,7 @@ return [
         'endless-design-ideas' => [
             'title'  => 'Organizing Advice for Maximum Space Utilization in Apartments : Endless Design Ideas ',
             'date'   => '2023-08-21',
-            'image'  => 'assets/img/Freepik-images/Blog/Compressed/Blog-details9.webp',
+            'image'  => 'assets/img/Images/Blog/Compressed/Blog-details9.webp',
             'intro'  => "In the fast-paced world of urban living, the challenge of making the most out of limited spaces is a common concern. For residents of apartments in Bengaluru, where space comes at a premium, mastering the art of interior design and space management is essential. This blog unveils many creative and practical organizing pieces of advice to transform your 2 and 3-BHK homes into functional and stylish havens. From understanding your needs to incorporating modular designs, let’s dive into unlimited storage possibilities.",
             'sections' => [
                 [

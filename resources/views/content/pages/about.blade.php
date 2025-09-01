@@ -4,7 +4,7 @@
 
 @section('main-container')
     {{-- Banner Section --}}
-    <section class="gallery-banner" style="background-image: url(@assetPath('assets/img/Freepik-images/About/Compressed/7.webp'));">
+    <section class="gallery-banner" style="background-image: url(@assetPath('assets/img/Images/About/Compressed/7.webp'));">
         <div class="gallery-banner-overlay">
             <div class="gallery-banner-content">
                 <div class="breadcrumb-nav">
@@ -25,7 +25,7 @@
                 <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
                     <div class="krish-video-box">
                         <div class="video-inner">
-                            <img src="@assetPath('assets/img/Freepik-images/About/Compressed/home-2.webp')" alt="About" />
+                            <img src="@assetPath('assets/img/Images/About/Compressed/home-2.webp')" alt="About" />
                             <a href="https://www.youtube.com/embed/EtKZvoZKklE" class="video-play-btn glightbox-video"
                             target="_blank" rel="noopener" aria-label="Play Video">
                                 <i class="fas fa-play"></i>
@@ -362,8 +362,8 @@
 
             <div class="mb-5">
                 <picture>
-                    <source media="(max-width: 767px)" srcset="@assetPath('assets/img/Freepik-images/About/Experience-center/Experience-center2.jpeg')">
-                    <img src="@assetPath('assets/img/Freepik-images/About/Experience-center/Experience-center1.jpeg')" alt="Experience Centre">
+                    <source media="(max-width: 767px)" srcset="@assetPath('assets/img/Images/About/Experience-center/Experience-center2.jpeg')">
+                    <img src="@assetPath('assets/img/Images/About/Experience-center/Experience-center1.jpeg')" alt="Experience Centre">
                 </picture>
             </div>
 
