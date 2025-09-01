@@ -38,6 +38,7 @@ Route::get('/tour', [TourController::class, "index"])->name('tour');
 Route::get('/gallery', [GalleryController::class, "index"])->name('gallery');
 Route::get('/carrer', [CarrerController::class, "index"])->name('carrer');
 Route::get('/blog', [BlogController::class, "index"])->name('blog');
+Route::get('/blogs/{slug}', [BlogController::class, 'show'])->name('blogs.show');
 Route::get('/contact', [ContactController::class, "index"])->name('contact');
 Route::get('/do-more', [DomoreController::class, "index"])->name('do_more');
 Route::get('/termsandconditions', [TermsandconditionsController::class, "index"])->name('termsandconditions');
