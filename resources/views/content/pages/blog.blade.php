@@ -43,7 +43,7 @@
                     <div class="blog-img">
                         @if($img)
                             {{-- Use your helper if it supports variables; else fallback to asset() --}}
-                            <img src="{{ asset($img) }}" alt="blog image" />
+                            <img src="@assetPath($img)" alt="blog image" />
                             {{-- or: <img src="@assetPath($img)" alt="blog image" /> --}}
                         @endif
                     </div>

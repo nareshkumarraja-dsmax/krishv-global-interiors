@@ -34,7 +34,7 @@
 
             <div class="col-lg-6 text-end">
                 @if(!empty($post['image']))
-                    <img src="{{ asset($post['image']) }}" alt="{{ $post['title'] ?? '' }}" class="img-fluid rounded-4 shadow" />
+                    <img src="@assetPath($post['image'])" alt="{{ $post['title'] ?? '' }})" class="img-fluid rounded-4 shadow" />
                 @endif
             </div>
         </div>
