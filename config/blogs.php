@@ -42,9 +42,5 @@ return [
             ],
             'footer' => 'For expert advice and a lighting plan customized to your unique needs ...',
         ],
-
-        // Add more posts here with unique slugs:
-        // 'kitchen-modular-guide' => [ ... ],
-        // 'villa-makeover-before-after' => [ ... ],
     ],
 ];

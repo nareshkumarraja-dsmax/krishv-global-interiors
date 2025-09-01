@@ -731,21 +731,28 @@
                 </h2>
                 <div class="row align-items-center krishv-before-after-row mb-5">
                     <div class="col-md-7 order-2 order-md-1">
-                        <div class="krishv-before-after-wrapper">
-                            <img src="@assetPath('assets/img/Freepik-images/Renovation/after01.png')" alt="After Image" class="krishv-after-img" />
+                        <div class="krishv-before-after-wrapper" data-start="50" aria-label="Before After Slider">
+                            <img src="@assetPath('assets/img/Freepik-images/Renovation/after01.png')"
+                                alt="After Image" class="krishv-after-img" />
+
                             <div class="krishv-before-img-wrapper">
-                                <img src="@assetPath('assets/img/Freepik-images/Renovation/before01.png')" alt="Before Image" />
+                                <img src="@assetPath('assets/img/Freepik-images/Renovation/before01.png')"
+                                    alt="Before Image" class="krishv-before-img" />
                             </div>
-                            <div class="krishv-slider-line-wrapper">
+
+                            <div class="krishv-slider-line-wrapper" aria-hidden="true">
                                 <div class="krishv-slider-line"></div>
-                                <div class="krishv-slider-handle">
-                                    <span class="krishv-slider-icon">&#8596;</span>
-                                </div>
                             </div>
+
+                            <button class="krishv-slider-handle" type="button" role="slider"
+                                    aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"
+                                    aria-label="Comparison position">
+                                <span class="krishv-slider-icon">&#8596;</span>
+                            </button>
 
                             <div class="krishv-label krishv-before-label">Before</div>
                             <div class="krishv-label krishv-after-label">After</div>
-                        </div>
+                            </div>
                     </div>
                     <div class="col-md-5 d-flex align-items-center order-1 order-md-2">
                         <div class="renovation-text-box text-center text-white w-100">
@@ -1019,79 +1026,69 @@
 
     <!-- Before And After Slider -->
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const wrapper = document.querySelector(".krishv-before-after-wrapper");
-            const beforeImgWrapper = wrapper.querySelector(".krishv-before-img-wrapper");
-            const handle = wrapper.querySelector(".krishv-slider-handle");
-            const beforeLabel = wrapper.querySelector(".krishv-before-label");
-            const afterLabel = wrapper.querySelector(".krishv-after-label");
+        document.addEventListener('DOMContentLoaded', () => {
+        const clamp = (n,min,max)=>Math.max(min,Math.min(max,n));
 
-        function setSlider(xPosition) {
-            const rect = wrapper.getBoundingClientRect();
-            const offsetX = Math.min(Math.max(0, xPosition - rect.left), rect.width);
-            const percent = (offsetX / rect.width) * 100;
+        document.querySelectorAll('.krishv-before-after-wrapper').forEach(wrapper => {
+            const handle = wrapper.querySelector('.krishv-slider-handle');
+            const beforeWrap = wrapper.querySelector('.krishv-before-img-wrapper');
 
-            beforeImgWrapper.style.width = `${percent}%`;
+            // ---- HARD RESET for old inline styles / listeners ----
+            if (beforeWrap) {
+            beforeWrap.style.width = '100%';
+            beforeWrap.style.overflow = 'visible';
+            }
+            // Remove any old width setter you might still have:
+            wrapper.querySelectorAll('*').forEach(el => {
+            if (el._kvOldHandlers) { el._kvOldHandlers.forEach(fn => el.removeEventListener(...fn)); }
+            });
 
-            const sliderLineWrapper = wrapper.querySelector(".krishv-slider-line-wrapper");
-            sliderLineWrapper.style.left = `${percent}%`;
-
-            const beforeLabel = wrapper.querySelector(".krishv-before-label");
-            const afterLabel = wrapper.querySelector(".krishv-after-label");
-            const handle = wrapper.querySelector(".krishv-slider-handle");
-
-            handle.style.left = `50%`;
-
-            if (percent >= 75) {
-                beforeLabel.style.display = "block";
-                afterLabel.style.display = "none";
-            } else if (percent <= 25) {
-                beforeLabel.style.display = "none";
-                afterLabel.style.display = "block";
-            } else {
-                beforeLabel.style.display = "block";
-                afterLabel.style.display = "block";
+            function setPercent(p){
+            p = clamp(p, 0, 100);
+            wrapper.style.setProperty('--pos', p + '%');
+            if (handle) handle.setAttribute('aria-valuenow', String(Math.round(p)));
+            toggleLabels(p);
             }
 
-            const handleRect = handle.getBoundingClientRect();
-            const afterLabelRect = afterLabel.getBoundingClientRect();
-            const distance = afterLabelRect.left - handleRect.right;
-
-            if (distance < 60) {
-                afterLabel.classList.add("hide-label");
-            } else {
-                afterLabel.classList.remove("hide-label");
+            function percentFromClientX(x){
+            const r = wrapper.getBoundingClientRect();
+            return clamp(((x - r.left) / r.width) * 100, 0, 100);
             }
-        }
 
+            function toggleLabels(p){
+            const beforeLabel = wrapper.querySelector('.krishv-before-label');
+            const afterLabel  = wrapper.querySelector('.krishv-after-label');
+            if (!beforeLabel || !afterLabel) return;
+            if (p >= 75) { beforeLabel.style.opacity = '1'; afterLabel.style.opacity = '0'; }
+            else if (p <= 25) { beforeLabel.style.opacity = '0'; afterLabel.style.opacity = '1'; }
+            else { beforeLabel.style.opacity = '1'; afterLabel.style.opacity = '1'; }
+            }
+
+            // Pointer interactions (click/drag anywhere)
             let dragging = false;
+            const down = e => { dragging = true; setPercent(percentFromClientX(e.clientX)); };
+            const move = e => { if (dragging) { setPercent(percentFromClientX(e.clientX)); e.preventDefault(); } };
+            const up   = () => { dragging = false; };
 
-            const startDrag = (e) => {
-                dragging = true;
-                setSlider(e.pageX || e.touches[0].pageX);
-            };
+            wrapper.addEventListener('pointerdown', down);
+            window.addEventListener('pointermove', move);
+            window.addEventListener('pointerup', up);
 
-            const stopDrag = () => {
-                dragging = false;
-            };
+            // Keyboard on the handle
+            handle?.addEventListener('keydown', (e) => {
+            const step = e.shiftKey ? 5 : 1;
+            const now = Number(handle.getAttribute('aria-valuenow') || 50);
+            if (e.key === 'ArrowLeft')  { setPercent(now - step); e.preventDefault(); }
+            if (e.key === 'ArrowRight') { setPercent(now + step); e.preventDefault(); }
+            if (e.key === 'Home')       { setPercent(0);         e.preventDefault(); }
+            if (e.key === 'End')        { setPercent(100);       e.preventDefault(); }
+            });
 
-            const drag = (e) => {
-                if (dragging) {
-                    setSlider(e.pageX || e.touches[0].pageX);
-                }
-            };
-
-            handle.addEventListener("mousedown", startDrag);
-            window.addEventListener("mouseup", stopDrag);
-            window.addEventListener("mousemove", drag);
-
-            handle.addEventListener("touchstart", startDrag, { passive: true });
-            window.addEventListener("touchend", stopDrag);
-            window.addEventListener("touchmove", drag, { passive: true });
-
-            setSlider(wrapper.offsetWidth / 2 + wrapper.getBoundingClientRect().left);
+            // Init (you can change to any default)
+            setPercent(50);
         });
-    </script>
+        });
+        </script>
 
     @endsection
 
