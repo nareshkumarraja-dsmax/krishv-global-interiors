@@ -253,7 +253,7 @@
 
 
     {{-- About Section of home --}}
-    <div class="space" id="about-sec">
+    {{-- <div class="space" id="about-sec">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-6 mb-5 mb-xl-0 wow fadeInLeft" data-wow-delay="0.2s" >
@@ -273,7 +273,7 @@
         <div class="shape-mockup jump" data-top="0" data-right="0">
             <img src="@assetPath('assets/img/shape/shape_3.png')" alt="shape" />
         </div>
-    </div>
+    </div> --}}
 
 
     <div class="space" id="about-sec">
@@ -1184,6 +1184,30 @@
                 allowTouchMove: false
             });
         </script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".img-slider img");
+    let current = 0;
+
+    function updateClasses() {
+        images.forEach((img) => img.className = ""); // reset
+
+        images[current].classList.add("active");
+        images[(current + 1) % images.length].classList.add("middle");
+        images[(current + 2) % images.length].classList.add("back");
+    }
+
+    function showNextImage() {
+        current = (current + 1) % images.length;
+        updateClasses();
+    }
+
+    updateClasses(); // show first stack
+    setInterval(showNextImage, 3000);
+    });
+</script>
 
     @endsection
 

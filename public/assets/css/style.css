@@ -8993,8 +8993,8 @@ blockquote cite:before {
 /* ----Image box-1 ----- */
 .img-box1 {
     position: relative;
-    border: 1px solid var(--border-color);
-    margin-right: 115px;
+    /* border: 1px solid var(--border-color);
+    margin-right: 115px; */
     padding-bottom: 140px
 }
 
