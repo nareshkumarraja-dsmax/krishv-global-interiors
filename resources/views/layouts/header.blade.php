@@ -84,21 +84,30 @@
                             <li><a class="{{ request()->routeIs('turnkey_projects')? 'active': ''}}" href="{{route('turnkey_projects')}}">Complete Turnkey Projects</a></li>
                         </ul>
                     </li>
-                    <li><a class="{{ request()->routeIs('tour')? 'active': ''}}" href="{{route('tour')}}">Virtual Tour</a></li>
-                    <li><a class="{{ request()->routeIs('gallery')? 'active': ''}}" href="{{route('gallery')}}">Gallery</a></li>
+                    <li><a class="{{ request()->routeIs('tour')? 'active': ''}}" href="{{route('tour')}}">360° view</a></li>
+                    <li><a class="{{ request()->routeIs('carrer')? 'active': ''}}" href="{{route('carrer')}}">Careers</a></li>
                     <li class="menu-item-has-children">
-                        <a class="{{ request()->routeIs('carrer')
+                        <a class="{{ request()->routeIs('referandearn')
+                            || request()->routeIs('channelpartner')
+                            ? 'active' : '' }}" href="#">
+                            Refer & earn
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a class="{{ request()->routeIs('referandearn')? 'active': ''}}" href="{{route('carrer')}}">Refer & Earn</a></li>
+                            <li><a class="{{ request()->routeIs('channelpartner')? 'active': ''}}" href="{{route('blog')}}">Channel Partner</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a class="{{ request()->routeIs('gallery')
                             || request()->routeIs('blog')
                             || request()->routeIs('contact')
-                            || request()->routeIs('do_more')
                             ? 'active' : '' }}" href="#">
                             More
                         </a>
                         <ul class="sub-menu">
-                            <li><a class="{{ request()->routeIs('carrer')? 'active': ''}}" href="{{route('carrer')}}">Careers</a></li>
+                            <li><a class="{{ request()->routeIs('gallery')? 'active': ''}}" href="{{route('carrer')}}">Careers</a></li>
                             <li><a class="{{ request()->routeIs('blog')? 'active': ''}}" href="{{route('blog')}}">Blog</a></li>
                             <li><a class="{{ request()->routeIs('contact')? 'active': ''}}" href="{{route('contact')}}">Contact</a></li>
-                            <li><a class="{{ request()->routeIs('do_more')? 'active': ''}}" href="{{route('do_more')}}">Do More</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -160,21 +169,30 @@
                                             <li><a class="{{ request()->routeIs('turnkey_projects')? 'active': ''}}" href="{{route('turnkey_projects')}}">Complete Turnkey Projects</a></li>
                                         </ul>
                                     </li>
-                                    <li><a class="{{ request()->routeIs('tour')? 'active': ''}}" href="{{route('tour')}}">Virtual Tour</a></li>
-                                    <li><a class="{{ request()->routeIs('gallery')? 'active': ''}}" href="{{route('gallery')}}">Gallery</a></li>
+                                    <li><a class="{{ request()->routeIs('tour')? 'active': ''}}" href="{{route('tour')}}">360° view</a></li>
+                                    <li><a class="{{ request()->routeIs('carrer')? 'active': ''}}" href="{{route('carrer')}}">Careers</a></li>
                                     <li class="menu-item-has-children">
-                                        <a class="{{ request()->routeIs('carrer')
+                                        <a class="{{ request()->routeIs('referandearn')
+                                            || request()->routeIs('channelpartner')
+                                            ? 'active' : '' }}" href="#">
+                                            Refer & earn
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li><a class="{{ request()->routeIs('referandearn')? 'active': ''}}" href="{{route('carrer')}}">refer & earn</a></li>
+                                            <li><a class="{{ request()->routeIs('channelpartner')? 'active': ''}}" href="{{route('blog')}}">channel partner</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a class="{{ request()->routeIs('gallery')
                                             || request()->routeIs('blog')
                                             || request()->routeIs('contact')
-                                            || request()->routeIs('do_more')
                                             ? 'active' : '' }}" href="#">
                                             More
                                         </a>
                                         <ul class="sub-menu">
-                                            <li><a class="{{ request()->routeIs('carrer')? 'active': ''}}" href="{{route('carrer')}}">Careers</a></li>
+                                            <li><a class="{{ request()->routeIs('carrer')? 'active': ''}}" href="{{route('carrer')}}">Gallery</a></li>
                                             <li><a class="{{ request()->routeIs('blog')? 'active': ''}}" href="{{route('blog')}}">Blog</a></li>
                                             <li><a class="{{ request()->routeIs('contact')? 'active': ''}}" href="{{route('contact')}}">Contact</a></li>
-                                            <li><a class="{{ request()->routeIs('do_more')? 'active': ''}}" href="{{route('do_more')}}">Do More</a></li>
                                         </ul>
                                     </li>
                                 </ul>
