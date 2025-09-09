@@ -4,7 +4,7 @@
 
 @section('main-container')
     {{-- Banner Section --}}
-    <section class="gallery-banner" style="background-image: url(@assetPath('assets/img/Freepik-images/Home-automation/Compressed/Banner-Homeautomation.webp'));">
+    <section class="gallery-banner" style="background-image: url(@assetPath('assets/img/Images/Home-automation/Compressed/Banner-Homeautomation.webp'));">
         <div class="gallery-banner-overlay">
             <div class="gallery-banner-content">
                 <div class="breadcrumb-nav">
@@ -27,7 +27,7 @@
                 <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
                     <div class="img-box3">
                         <div class="img1">
-                            <img src="@assetPath('assets/img/Freepik-images/Home-automation/Compressed/About.webp')" alt="About" />
+                            <img src="@assetPath('assets/img/Images/Home-automation/Compressed/About.webp')" alt="About" />
                         </div>
                     </div>
                 </div>
@@ -68,43 +68,43 @@
             <div class="swiper gallery-swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/Home-automation/Compressed/H1.webp')" alt="Gallery Image 1" />
+                        <img src="@assetPath('assets/img/Images/Home-automation/Compressed/H1.webp')" alt="Gallery Image 1" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/Home-automation/Compressed/H2.webp')" alt="Gallery Image 2" />
+                        <img src="@assetPath('assets/img/Images/Home-automation/Compressed/H2.webp')" alt="Gallery Image 2" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/Home-automation/Compressed/H11.webp')" alt="Gallery Image 3" />
+                        <img src="@assetPath('assets/img/Images/Home-automation/Compressed/H11.webp')" alt="Gallery Image 3" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/Home-automation/Compressed/H4.webp')" alt="Gallery Image 4" />
+                        <img src="@assetPath('assets/img/Images/Home-automation/Compressed/H4.webp')" alt="Gallery Image 4" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/Home-automation/Compressed/H5.webp')" alt="Gallery Image 5" />
+                        <img src="@assetPath('assets/img/Images/Home-automation/Compressed/H5.webp')" alt="Gallery Image 5" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/Home-automation/Compressed/H6.webp')" alt="Gallery Image 6" />
+                        <img src="@assetPath('assets/img/Images/Home-automation/Compressed/H6.webp')" alt="Gallery Image 6" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/Home-automation/Compressed/H13.webp')" alt="Gallery Image 7" />
+                        <img src="@assetPath('assets/img/Images/Home-automation/Compressed/H13.webp')" alt="Gallery Image 7" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/Home-automation/Compressed/H8.webp')" alt="Gallery Image 8" />
+                        <img src="@assetPath('assets/img/Images/Home-automation/Compressed/H8.webp')" alt="Gallery Image 8" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/Home-automation/Compressed/H9.webp')" alt="Gallery Image 9" />
+                        <img src="@assetPath('assets/img/Images/Home-automation/Compressed/H9.webp')" alt="Gallery Image 9" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/Home-automation/Compressed/H10.webp')" alt="Gallery Image 10" />
+                        <img src="@assetPath('assets/img/Images/Home-automation/Compressed/H10.webp')" alt="Gallery Image 10" />
                     </div>
 
                 </div>

@@ -75,8 +75,8 @@
                             || request()->routeIs('false_ceiling')
                             || request()->routeIs('commercial_interiors')
                             || request()->routeIs('turnkey_projects')
-                            ? 'active' : '' }}" href="#">
-                            Services
+                            ? 'active' : '' }}" href="javascript:void(0)">
+                            Products
                         </a>
                         <ul class="sub-menu">
                             <li><a href="{{route('complete_home_interiors')}}">Complete Home Interiors</a></li>
@@ -90,21 +90,30 @@
                             <li><a href="{{route('turnkey_projects')}}">Complete Turnkey Projects</a></li>
                         </ul>
                     </li>
-                    <li><a href="{{route('tour')}}">Virtual Tour</a></li>
-                    <li><a href="{{route('gallery')}}">Gallery</a></li>
+                    <li><a href="{{route('tour')}}">360° view</a></li>
+                    <li><a href="{{route('carrer')}}">Careers</a></li>
                     <li class="menu-item-has-children">
-                        <a class="{{ request()->routeIs('carrer')
-                            || request()->routeIs('blog')
-                            || request()->routeIs('contact')
-                            || request()->routeIs('do_more')
-                            ? 'active' : '' }}" href="#">
+                        <a class="{{ request()->routeIs('referandearn')
+                        || request()->routeIs('channelpartner')
+                            ? 'active' : '' }}" href="javascript:void(0)">
+                            Refer & earn
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="{{route('referandearn')}}">Refer & Earn</a></li>
+                            <li><a href="{{route('channelpartner')}}">Channel Partner</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a class="{{ request()->routeIs('gallery')
+                        || request()->routeIs('blog')
+                        || request()->routeIs('contact')
+                            ? 'active' : '' }}" href="javascript:void(0)">
                             More
                         </a>
                         <ul class="sub-menu">
-                            <li><a href="{{route('carrer')}}">Careers</a></li>
+                            <li><a href="{{route('gallery')}}">Gallery</a></li>
                             <li><a href="{{route('blog')}}">Blog</a></li>
                             <li><a href="{{route('contact')}}">Contact</a></li>
-                            <li><a href="{{route('do_more')}}">Do More</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -151,8 +160,8 @@
                                             || request()->routeIs('false_ceiling')
                                             || request()->routeIs('commercial_interiors')
                                             || request()->routeIs('turnkey_projects')
-                                            ? 'active' : '' }}" href="#">
-                                            Services
+                                            ? 'active' : '' }}" href="javascript:void(0)">
+                                            Products
                                         </a>
                                         <ul class="sub-menu">
                                             <li><a href="{{route('complete_home_interiors')}}">Complete Home Interiors</a></li>
@@ -166,21 +175,30 @@
                                             <li><a href="{{route('turnkey_projects')}}">Complete Turnkey Projects</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="{{route('tour')}}">Virtual Tour</a></li>
-                                    <li><a href="{{route('gallery')}}">Gallery</a></li>
+                                    <li><a href="{{route('tour')}}">360° view</a></li>
+                                    <li><a href="{{route('carrer')}}">Careers</a></li>
                                     <li class="menu-item-has-children">
-                                        <a class="{{ request()->routeIs('carrer')
+                                        <a class="{{ request()->routeIs('referandearn')
+                                            || request()->routeIs('channelpartner')
+                                            ? 'active' : '' }}" href="javascript:void(0)">
+                                            Refer & earn
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li><a href="{{route('referandearn')}}">refer & earn</a></li>
+                                            <li><a href="{{route('channelpartner')}}">channel partner</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a class="{{ request()->routeIs('gallery')
                                             || request()->routeIs('blog')
                                             || request()->routeIs('contact')
-                                            || request()->routeIs('do_more')
-                                            ? 'active' : '' }}" href="#">
+                                            ? 'active' : '' }}" href="javascript:void(0)">
                                             More
                                         </a>
                                         <ul class="sub-menu">
-                                            <li><a href="{{route('carrer')}}">Careers</a></li>
+                                            <li><a href="{{route('gallery')}}">gallery</a></li>
                                             <li><a href="{{route('blog')}}">Blog</a></li>
                                             <li><a href="{{route('contact')}}">Contact</a></li>
-                                            <li><a href="{{route('do_more')}}">Do More</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -235,13 +253,13 @@
 
 
     {{-- About Section of home --}}
-    <div class="space" id="about-sec">
+    {{-- <div class="space" id="about-sec">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-6 mb-5 mb-xl-0 wow fadeInLeft" data-wow-delay="0.2s" >
                     <div class="img-box1">
                         <div class="img1">
-                            <img src="@assetPath('assets/img/Freepik-images/About/Compressed/About.webp')" alt="About" />
+                            <img src="@assetPath('assets/img/Images/About/Compressed/About.webp')" alt="About" />
                         </div>
                     </div>
                 </div>
@@ -254,6 +272,33 @@
         </div>
         <div class="shape-mockup jump" data-top="0" data-right="0">
             <img src="@assetPath('assets/img/shape/shape_3.png')" alt="shape" />
+        </div>
+    </div> --}}
+
+
+    <div class="space" id="about-sec">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 mb-5 mb-xl-0 wow fadeInLeft" data-wow-delay="0.2s" >
+                    <div class="img-box1">
+                        <div class="img1 img-slider">
+                            <img src="assets/img/Images/living-room/Images/Livingroom16.webp" alt="About" class="active" />
+                            <img src="assets/img/Images/kitchen/Images/Kitchen16.webp" alt="About 2" />
+                            <img src="assets/img/Images/Dining/Images/Dining12.webp" alt="About 3" />
+                            <img src="assets/img/Images/Work-space/Images/Workspace14.webp" alt="About " />
+                            <img src="assets/img/Images/Bed-room/Images/Bedroom9.webp" alt="About " />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+                    <h2 class="sec-title margin about-content"> Your Premier Interior Design Partner<span class="text-theme"> in Bengaluru</span>  </h2>
+                    <p class=""> At <b style="color: #fecc52;"> Krish-V Global Interiors,</b> we don't just design spaces; we craft the backdrop to your life's most precious moments. We believe a home is more than just walls—it’s where dreams, love, and memories come to life. Our vision is to create spaces that reflect your heart, enhance your lifestyle, and feel like home from the very first step. Krish-V Global Interiors is<b style="color: #fecc52;"> Bengaluru's premier interior design company,</b> dedicated to transforming your vision into reality. </p>
+                    <p class=""> With years of invaluable experience, Krish-V has successfully completed over  <b style="color: #fecc52;">30,000+  homes,</b> bringing countless dreams to life. Our reputation for reliability speaks for itself. </p>
+                </div>
+            </div>
+        </div>
+        <div class="shape-mockup jump" data-top="0" data-right="0">
+            <img src="assets/img/shape/shape_3.png" alt="shape" />
         </div>
     </div>
 
@@ -372,7 +417,7 @@
             <div class="row service-card-grid">
                 <div class="col-md-6 col-lg-4 service-card">
                     <div class="service-card-inner">
-                        <img src="@assetPath('assets/img/Freepik-images/living-room/Compressed/l7.webp')" alt="Bedroom" class="service-img">
+                        <img src="@assetPath('assets/img/Images/living-room/Compressed/l7.webp')" alt="Bedroom" class="service-img">
                         <div class="service-content">
                             <img src="@assetPath('assets/img/icon/services/double-bed.svg')" alt="Bed Icon" class="service-icon svg-img">
                             <h3 class="service-title">Complete Home Interiors</h3>
@@ -382,7 +427,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 service-card">
                     <div class="service-card-inner">
-                        <img src="@assetPath('assets/img/Freepik-images/Renovation/Resizer/after03_optimized.webp')" alt="kitchen" class="service-img">
+                        <img src="@assetPath('assets/img/Images/Renovation/Resizer/after03_optimized.webp')" alt="kitchen" class="service-img">
                         <div class="service-content">
                             <img src="@assetPath('assets/img/icon/services/house.svg')" alt="Bed Icon" class="service-icon svg-img">
                             <h3 class="service-title">Renovation</h3>
@@ -392,7 +437,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 service-card">
                     <div class="service-card-inner">
-                        <img src="@assetPath('assets/img/Freepik-images/Home-automation/Compressed/H7.webp')" alt="kids-room" class="service-img">
+                        <img src="@assetPath('assets/img/Images/Home-automation/Compressed/H7.webp')" alt="kids-room" class="service-img">
                         <div class="service-content">
                             <img src="@assetPath('assets/img/icon/services/smart-home.svg')" alt="Bed Icon" class="service-icon svg-img">
                             <h3 class="service-title">Home Automation</h3>
@@ -402,7 +447,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 service-card">
                     <div class="service-card-inner">
-                        <img src="@assetPath('assets/img/Freepik-images/Bed-room/Compressed/br4.webp')" alt="living-room" class="service-img">
+                        <img src="@assetPath('assets/img/Images/Bed-room/Compressed/br4.webp')" alt="living-room" class="service-img">
                         <div class="service-content">
                             <img src="@assetPath('assets/img/icon/services/living.svg')" alt="Bed Icon" class="service-icon svg-img">
                             <h3 class="service-title">Customized Interior Designs</h3>
@@ -412,7 +457,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 service-card">
                     <div class="service-card-inner">
-                        <img src="@assetPath('assets/img/Freepik-images/Work-space/Compressed/w6.webp')" alt="home-automation" class="service-img">
+                        <img src="@assetPath('assets/img/Images/Work-space/Compressed/w6.webp')" alt="home-automation" class="service-img">
                         <div class="service-content">
                             <img src="@assetPath('assets/img/icon/services/workspace.svg')" alt="Bed Icon" class="service-icon svg-img">
                             <h3 class="service-title">Commercial Interiors </h3>
@@ -422,7 +467,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 service-card">
                     <div class="service-card-inner">
-                        <img src="@assetPath('assets/img/Freepik-images/Turnkey-projects/Compressed/T34.webp')" alt="upvc" class="service-img">
+                        <img src="@assetPath('assets/img/Images/Turnkey-projects/Compressed/T34.webp')" alt="upvc" class="service-img">
                         <div class="service-content">
                             <img src="@assetPath('assets/img/icon/services/protection.svg')" alt="Bed Icon" class="service-icon svg-img">
                             <h3 class="service-title">Complete Turnkey Projects</h3>
@@ -432,7 +477,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 service-card">
                     <div class="service-card-inner">
-                        <img src="@assetPath('assets/img/Freepik-images/Flooring/Compressed/F14.webp')" alt="renovation-img" class="service-img">
+                        <img src="@assetPath('assets/img/Images/Flooring/Compressed/F14.webp')" alt="renovation-img" class="service-img">
                         <div class="service-content">
                             <img src="@assetPath('assets/img/icon/services/tiles.svg')" alt="Bed Icon" class="service-icon svg-img">
                             <h3 class="service-title">Flooring Solutions</h3>
@@ -442,7 +487,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 service-card">
                     <div class="service-card-inner">
-                        <img src="@assetPath('assets/img/Freepik-images/False-ceiling/Compressed/F5.webp')" alt="Workspace" class="service-img">
+                        <img src="@assetPath('assets/img/Images/False-ceiling/Compressed/F5.webp')" alt="Workspace" class="service-img">
                         <div class="service-content">
                             <img src="@assetPath('assets/img/icon/services/ceiling.svg')" alt="Bed Icon" class="service-icon svg-img">
                             <h3 class="service-title">False Ceiling</h3>
@@ -452,7 +497,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 service-card">
                     <div class="service-card-inner">
-                        <img src="@assetPath('assets/img/Freepik-images/Upvc/Compressed/u8.webp')" alt="Dining" class="service-img">
+                        <img src="@assetPath('assets/img/Images/Upvc/Compressed/u8.webp')" alt="Dining" class="service-img">
                         <div class="service-content">
                             <img src="@assetPath('assets/img/icon/services/windows.svg')" alt="Bed Icon" class="service-icon svg-img">
                             <h3 class="service-title">UPVC & Aluminium - Doors & Windows</h3>
@@ -476,7 +521,7 @@
                 <div class="flip-card-wrapper">
                     <div class="flip-card">
                         <div class="flip-card-front">
-                            <img src="@assetPath('assets/img/Freepik-images/living-room/Compressed/l7.webp')" alt="Service Image" />
+                            <img src="@assetPath('assets/img/Images/living-room/Compressed/l7.webp')" alt="Service Image" />
                             <h3>Complete Home Interiors</h3>
                             <p>Interiors tailored to your lifestyle and comfort.</p>
                         </div>
@@ -498,7 +543,7 @@
                 <div class="flip-card-wrapper">
                     <div class="flip-card">
                         <div class="flip-card-front">
-                            <img src="@assetPath('assets/img/Freepik-images/Renovation/Resizer/after03_optimized.webp')" alt="Service Image" />
+                            <img src="@assetPath('assets/img/Images/Renovation/Resizer/after03_optimized.webp')" alt="Service Image" />
                             <h3>Renovation</h3>
                             <p>Transform and refresh your space with smart, modern renovation solutions.</p>
                         </div>
@@ -520,7 +565,7 @@
                 <div class="flip-card-wrapper">
                     <div class="flip-card">
                         <div class="flip-card-front">
-                            <img src="@assetPath('assets/img/Freepik-images/Home-automation/Compressed/H7.webp')" alt="Service Image" />
+                            <img src="@assetPath('assets/img/Images/Home-automation/Compressed/H7.webp')" alt="Service Image" />
                             <h3>Home Automation</h3>
                             <p>Seamless smart home solutions that bring comfort, control, and convenience.</p>
                         </div>
@@ -542,7 +587,7 @@
                 <div class="flip-card-wrapper">
                     <div class="flip-card">
                         <div class="flip-card-front">
-                            <img src="@assetPath('assets/img/Freepik-images/Bed-room/Compressed/bed7.webp')" alt="Service Image" />
+                            <img src="@assetPath('assets/img/Images/Bed-room/Compressed/bed7.webp')" alt="Service Image" />
                             <h3>Customized Interior Designs</h3>
                             <p>Smart, stylish interiors made for you.</p>
                         </div>
@@ -564,7 +609,7 @@
                 <div class="flip-card-wrapper">
                     <div class="flip-card">
                         <div class="flip-card-front">
-                            <img src="@assetPath('assets/img/Freepik-images/Work-space/Compressed/w16.webp')" alt="Service Image" />
+                            <img src="@assetPath('assets/img/Images/Work-space/Compressed/w16.webp')" alt="Service Image" />
                             <h3>Commercial Interiors</h3>
                             <p>Smart workspace design that boosts productivity and showcases your brand.</p>
                         </div>
@@ -586,7 +631,7 @@
                 <div class="flip-card-wrapper">
                     <div class="flip-card">
                         <div class="flip-card-front">
-                            <img src="@assetPath('assets/img/Freepik-images/Turnkey-projects/Compressed/T21.webp')" alt="Service Image" />
+                            <img src="@assetPath('assets/img/Images/Turnkey-projects/Compressed/T21.webp')" alt="Service Image" />
                             <h3>Complete Turnkey Projects</h3>
                             <p>End-to-end execution with quality and efficiency at every step.</p>
                         </div>
@@ -608,7 +653,7 @@
                 <div class="flip-card-wrapper">
                     <div class="flip-card">
                         <div class="flip-card-front">
-                            <img src="@assetPath('assets/img/Freepik-images/Flooring/Compressed/F17.webp')" alt="Service Image" />
+                            <img src="@assetPath('assets/img/Images/Flooring/Compressed/F17.webp')" alt="Service Image" />
                             <h3>Flooring Solutions</h3>
                             <p>Durable, precision-installed flooring that combines style and strength.</p>
                         </div>
@@ -630,7 +675,7 @@
                 <div class="flip-card-wrapper">
                     <div class="flip-card">
                         <div class="flip-card-front">
-                            <img src="@assetPath('assets/img/Freepik-images/False-ceiling/Compressed/F5.webp')" alt="Service Image" />
+                            <img src="@assetPath('assets/img/Images/False-ceiling/Compressed/F5.webp')" alt="Service Image" />
                             <h3>False Ceiling</h3>
                             <p>Stylish false ceilings that enhance lighting, acoustics, and overall ambiance.</p>
                         </div>
@@ -652,7 +697,7 @@
                 <div class="flip-card-wrapper">
                     <div class="flip-card">
                         <div class="flip-card-front">
-                            <img src="@assetPath('assets/img/Freepik-images/Upvc/Compressed/u8.webp')" alt="Service Image" />
+                            <img src="@assetPath('assets/img/Images/Upvc/Compressed/u8.webp')" alt="Service Image" />
                             <h3>UPVC & Aluminium - Doors & Windows</h3>
                             <p>Sleek, durable doors and windows built to last.</p>
                         </div>
@@ -678,10 +723,10 @@
 
 
     {{-- Experience Center Section --}}
-    <section class="krish-experience-modern" >
+    {{-- <section class="krish-experience-modern" >
         <div class="krish-experience-wrapper">
             <div class="krish-experience-left">
-                <div class="experience-image" style="background-image: url(@assetPath('assets/img/Freepik-images/About/Experience-center/Experience-center2.jpeg');"></div>
+                <div class="experience-image" style="background-image: url(@assetPath('assets/img/Images/About/Experience-center/Experience-center2.jpeg');"></div>
             </div>
             <div class="krish-experience-right">
                 <h2 class="site-section-heading mb-4">
@@ -699,6 +744,43 @@
                 </div>
             </div>
         </div>
+    </section> --}}
+
+
+    <section class="experience-centre-slider">
+        <div class="experience-centre-wrapper">
+
+            <!-- Left side content -->
+            <div class="experience-centre-left">
+                <h2 class="site-section-heading mb-4">
+                    Immerse Yourself in Design : Visit <span> Our Experience Centre </span>
+                </h2>
+                <p style="font-size: 14px;">As Bangalore’s Leading Interior Design Firm, we have a strong market presence, serving clients across the city and beyond.
+                    Come visit our state-of-the-art Experience Centre at Thanisandra, Bangalore, to envision your future space.</p>
+                <ul class="experience-features">
+                    <li><i class="fas fa-columns"></i> Design Galleries</li>
+                    <li><i class="fas fa-cubes"></i> Material Library</li>
+                    <li><i class="fas fa-vr-cardboard"></i> Virtual Reality Experiences</li>
+                </ul>
+                <div class="experience-cta">
+                    <button class="krish-btn secondary" data-bs-toggle="modal" data-bs-target="#siteVisitModal">Schedule a Visit</button>
+                </div>
+            </div>
+
+            <!-- Right side image slider -->
+            <div class="experience-centre-right">
+                <div class="swiper centre-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="assets/img/Images/About/Experience-center/Experience-center21.JPG" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/Images/About/Experience-center/Experience-center22.JPG" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/Images/About/Experience-center/Experience-center23.JPG" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/Images/About/Experience-center/Experience-center24.JPG" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/Images/living-room/Images/Livingroom14.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/Images/living-room/Images/Livingroom11.webp" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
@@ -713,7 +795,7 @@
                     </div>
                     <div class="krish-v-cta-text">
                         <h2>READY TO TRANSFORM YOUR SPACE?</h2>
-                        <a href="#" class="krish-v-cta-btn" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us Now <i class="fas fa-arrow-right"></i></a>
+                        <a href="" class="krish-v-cta-btn" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us Now <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -732,11 +814,11 @@
                 <div class="row align-items-center krishv-before-after-row mb-5">
                     <div class="col-md-7 order-2 order-md-1">
                         <div class="krishv-before-after-wrapper" data-start="50" aria-label="Before After Slider">
-                            <img src="@assetPath('assets/img/Freepik-images/Renovation/after01.png')"
+                            <img src="@assetPath('assets/img/Images/Renovation/after01.png')"
                                 alt="After Image" class="krishv-after-img" />
 
                             <div class="krishv-before-img-wrapper">
-                                <img src="@assetPath('assets/img/Freepik-images/Renovation/before01.png')"
+                                <img src="@assetPath('assets/img/Images/Renovation/before01.png')"
                                     alt="Before Image" class="krishv-before-img" />
                             </div>
 
@@ -905,7 +987,7 @@
             <div class="krish-v-cta-content">
                 <div class="krish-v-cta-text">
                     <h2>READY TO TRANSFORM YOUR SPACE?</h2>
-                    <a href="#" class="krish-v-cta-btn" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us Now <i class="fas fa-arrow-right"></i></a>
+                    <a href="" class="krish-v-cta-btn" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us Now <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="krish-v-cta-image">
                     <img src="@assetPath('assets/img/team/graphical-image/Dining.png')" alt="transform" />
@@ -1089,6 +1171,43 @@
         });
         });
         </script>
+
+        <script>
+            var swiper = new Swiper(".centre-swiper", {
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                effect: "slide",
+                speed: 800,
+                allowTouchMove: false
+            });
+        </script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".img-slider img");
+    let current = 0;
+
+    function updateClasses() {
+        images.forEach((img) => img.className = ""); // reset
+
+        images[current].classList.add("active");
+        images[(current + 1) % images.length].classList.add("middle");
+        images[(current + 2) % images.length].classList.add("back");
+    }
+
+    function showNextImage() {
+        current = (current + 1) % images.length;
+        updateClasses();
+    }
+
+    updateClasses(); // show first stack
+    setInterval(showNextImage, 3000);
+    });
+</script>
 
     @endsection
 

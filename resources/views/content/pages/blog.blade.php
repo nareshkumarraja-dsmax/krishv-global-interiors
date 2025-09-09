@@ -4,7 +4,7 @@
 
 @section('main-container')
     {{-- Banner Section --}}
-    <section class="gallery-banner" style="background-image: url(@assetPath('assets/img/Freepik-images/Blog/Compressed/Banner-blog.webp'));">
+    <section class="gallery-banner" style="background-image: url(@assetPath('assets/img/Images/Blog/Compressed/Banner-blog.webp'));">
         <div class="gallery-banner-overlay">
             <div class="gallery-banner-content">
                 <div class="breadcrumb-nav">
@@ -43,7 +43,7 @@
                     <div class="blog-img">
                         @if($img)
                             {{-- Use your helper if it supports variables; else fallback to asset() --}}
-                            <img src="{{ asset($img) }}" alt="blog image" />
+                            <img src="@assetPath($img)" alt="blog image" />
                             {{-- or: <img src="@assetPath($img)" alt="blog image" /> --}}
                         @endif
                     </div>

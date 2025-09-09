@@ -1,10 +1,10 @@
 @extends('layouts.main')
-@section('title', 'UPVC Doors  Windows Solutions in Bangalore - Krish-V Global Interiors')
-@section('description', 'Choose Krish-V Global Interiors for premium UPVC doors and windows in Bangalore. Durable, stylish, and energy-efficient upgrades for your space.')
+@section('title', 'About Krish-V Global Interiors - Shaping Bangalore Modern Interiors')
+@section('description', 'Learn how Krish-V Global Interiors is redefining spaces in Bangalore. Our visionary team blends creativity with functionality to deliver exceptional interior solutions.')
 
 @section('main-container')
     {{-- Banner Section --}}
-    <section class="gallery-banner" style="background-image: url(@assetPath('assets/img/Freepik-images/About/Compressed/7.webp'));">
+    <section class="gallery-banner" style="background-image: url(@assetPath('assets/img/Images/About/Compressed/7.webp'));">
         <div class="gallery-banner-overlay">
             <div class="gallery-banner-content">
                 <div class="breadcrumb-nav">
@@ -25,7 +25,7 @@
                 <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
                     <div class="krish-video-box">
                         <div class="video-inner">
-                            <img src="@assetPath('assets/img/Freepik-images/About/Compressed/home-2.webp')" alt="About" />
+                            <img src="@assetPath('assets/img/Images/About/Compressed/home-2.webp')" alt="About" />
                             <a href="https://www.youtube.com/embed/EtKZvoZKklE" class="video-play-btn glightbox-video"
                             target="_blank" rel="noopener" aria-label="Play Video">
                                 <i class="fas fa-play"></i>
@@ -289,6 +289,63 @@
     </div>
 
 
+     <!-- OUR SPECIALITY SECTION -->
+    <section class="stages-section" id="stages" style="text-align: center;">
+        <div class="conatiner">
+            <h2 class="site-section-heading mb-5">
+                Stages of<span> Interiors</span>
+            </h2>
+            <div class="stages-wrapper">
+                <div class="stage">
+                    <div class="circle">
+                        <div class="inner-circle">
+                            <img src="assets/img/icon/Stages/talk.svg"alt="icon"/>
+                        </div>
+                    </div>
+                    <div class="number">01</div>
+                    <p>Consultation</p>
+                </div>
+                <div class="stage">
+                    <div class="circle">
+                        <div class="inner-circle">
+                            <img src="assets/img/icon/choose_feature_2.svg" alt="icon" />
+                        </div>
+                    </div>
+                    <div class="number">02</div>
+                    <p>Interior Design & Quality Check</p>
+                </div>
+                <div class="stage">
+                    <div class="circle">
+                        <div class="inner-circle">
+                            <img src="assets/img/icon/choose_feature_3.svg" alt="icon" />
+                        </div>
+                    </div>
+                    <div class="number">03</div>
+                    <p>Production & Quality Check</p>
+                </div>
+                <div class="stage">
+                    <div class="circle">
+                        <div class="inner-circle">
+                            <img src="assets/img/icon/choose_feature_4.svg" alt="icon" />
+                        </div>
+                    </div>
+                    <div class="number">04</div>
+                    <p>Execution & Quality Check</p>
+                </div>
+                <div class="stage">
+                    <div class="circle">
+                        <div class="inner-circle">
+                            <img src="assets/img/icon/choose_feature_5.svg" alt="icon" />
+                        </div>
+                    </div>
+                    <div class="number">05</div>
+                    <p>Handover & After-Sales</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     {{-- Counter Section --}}
     <section class="">
@@ -362,8 +419,8 @@
 
             <div class="mb-5">
                 <picture>
-                    <source media="(max-width: 767px)" srcset="@assetPath('assets/img/Freepik-images/About/Experience-center/Experience-center2.jpeg')">
-                    <img src="@assetPath('assets/img/Freepik-images/About/Experience-center/Experience-center1.jpeg')" alt="Experience Centre">
+                    <source media="(max-width: 767px)" srcset="@assetPath('assets/img/Images/About/Experience-center/Experience-center2.jpeg')">
+                    <img src="@assetPath('assets/img/Images/About/Experience-center/Experience-center1.jpeg')" alt="Experience Centre">
                 </picture>
             </div>
 
@@ -643,6 +700,65 @@
             const krishLightbox = GLightbox({
                 selector: '.glightbox',
                 type: 'video',
+            });
+        </script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const stages = document.querySelectorAll(".stage");
+                const section = document.querySelector("#stages");
+                let current = 0;
+                let interval;
+
+                const stepTime = 2500;
+                const endPause = 3000;
+                const restartDelay = 2000;
+
+                function activateSteps(index) {
+                    stages.forEach((stage, i) => {
+                        if (i <= index) {
+                            setTimeout(() => stage.classList.add("active"), i * 300);
+                        } else {
+                            stage.classList.remove("active");
+                        }
+                    });
+                }
+
+                function startAnimation() {
+                    if (interval) return;
+                    activateSteps(current);
+
+                    interval = setInterval(() => {
+                        current++;
+                        if (current >= stages.length) {
+                            clearInterval(interval);
+                            interval = null;
+
+                            setTimeout(() => {
+                                stages.forEach(s => s.classList.remove("active"));
+                                current = 0;
+
+                                setTimeout(() => {
+                                    startAnimation();
+                                }, restartDelay);
+
+                            }, endPause);
+
+                        } else {
+                            activateSteps(current);
+                        }
+                    }, stepTime);
+                }
+
+                const observer = new IntersectionObserver(
+                    (entries) => {
+                        if (entries[0].isIntersecting) {
+                            startAnimation();
+                        }
+                    },
+                    { threshold: 0.3 }
+                );
+                observer.observe(section);
             });
         </script>
     @endsection

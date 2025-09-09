@@ -1,10 +1,10 @@
 @extends('layouts.main')
-@section('title', 'About Krish-V Global Interiors - Shaping Bangalore Modern Interiors')
-@section('description', 'Learn how Krish-V Global Interiors is redefining spaces in Bangalore. Our visionary team blends creativity with functionality to deliver exceptional interior solutions.')
+@section('title', 'UPVC Doors & Windows Solutions in Bangalore - Krish-V Global Interiors')
+@section('description', 'Choose Krish-V Global Interiors for premium UPVC doors and windows in Bangalore. Durable, stylish, and energy-efficient upgrades for your space.')
 
 @section('main-container')
     {{-- Banner Section --}}
-    <section class="gallery-banner" style="background-image: url(@assetPath('assets/img/Freepik-images/Upvc/Compressed/Banner-upvc.webp'));">
+    <section class="gallery-banner" style="background-image: url(@assetPath('assets/img/Images/Upvc/Compressed/Banner-upvc.webp'));">
         <div class="gallery-banner-overlay">
             <div class="gallery-banner-content">
                 <div class="breadcrumb-nav">
@@ -26,7 +26,7 @@
                 <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
                     <div class="img-box3">
                         <div class="img1">
-                            <img src="@assetPath('assets/img/Freepik-images/Upvc/Compressed/About.webp')" alt="About" />
+                            <img src="@assetPath('assets/img/Images/Upvc/Compressed/About.webp')" alt="About" />
                         </div>
                     </div>
                 </div>
@@ -67,43 +67,43 @@
             <div class="swiper gallery-swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/Upvc/Compressed/u1.webp')"  alt="Gallery Image 1" />
+                        <img src="@assetPath('assets/img/Images/Upvc/Compressed/u1.webp')"  alt="Gallery Image 1" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/Upvc/Compressed/u23.webp')"  alt="Gallery Image 2" />
+                        <img src="@assetPath('assets/img/Images/Upvc/Compressed/u23.webp')"  alt="Gallery Image 2" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/Upvc/Compressed/u3.webp')"  alt="Gallery Image 3" />
+                        <img src="@assetPath('assets/img/Images/Upvc/Compressed/u3.webp')"  alt="Gallery Image 3" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/Upvc/Compressed/u25.webp')"  alt="Gallery Image 4" />
+                        <img src="@assetPath('assets/img/Images/Upvc/Compressed/u25.webp')"  alt="Gallery Image 4" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/Upvc/Compressed/u21.webp')" alt="Gallery Image 5" />
+                        <img src="@assetPath('assets/img/Images/Upvc/Compressed/u21.webp')" alt="Gallery Image 5" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/Upvc/Compressed/u10.webp')"  alt="Gallery Image 6" />
+                        <img src="@assetPath('assets/img/Images/Upvc/Compressed/u10.webp')"  alt="Gallery Image 6" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/Upvc/Compressed/u8.webp')" alt="Gallery Image 7" />
+                        <img src="@assetPath('assets/img/Images/Upvc/Compressed/u8.webp')" alt="Gallery Image 7" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/Upvc/Compressed/u9.webp')"  alt="Gallery Image 8" />
+                        <img src="@assetPath('assets/img/Images/Upvc/Compressed/u9.webp')"  alt="Gallery Image 8" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/Upvc/Compressed/u11.webp')" alt="Gallery Image 9" />
+                        <img src="@assetPath('assets/img/Images/Upvc/Compressed/u11.webp')" alt="Gallery Image 9" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="@assetPath('assets/img/Freepik-images/Upvc/Compressed/u12.webp')"  alt="Gallery Image 10" />
+                        <img src="@assetPath('assets/img/Images/Upvc/Compressed/u12.webp')"  alt="Gallery Image 10" />
                     </div>
 
                 </div>
