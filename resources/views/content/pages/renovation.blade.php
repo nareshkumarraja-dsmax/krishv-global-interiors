@@ -233,7 +233,7 @@
             setPercent(50);
         });
         });
-        </script>
+    </script>
 
     @endsection
 @endsection
