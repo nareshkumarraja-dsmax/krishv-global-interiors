@@ -20,89 +20,84 @@
     </section>
 
     {{-- Blog Section --}}
-@php
-    // $list comes from BlogController@index (built from config('blogs.posts'))
-    $chunks = array_chunk($list, 3); // 3 cards per section (same as your layout)
-    $counter = 1;                    // for 01, 02, 03...
-@endphp
+    @php
+        // $list comes from BlogController@index (built from config('blogs.posts'))
+        $chunks = array_chunk($list, 3);
+        $counter = 1;
+    @endphp
 
-@foreach($chunks as $sectionIndex => $chunk)
-<section class="blog position-relative">
-    <div class="container">
-        <div class="blog-card-wrap">
-            @foreach($chunk as $item)
-                @php
-                    $count = sprintf('%02d', $counter++);
-                    $date  = !empty($item['date']) ? \Carbon\Carbon::parse($item['date'])->format('F j, Y') : null;
-                    $img   = $item['image'] ?? null;
-                    $title = $item['title'] ?? $item['slug'];
-                    $intro = \Illuminate\Support\Str::limit(strip_tags($item['intro'] ?? ''), 140);
-                @endphp
+    @foreach($chunks as $sectionIndex => $chunk)
+    <section class="blog position-relative">
+        <div class="container">
+            <div class="blog-card-wrap">
+                @foreach($chunk as $item)
+                    @php
+                        $count = sprintf('%02d', $counter++);
+                        $date  = !empty($item['date']) ? \Carbon\Carbon::parse($item['date'])->format('F j, Y') : null;
+                        $img   = $item['image'] ?? null;
+                        $title = $item['title'] ?? $item['slug'];
+                        $intro = \Illuminate\Support\Str::limit(strip_tags($item['intro'] ?? ''), 140);
+                    @endphp
 
-                <div class="blog-card wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="blog-img">
-                        @if($img)
-                            {{-- Use your helper if it supports variables; else fallback to asset() --}}
-                            <img src="@assetPath($img)" alt="blog image" />
-                            {{-- or: <img src="@assetPath($img)" alt="blog image" /> --}}
+                    <div class="blog-card wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="blog-img">
+                            @if($img)
+                                <img src="@assetPath($img)" alt="blog image" />
+                            @endif
+                        </div>
+
+                        <span class="blog-count h2">{{ $count }}</span>
+
+                        <div class="blog-meta style2">
+                            <a href="{{ route('blogs.show', $item['slug']) }}" target="_blank" class="mb-3">
+                                {{ $title }}
+                            </a>
+                            @if($date)
+                                <a href="javascript:void(0)" style="color: #fecc52;">{{ $date }}</a>
+                            @endif
+                        </div>
+
+                        @if($intro)
+                            <p class="blog-text">{{ $intro }}</p>
                         @endif
+
+                        <a href="{{ route('blogs.show', $item['slug']) }}" target="_blank" class="link-btn">Know More</a>
                     </div>
-
-                    <span class="blog-count h2">{{ $count }}</span>
-
-                    <div class="blog-meta style2">
-                        <a href="{{ route('blogs.show', $item['slug']) }}" target="_blank" class="mb-3">
-                            {{ $title }}
-                        </a>
-                        @if($date)
-                            <a href="javascript:void(0)" style="color: #fecc52;">{{ $date }}</a>
-                        @endif
-                    </div>
-
-                    @if($intro)
-                        <p class="blog-text">{{ $intro }}</p>
-                    @endif
-
-                    <a href="{{ route('blogs.show', $item['slug']) }}" target="_blank" class="link-btn">Know More</a>
-                </div>
-            @endforeach
+                @endforeach
+            </div>
         </div>
-    </div>
 
-    {{-- Keep the decorative shape exactly like your middle section (second block) --}}
-    @if($sectionIndex === 1)
-        <div class="body-shape1">
-            <img src="@assetPath('assets/img/shape/shape_1.png')" alt="shape" />
-        </div>
-    @endif
-</section>
-@endforeach
-
+        @if($sectionIndex === 1)
+            <div class="body-shape1">
+                <img src="@assetPath('assets/img/shape/shape_1.png')" alt="shape" />
+            </div>
+        @endif
+    </section>
+    @endforeach
 
     @include('content.forms.enquiry')
     @include('content.forms.scripts.enquiry_script')
 
     @section('vendor-js')
-    {{-- Blog Script --}}
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            if (window.innerWidth <= 991) {
-                const blogCards = document.querySelectorAll(".blog-card");
+        {{-- Blog Script --}}
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                if (window.innerWidth <= 991) {
+                    const blogCards = document.querySelectorAll(".blog-card");
 
-                const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                    entry.target.classList.add("show-image");
-                    } else {
-                    entry.target.classList.remove("show-image");
-                    }
-                });
-                }, { threshold: 1 });
+                    const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                        entry.target.classList.add("show-image");
+                        } else {
+                        entry.target.classList.remove("show-image");
+                        }
+                    });
+                    }, { threshold: 1 });
 
-                blogCards.forEach(card => observer.observe(card));
-            }
-        });
-    </script>
-
+                    blogCards.forEach(card => observer.observe(card));
+                }
+            });
+        </script>
     @endsection
 @endsection

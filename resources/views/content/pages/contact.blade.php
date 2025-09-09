@@ -122,7 +122,6 @@
         </div>
     </section>
 
-
     {{-- Map --}}
     <div class="container-fluid px-1 mt-4 wow fadeInRight" data-wow-delay="0.2s">
         <div class="row gx-0">
@@ -138,24 +137,24 @@
     @include('content.forms.scripts.enquiry_script')
 
     @section('vendor-js')
-    {{-- Contact form --}}
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const inputs = document.querySelectorAll('#pagecontactModal .dark-input');
+        {{-- Contact form --}}
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const inputs = document.querySelectorAll('#pagecontactModal .dark-input');
 
-            function toggleFilledClass(input) {
-                if (input.value.trim() !== '') {
-                    input.classList.add('filled');
-                } else {
-                    input.classList.remove('filled');
+                function toggleFilledClass(input) {
+                    if (input.value.trim() !== '') {
+                        input.classList.add('filled');
+                    } else {
+                        input.classList.remove('filled');
+                    }
                 }
-            }
 
-            inputs.forEach(input => {
-                toggleFilledClass(input);
-                input.addEventListener('input', () => toggleFilledClass(input));
+                inputs.forEach(input => {
+                    toggleFilledClass(input);
+                    input.addEventListener('input', () => toggleFilledClass(input));
+                });
             });
-        });
-    </script>
+        </script>
     @endsection
 @endsection

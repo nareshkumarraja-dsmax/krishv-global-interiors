@@ -6,8 +6,7 @@
     <meta name="asset-path" content="@assetPath('')">
     <title>@yield('title')</title>
     <meta name="description" content="@yield('description')">
-    <meta name="author" content="Themeholy" />
-    <meta name="keywords" content="Artraz - Architecture HTML Template" />
+    <meta name="keywords" content="@yield('keywords')" />
     <meta name="robots" content="INDEX,FOLLOW" />
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
     <link rel="icon" sizes="57x57" href="@assetPath('assets/img/1.png')">
@@ -45,8 +44,6 @@
     </div>
     <div class="th-cursor"></div>
 
-
-
     <div class="th-menu-wrapper">
         <div class="th-menu-area text-center">
             <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
@@ -69,7 +66,7 @@
                             || request()->routeIs('false_ceiling')
                             || request()->routeIs('commercial_interiors')
                             || request()->routeIs('turnkey_projects')
-                            ? 'active' : '' }}" href="#">
+                            ? 'active' : '' }}" href="javascript:void(0)">
                             Services
                         </a>
                         <ul class="sub-menu">
@@ -89,7 +86,7 @@
                     <li class="menu-item-has-children">
                         <a class="{{ request()->routeIs('referandearn')
                             || request()->routeIs('channelpartner')
-                            ? 'active' : '' }}" href="#">
+                            ? 'active' : '' }}" href="javascript:void(0)">
                             Refer & earn
                         </a>
                         <ul class="sub-menu">
@@ -101,7 +98,7 @@
                         <a class="{{ request()->routeIs('gallery')
                             || request()->routeIs('blog')
                             || request()->routeIs('contact')
-                            ? 'active' : '' }}" href="#">
+                            ? 'active' : '' }}" href="javascript:void(0)">
                             More
                         </a>
                         <ul class="sub-menu">
@@ -125,9 +122,6 @@
             </div>
         </div>
     </div>
-
-
-
 
     <header class="th-header header-layout1 header-colored">
         <div class="sticky-wrapper">
@@ -154,7 +148,7 @@
                                             || request()->routeIs('false_ceiling')
                                             || request()->routeIs('commercial_interiors')
                                             || request()->routeIs('turnkey_projects')
-                                            ? 'active' : '' }}" href="#">
+                                            ? 'active' : '' }}" href="javascript:void(0)">
                                             Services
                                         </a>
                                         <ul class="sub-menu">
@@ -174,7 +168,7 @@
                                     <li class="menu-item-has-children">
                                         <a class="{{ request()->routeIs('referandearn')
                                             || request()->routeIs('channelpartner')
-                                            ? 'active' : '' }}" href="#">
+                                            ? 'active' : '' }}" href="javascript:void(0)">
                                             Refer & earn
                                         </a>
                                         <ul class="sub-menu">
@@ -186,7 +180,7 @@
                                         <a class="{{ request()->routeIs('gallery')
                                             || request()->routeIs('blog')
                                             || request()->routeIs('contact')
-                                            ? 'active' : '' }}" href="#">
+                                            ? 'active' : '' }}" href="javascript:void(0)">
                                             More
                                         </a>
                                         <ul class="sub-menu">

@@ -292,23 +292,23 @@
     @include('content.forms.scripts.enquiry_script')
 
     @section('vendor-js')
-    {{-- Script For Accordion --}}
-    <script>
-        document.querySelectorAll('.step-accordion .step-header').forEach(header => {
-            header.addEventListener('click', () => {
-                const currentAccordion = header.parentElement;
+        {{-- Script For Accordion --}}
+        <script>
+            document.querySelectorAll('.step-accordion .step-header').forEach(header => {
+                header.addEventListener('click', () => {
+                    const currentAccordion = header.parentElement;
 
-                // Close all other accordions
-                document.querySelectorAll('.step-accordion').forEach(accordion => {
-                    if (accordion !== currentAccordion) {
-                        accordion.classList.remove('active');
-                    }
+                    // Close all other accordions
+                    document.querySelectorAll('.step-accordion').forEach(accordion => {
+                        if (accordion !== currentAccordion) {
+                            accordion.classList.remove('active');
+                        }
+                    });
+
+                    // Toggle the clicked accordion
+                    currentAccordion.classList.toggle('active');
                 });
-
-                // Toggle the clicked accordion
-                currentAccordion.classList.toggle('active');
             });
-        });
         </script>
     @endsection
 @endsection

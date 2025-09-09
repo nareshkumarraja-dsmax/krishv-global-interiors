@@ -19,7 +19,6 @@
         </div>
     </section>
 
-
     {{-- Career Card Section --}}
     <section class="career-card-section-v2 space">
         <div class="container">
@@ -375,30 +374,30 @@
     @include('content.forms.scripts.apply_mow_script')
 
     @section('vendor-js')
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const customButtons = document.querySelectorAll(".custom-know-more-btn");
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const customButtons = document.querySelectorAll(".custom-know-more-btn");
 
-            customButtons.forEach(function (button) {
-                button.addEventListener("click", function () {
-                const card = button.closest(".custom-career-card");
-                const toggleContent = card.querySelector(".custom-requirement-toggle");
-                const btnText = button.querySelector(".btn-text");
-                const icon = button.querySelector("i");
+                customButtons.forEach(function (button) {
+                    button.addEventListener("click", function () {
+                    const card = button.closest(".custom-career-card");
+                    const toggleContent = card.querySelector(".custom-requirement-toggle");
+                    const btnText = button.querySelector(".btn-text");
+                    const icon = button.querySelector("i");
 
-                const isActive = toggleContent.classList.contains("show");
+                    const isActive = toggleContent.classList.contains("show");
 
-                toggleContent.classList.toggle("show", !isActive);
+                    toggleContent.classList.toggle("show", !isActive);
 
-                button.classList.toggle("active", !isActive);
+                    button.classList.toggle("active", !isActive);
 
-                btnText.textContent = isActive ? "Know More" : "Show Less";
-                icon.classList.toggle("fa-chevron-down", isActive);
-                icon.classList.toggle("fa-chevron-up", !isActive);
+                    btnText.textContent = isActive ? "Know More" : "Show Less";
+                    icon.classList.toggle("fa-chevron-down", isActive);
+                    icon.classList.toggle("fa-chevron-up", !isActive);
+                    });
                 });
             });
-        });
-    </script>
+        </script>
     @endsection
 @endsection

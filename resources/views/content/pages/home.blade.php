@@ -32,7 +32,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -42,17 +41,24 @@
     <link rel="stylesheet" href="@assetPath('assets/css/fontawesome.min.css')" />
     <link rel="stylesheet" href="@assetPath('assets/css/style.css')" />
 
-
+    <style>
+        .slick-dots li button {
+            width: 12px !important;
+            height: 12px !important;
+        }
+    </style>
 </head>
-<body class="">
+<body>
+    {{-- Preloader --}}
     <div class="preloader">
         <div class="preloader-inner">
             <img src="@assetPath('assets/img/loader.gif')" alt="loading">
         </div>
     </div>
+
     <div class="th-cursor"></div>
 
-
+    {{-- Mobile Menu Section --}}
     <div class="th-menu-wrapper">
         <div class="th-menu-area text-center">
             <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
@@ -132,8 +138,7 @@
         </div>
     </div>
 
-
-
+    {{-- Header Section --}}
     <header class="th-header header-layout2 ">
         <div class="sticky-wrapper">
             <div class="sticky-active">
@@ -221,8 +226,6 @@
         </div>
     </header>
 
-
-
     {{-- Hero Section --}}
     <div class="th-hero-wrapper hero-1">
         <div class="hero-slider-1 th-carousel" id="heroSlide1" data-fade="true" data-slide-show="1">
@@ -251,7 +254,6 @@
         </div>
     </div>
 
-
     {{-- About Section of home --}}
     {{-- <div class="space" id="about-sec">
         <div class="container">
@@ -275,11 +277,10 @@
         </div>
     </div> --}}
 
-
     <div class="space" id="about-sec">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-xl-6 mb-5 mb-xl-0 wow fadeInLeft" data-wow-delay="0.2s" >
+                <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s" >
                     <div class="img-box1">
                         <div class="img1 img-slider">
                             <img src="assets/img/Images/living-room/Images/Livingroom16.webp" alt="About" class="active" />
@@ -301,7 +302,6 @@
             <img src="assets/img/shape/shape_3.png" alt="shape" />
         </div>
     </div>
-
 
     {{-- Why choose us section --}}
     <div class="" style="text-align: center;">
@@ -393,8 +393,6 @@
             </div>
         </div>
     </div>
-
-
 
     {{-- Mobile Service Section --}}
     <section class="mobile-service-section" id="main-services" style="text-align: center;">
@@ -508,7 +506,6 @@
             </div>
         </div>
     </section>
-
 
     {{-- Desktop Service Section --}}
     <section class="space service-flip-section"  style="text-align: center;">
@@ -720,8 +717,6 @@
         </div>
     </section>
 
-
-
     {{-- Experience Center Section --}}
     {{-- <section class="krish-experience-modern" >
         <div class="krish-experience-wrapper">
@@ -783,8 +778,6 @@
         </div>
     </section>
 
-
-
     {{-- CTA Section --}}
     <div class="padding first-page">
         <section class="krish-v-cta-section mb-20" >
@@ -801,8 +794,6 @@
             </div>
         </section>
     </div>
-
-
 
     {{-- Before and After Section --}}
     <div class="space-bottom content-wrapper" style="text-align: center;">
@@ -848,8 +839,6 @@
         </section>
     </div>
 
-
-
     {{-- Virtual Tour Section --}}
     <section class="interior-parallax-tour" style="background-image: url(@assetPath('assets/img/bg/image-11.WEBP');">
         <div class="tour-overlay"></div>
@@ -864,8 +853,6 @@
             </div>
         </div>
     </section>
-
-
 
     {{-- Partner Section --}}
     <div class="partner-logos-section">
@@ -916,8 +903,6 @@
             </div>
         </div>
     </div>
-
-
 
     {{-- Testimonial section --}}
     <section class="testimonial-section" style="text-align: center;">
@@ -979,10 +964,8 @@
         </div>
     </section>
 
-
-
     {{-- CTA Section --}}
-    <section class="krish-v-cta-section Reverse mb-20" >
+    <section class="krish-v-cta-section Reverse mb-5" >
         <div class="container">
             <div class="krish-v-cta-content">
                 <div class="krish-v-cta-text">
@@ -1002,174 +985,171 @@
     @include('content.forms.scripts.exp_script')
 
     @section('vendor-js')
-    <!---------- For Position Stiky--------->
-    <script>
-        window.addEventListener("scroll", function () {
-            const header = document.querySelector(".header-layout2");
-                if (window.scrollY > 50) {
-            header.classList.add("sticky");
-                } else {
-            header.classList.remove("sticky");
-            }
-        });
-    </script>
-
-
-    {{-- For Service Card Section --}}
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const cards = document.querySelectorAll(".service-card");
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("active");
+        <!---------- For Position Stiky--------->
+        <script>
+            window.addEventListener("scroll", function () {
+                const header = document.querySelector(".header-layout2");
+                    if (window.scrollY > 50) {
+                header.classList.add("sticky");
                     } else {
-                        entry.target.classList.remove("active");
-                    }
-                });
-            }, {
-                threshold: 1.0
+                header.classList.remove("sticky");
+                }
             });
-
-            cards.forEach(card => observer.observe(card));
-        });
         </script>
 
+        {{-- For Service Card Section --}}
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const cards = document.querySelectorAll(".service-card");
 
-    <!-- Form Popup -->
-    <script>
-        let scrollCount = 0;
-        let modalTriggered = false;
-        let scrollCooldown = false;
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("active");
+                        } else {
+                            entry.target.classList.remove("active");
+                        }
+                    });
+                }, {
+                    threshold: 1.0
+                });
 
-        window.addEventListener('wheel', () => {
-            if (modalTriggered || scrollCooldown) return;
+                cards.forEach(card => observer.observe(card));
+            });
+            </script>
 
-            scrollCount++;
+        <!-- Form Popup -->
+        <script>
+            let scrollCount = 0;
+            let modalTriggered = false;
+            let scrollCooldown = false;
 
-            if (scrollCount >= 6) {
-            modalTriggered = true;
-            const contactModal = new bootstrap.Modal(document.getElementById('contactModal'));
-            contactModal.show();
-            }
+            window.addEventListener('wheel', () => {
+                if (modalTriggered || scrollCooldown) return;
 
+                scrollCount++;
 
-            scrollCooldown = true;
-            setTimeout(() => {
-            scrollCooldown = false;
-            }, 300);
-        }, { passive: true });
-    </script>
-
-
-    <!-- For Service Section -->
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            loop: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            breakpoints: {
-                1200: {
-                    slidesPerView: 3,
-                },
-                768: {
-                    slidesPerView: 2,
-                },
-                479: {
-                    slidesPerView: 1,
-                },
-                0: {
-                    slidesPerView: 1,
+                if (scrollCount >= 6) {
+                modalTriggered = true;
+                const contactModal = new bootstrap.Modal(document.getElementById('contactModal'));
+                contactModal.show();
                 }
-            },
-            watchOverflow: true,
-        });
 
-        window.onload = () => {
-            const paths = document.querySelectorAll('.svg-img path');
-            paths.forEach(path => {
-                path.classList.add('animated');
-            });
-        };
-    </script>
 
-    <!-- Before And After Slider -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-        const clamp = (n,min,max)=>Math.max(min,Math.min(max,n));
+                scrollCooldown = true;
+                setTimeout(() => {
+                scrollCooldown = false;
+                }, 300);
+            }, { passive: true });
+        </script>
 
-        document.querySelectorAll('.krishv-before-after-wrapper').forEach(wrapper => {
-            const handle = wrapper.querySelector('.krishv-slider-handle');
-            const beforeWrap = wrapper.querySelector('.krishv-before-img-wrapper');
-
-            // ---- HARD RESET for old inline styles / listeners ----
-            if (beforeWrap) {
-            beforeWrap.style.width = '100%';
-            beforeWrap.style.overflow = 'visible';
-            }
-            // Remove any old width setter you might still have:
-            wrapper.querySelectorAll('*').forEach(el => {
-            if (el._kvOldHandlers) { el._kvOldHandlers.forEach(fn => el.removeEventListener(...fn)); }
-            });
-
-            function setPercent(p){
-            p = clamp(p, 0, 100);
-            wrapper.style.setProperty('--pos', p + '%');
-            if (handle) handle.setAttribute('aria-valuenow', String(Math.round(p)));
-            toggleLabels(p);
-            }
-
-            function percentFromClientX(x){
-            const r = wrapper.getBoundingClientRect();
-            return clamp(((x - r.left) / r.width) * 100, 0, 100);
-            }
-
-            function toggleLabels(p){
-            const beforeLabel = wrapper.querySelector('.krishv-before-label');
-            const afterLabel  = wrapper.querySelector('.krishv-after-label');
-            if (!beforeLabel || !afterLabel) return;
-            if (p >= 75) { beforeLabel.style.opacity = '1'; afterLabel.style.opacity = '0'; }
-            else if (p <= 25) { beforeLabel.style.opacity = '0'; afterLabel.style.opacity = '1'; }
-            else { beforeLabel.style.opacity = '1'; afterLabel.style.opacity = '1'; }
-            }
-
-            // Pointer interactions (click/drag anywhere)
-            let dragging = false;
-            const down = e => { dragging = true; setPercent(percentFromClientX(e.clientX)); };
-            const move = e => { if (dragging) { setPercent(percentFromClientX(e.clientX)); e.preventDefault(); } };
-            const up   = () => { dragging = false; };
-
-            wrapper.addEventListener('pointerdown', down);
-            window.addEventListener('pointermove', move);
-            window.addEventListener('pointerup', up);
-
-            // Keyboard on the handle
-            handle?.addEventListener('keydown', (e) => {
-            const step = e.shiftKey ? 5 : 1;
-            const now = Number(handle.getAttribute('aria-valuenow') || 50);
-            if (e.key === 'ArrowLeft')  { setPercent(now - step); e.preventDefault(); }
-            if (e.key === 'ArrowRight') { setPercent(now + step); e.preventDefault(); }
-            if (e.key === 'Home')       { setPercent(0);         e.preventDefault(); }
-            if (e.key === 'End')        { setPercent(100);       e.preventDefault(); }
+        <!-- For Service Section -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    1200: {
+                        slidesPerView: 3,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                    },
+                    479: {
+                        slidesPerView: 1,
+                    },
+                    0: {
+                        slidesPerView: 1,
+                    }
+                },
+                watchOverflow: true,
             });
 
-            // Init (you can change to any default)
-            setPercent(50);
-        });
-        });
+            window.onload = () => {
+                const paths = document.querySelectorAll('.svg-img path');
+                paths.forEach(path => {
+                    path.classList.add('animated');
+                });
+            };
+        </script>
+
+        <!-- Before And After Slider -->
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const clamp = (n,min,max)=>Math.max(min,Math.min(max,n));
+
+                document.querySelectorAll('.krishv-before-after-wrapper').forEach(wrapper => {
+                    const handle = wrapper.querySelector('.krishv-slider-handle');
+                    const beforeWrap = wrapper.querySelector('.krishv-before-img-wrapper');
+
+                    // ---- HARD RESET for old inline styles / listeners ----
+                    if (beforeWrap) {
+                    beforeWrap.style.width = '100%';
+                    beforeWrap.style.overflow = 'visible';
+                    }
+                    // Remove any old width setter you might still have:
+                    wrapper.querySelectorAll('*').forEach(el => {
+                    if (el._kvOldHandlers) { el._kvOldHandlers.forEach(fn => el.removeEventListener(...fn)); }
+                    });
+
+                    function setPercent(p){
+                    p = clamp(p, 0, 100);
+                    wrapper.style.setProperty('--pos', p + '%');
+                    if (handle) handle.setAttribute('aria-valuenow', String(Math.round(p)));
+                    toggleLabels(p);
+                    }
+
+                    function percentFromClientX(x){
+                    const r = wrapper.getBoundingClientRect();
+                    return clamp(((x - r.left) / r.width) * 100, 0, 100);
+                    }
+
+                    function toggleLabels(p){
+                    const beforeLabel = wrapper.querySelector('.krishv-before-label');
+                    const afterLabel  = wrapper.querySelector('.krishv-after-label');
+                    if (!beforeLabel || !afterLabel) return;
+                    if (p >= 75) { beforeLabel.style.opacity = '1'; afterLabel.style.opacity = '0'; }
+                    else if (p <= 25) { beforeLabel.style.opacity = '0'; afterLabel.style.opacity = '1'; }
+                    else { beforeLabel.style.opacity = '1'; afterLabel.style.opacity = '1'; }
+                    }
+
+                    // Pointer interactions (click/drag anywhere)
+                    let dragging = false;
+                    const down = e => { dragging = true; setPercent(percentFromClientX(e.clientX)); };
+                    const move = e => { if (dragging) { setPercent(percentFromClientX(e.clientX)); e.preventDefault(); } };
+                    const up   = () => { dragging = false; };
+
+                    wrapper.addEventListener('pointerdown', down);
+                    window.addEventListener('pointermove', move);
+                    window.addEventListener('pointerup', up);
+
+                    // Keyboard on the handle
+                    handle?.addEventListener('keydown', (e) => {
+                    const step = e.shiftKey ? 5 : 1;
+                    const now = Number(handle.getAttribute('aria-valuenow') || 50);
+                    if (e.key === 'ArrowLeft')  { setPercent(now - step); e.preventDefault(); }
+                    if (e.key === 'ArrowRight') { setPercent(now + step); e.preventDefault(); }
+                    if (e.key === 'Home')       { setPercent(0);         e.preventDefault(); }
+                    if (e.key === 'End')        { setPercent(100);       e.preventDefault(); }
+                    });
+
+                    // Init (you can change to any default)
+                    setPercent(50);
+                });
+            });
         </script>
 
         <script>
@@ -1185,30 +1165,28 @@
             });
         </script>
 
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll(".img-slider img");
+            let current = 0;
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-    const images = document.querySelectorAll(".img-slider img");
-    let current = 0;
+            function updateClasses() {
+                images.forEach((img) => img.className = ""); // reset
 
-    function updateClasses() {
-        images.forEach((img) => img.className = ""); // reset
+                images[current].classList.add("active");
+                images[(current + 1) % images.length].classList.add("middle");
+                images[(current + 2) % images.length].classList.add("back");
+            }
 
-        images[current].classList.add("active");
-        images[(current + 1) % images.length].classList.add("middle");
-        images[(current + 2) % images.length].classList.add("back");
-    }
+            function showNextImage() {
+                current = (current + 1) % images.length;
+                updateClasses();
+            }
 
-    function showNextImage() {
-        current = (current + 1) % images.length;
-        updateClasses();
-    }
-
-    updateClasses(); // show first stack
-    setInterval(showNextImage, 3000);
-    });
-</script>
-
+            updateClasses(); // show first stack
+            setInterval(showNextImage, 3000);
+            });
+        </script>
     @endsection
 
     @include('layouts.footer')

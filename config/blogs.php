@@ -285,8 +285,5 @@ return [
             ],
             'footer' => 'In the ever-evolving world of interior design, the mantra of “less is more” resonates deeply. By understanding your preferences, exploring modular designs, and embracing creative storage solutions, you can transform your apartment in Bengaluru into a well-organized oasis of comfort and style. With these tips, you can master the art of maximizing space utilization in your 2 and 3-BHK homes, creating an environment that effortlessly blends functionality and aesthetics. Say goodbye to clutter and hello to a harmonious living space that truly reflects your lifestyle.',
         ],
-        // Add more posts here with unique slugs:
-        // 'kitchen-modular-guide' => [ ... ],
-        // 'villa-makeover-before-after' => [ ... ],
     ],
 ];

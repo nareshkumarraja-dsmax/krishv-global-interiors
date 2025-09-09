@@ -71,7 +71,6 @@
             </div>
         </div>
     </section>
-
     @include('content.forms.enquiry')
     @include('content.forms.scripts.enquiry_script')
 @endsection

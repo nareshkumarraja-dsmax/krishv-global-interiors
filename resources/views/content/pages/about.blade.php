@@ -17,7 +17,6 @@
         </div>
     </section>
 
-
     {{-- About Section --}}
     <div class="space">
         <div class="container">
@@ -51,7 +50,6 @@
             <img src="@assetPath('assets/img/shape/shape_3.png')" alt="shape" />
         </div>
     </div>
-
 
     {{-- Usp Section --}}
     <section class="krishv-usp-section" style="text-align: center;">
@@ -124,7 +122,6 @@
             </div>
         </div>
     </section>
-
 
     {{-- Choose Feature Desktop --}}
     <div class="space-bottom stages-desktop d-none d-lg-block">
@@ -203,8 +200,6 @@
             </div>
         </div>
     </div>
-
-
 
     {{-- Choose Feature Mobile --}}
     <div class="space-bottom stages-mobile d-block d-lg-none">
@@ -288,7 +283,6 @@
         </div>
     </div>
 
-
      <!-- OUR SPECIALITY SECTION -->
     <section class="stages-section" id="stages" style="text-align: center;">
         <div class="conatiner">
@@ -345,8 +339,6 @@
         </div>
     </section>
 
-
-
     {{-- Counter Section --}}
     <section class="">
         <div class="container">
@@ -398,8 +390,6 @@
         </div>
     </section>
 
-
-
     {{-- Experience Center Section --}}
     <section class="krish-experience-centre">
         <div class="krish-container">
@@ -430,8 +420,6 @@
             </div>
         </div>
     </section>
-
-
 
     {{-- Testimonial Section --}}
     <section class="space testimonial-section">
@@ -589,7 +577,6 @@
             });
         </script>
 
-
         <!-- ----------------script for Choose feature section---------- -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
@@ -625,7 +612,6 @@
                 );
             });
         </script>
-
 
         {{-- Script for Counter up section --}}
         <script>
@@ -668,7 +654,6 @@
                 }
             });
         </script>
-
 
         {{-- Video Testimonial Section --}}
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />

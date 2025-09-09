@@ -23,6 +23,7 @@ use App\Http\Controllers\ChannelpartnerController;
 use App\Http\Controllers\TermsandconditionsController;
 use App\Http\Controllers\PrivacypolicyController;
 use App\Http\Controllers\FaqController;
+use App\Http\Controllers\FormsController;
 
 
 Route::get('/', [HomeController::class, "index"])->name('home');
@@ -48,3 +49,5 @@ Route::get('/channel-partner', [ContactController::class, "index"])->name('chann
 Route::get('/termsandconditions', [TermsandconditionsController::class, "index"])->name('termsandconditions');
 Route::get('/privacy-policy', [PrivacypolicyController::class, "index"])->name('privacy_policy');
 Route::get('/faq', [FaqController::class, "index"])->name('faq');
+
+Route::post('/enquiry-form', [ContactController::class, 'submitEnquiryForm'])->name('enquiry-form');

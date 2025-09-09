@@ -19,7 +19,6 @@
         </div>
     </section>
 
-
     {{-- Before-After section --}}
     <div class="content-wrapper" style="text-align: center;">
         <section class="">
@@ -66,7 +65,7 @@
                             </div>
                             <div class="krish-v-cta-text">
                                 <h2>READY TO TRANSFORM YOUR SPACE?</h2>
-                                <a href="#" class="krish-v-cta-btn" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us Now <i class="fas fa-arrow-right"></i></a>
+                                <a href="javascript:void(0)" class="krish-v-cta-btn" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us Now <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -103,7 +102,6 @@
             </div>
         </section>
     </div>
-
 
     {{-- testimonial Section --}}
     <section class="testimonial-section" style="text-align: center;">
@@ -169,71 +167,67 @@
     @include('content.forms.scripts.enquiry_script')
 
     @section('vendor-js')
-    <!-- Before And After Slider -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-        const clamp = (n,min,max)=>Math.max(min,Math.min(max,n));
+        <!-- Before And After Slider -->
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+            const clamp = (n,min,max)=>Math.max(min,Math.min(max,n));
 
-        document.querySelectorAll('.krishv-before-after-wrapper').forEach(wrapper => {
-            const handle = wrapper.querySelector('.krishv-slider-handle');
-            const beforeWrap = wrapper.querySelector('.krishv-before-img-wrapper');
+            document.querySelectorAll('.krishv-before-after-wrapper').forEach(wrapper => {
+                const handle = wrapper.querySelector('.krishv-slider-handle');
+                const beforeWrap = wrapper.querySelector('.krishv-before-img-wrapper');
 
-            // ---- HARD RESET for old inline styles / listeners ----
-            if (beforeWrap) {
-            beforeWrap.style.width = '100%';
-            beforeWrap.style.overflow = 'visible';
-            }
-            // Remove any old width setter you might still have:
-            wrapper.querySelectorAll('*').forEach(el => {
-            if (el._kvOldHandlers) { el._kvOldHandlers.forEach(fn => el.removeEventListener(...fn)); }
+                if (beforeWrap) {
+                beforeWrap.style.width = '100%';
+                beforeWrap.style.overflow = 'visible';
+                }
+                wrapper.querySelectorAll('*').forEach(el => {
+                if (el._kvOldHandlers) { el._kvOldHandlers.forEach(fn => el.removeEventListener(...fn)); }
+                });
+
+                function setPercent(p){
+                p = clamp(p, 0, 100);
+                wrapper.style.setProperty('--pos', p + '%');
+                if (handle) handle.setAttribute('aria-valuenow', String(Math.round(p)));
+                toggleLabels(p);
+                }
+
+                function percentFromClientX(x){
+                const r = wrapper.getBoundingClientRect();
+                return clamp(((x - r.left) / r.width) * 100, 0, 100);
+                }
+
+                function toggleLabels(p){
+                const beforeLabel = wrapper.querySelector('.krishv-before-label');
+                const afterLabel  = wrapper.querySelector('.krishv-after-label');
+                if (!beforeLabel || !afterLabel) return;
+                if (p >= 75) { beforeLabel.style.opacity = '1'; afterLabel.style.opacity = '0'; }
+                else if (p <= 25) { beforeLabel.style.opacity = '0'; afterLabel.style.opacity = '1'; }
+                else { beforeLabel.style.opacity = '1'; afterLabel.style.opacity = '1'; }
+                }
+
+                // Pointer interactions (click/drag anywhere)
+                let dragging = false;
+                const down = e => { dragging = true; setPercent(percentFromClientX(e.clientX)); };
+                const move = e => { if (dragging) { setPercent(percentFromClientX(e.clientX)); e.preventDefault(); } };
+                const up   = () => { dragging = false; };
+
+                wrapper.addEventListener('pointerdown', down);
+                window.addEventListener('pointermove', move);
+                window.addEventListener('pointerup', up);
+
+                // Keyboard on the handle
+                handle?.addEventListener('keydown', (e) => {
+                const step = e.shiftKey ? 5 : 1;
+                const now = Number(handle.getAttribute('aria-valuenow') || 50);
+                if (e.key === 'ArrowLeft')  { setPercent(now - step); e.preventDefault(); }
+                if (e.key === 'ArrowRight') { setPercent(now + step); e.preventDefault(); }
+                if (e.key === 'Home')       { setPercent(0);         e.preventDefault(); }
+                if (e.key === 'End')        { setPercent(100);       e.preventDefault(); }
+                });
+
+                setPercent(50);
             });
-
-            function setPercent(p){
-            p = clamp(p, 0, 100);
-            wrapper.style.setProperty('--pos', p + '%');
-            if (handle) handle.setAttribute('aria-valuenow', String(Math.round(p)));
-            toggleLabels(p);
-            }
-
-            function percentFromClientX(x){
-            const r = wrapper.getBoundingClientRect();
-            return clamp(((x - r.left) / r.width) * 100, 0, 100);
-            }
-
-            function toggleLabels(p){
-            const beforeLabel = wrapper.querySelector('.krishv-before-label');
-            const afterLabel  = wrapper.querySelector('.krishv-after-label');
-            if (!beforeLabel || !afterLabel) return;
-            if (p >= 75) { beforeLabel.style.opacity = '1'; afterLabel.style.opacity = '0'; }
-            else if (p <= 25) { beforeLabel.style.opacity = '0'; afterLabel.style.opacity = '1'; }
-            else { beforeLabel.style.opacity = '1'; afterLabel.style.opacity = '1'; }
-            }
-
-            // Pointer interactions (click/drag anywhere)
-            let dragging = false;
-            const down = e => { dragging = true; setPercent(percentFromClientX(e.clientX)); };
-            const move = e => { if (dragging) { setPercent(percentFromClientX(e.clientX)); e.preventDefault(); } };
-            const up   = () => { dragging = false; };
-
-            wrapper.addEventListener('pointerdown', down);
-            window.addEventListener('pointermove', move);
-            window.addEventListener('pointerup', up);
-
-            // Keyboard on the handle
-            handle?.addEventListener('keydown', (e) => {
-            const step = e.shiftKey ? 5 : 1;
-            const now = Number(handle.getAttribute('aria-valuenow') || 50);
-            if (e.key === 'ArrowLeft')  { setPercent(now - step); e.preventDefault(); }
-            if (e.key === 'ArrowRight') { setPercent(now + step); e.preventDefault(); }
-            if (e.key === 'Home')       { setPercent(0);         e.preventDefault(); }
-            if (e.key === 'End')        { setPercent(100);       e.preventDefault(); }
             });
-
-            // Init (you can change to any default)
-            setPercent(50);
-        });
-        });
-    </script>
-
+        </script>
     @endsection
 @endsection

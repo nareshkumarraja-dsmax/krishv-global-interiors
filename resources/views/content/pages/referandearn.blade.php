@@ -14,7 +14,6 @@
         </div>
     </section>
 
-
     {{-- Refer And Earn Section --}}
     <section class="space why-choose-centered-section">
         <div class="container position-relative">
@@ -116,36 +115,35 @@
         </div>
     </section>
 
-
     @include('content.forms.enquiry')
     @include('content.forms.scripts.enquiry_script')
 
     @section('vendor-js')
-    <!-- For Accordion -->
-    <script>
-        document.querySelectorAll('.step-accordion').forEach(accordion => {
-        accordion.querySelector('.step-header').addEventListener('click', () =>{
-            accordion.classList.toggle('active');
-        });
-    });
-    </script>
-
-    {{-- Validation Script --}}
-    <script>
-        (() => {
-            'use strict';
-            const forms = document.querySelectorAll('.needs-validation');
-            Array.from(forms).forEach(form => {
-                form.addEventListener('submit', e => {
-                if (!form.checkValidity()) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                }
-                form.classList.add('was-validated');
-                }, false);
+        <!-- For Accordion -->
+        <script>
+            document.querySelectorAll('.step-accordion').forEach(accordion => {
+            accordion.querySelector('.step-header').addEventListener('click', () =>{
+                accordion.classList.toggle('active');
             });
-        })();
-    </script>
+        });
+        </script>
+
+        {{-- Validation Script --}}
+        <script>
+            (() => {
+                'use strict';
+                const forms = document.querySelectorAll('.needs-validation');
+                Array.from(forms).forEach(form => {
+                    form.addEventListener('submit', e => {
+                    if (!form.checkValidity()) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                    }, false);
+                });
+            })();
+        </script>
     @endsection
 
 @endsection

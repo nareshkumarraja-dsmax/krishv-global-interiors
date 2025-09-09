@@ -2,7 +2,9 @@
     document.addEventListener('DOMContentLoaded', function () {
         const inputs = document.querySelectorAll('#contactModal .dark-input');
         const form = document.getElementById('contactForm');
-        const formSuccess = document.getElementById('formSuccess');
+        const formSuccess  = document.getElementById('enquiryFormSuccess');
+        const formError    = document.getElementById('enquiryFormError');
+        const csrfToken    = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
 
         function toggleFilledClass(input) {
             if (input.value.trim() !== '') {
@@ -17,17 +19,39 @@
             input.addEventListener('input', () => toggleFilledClass(input));
         });
 
-        form.addEventListener('submit', function (e) {
-        e.preventDefault();
+        form.addEventListener('submit', async function (e) {
+            e.preventDefault();
+            formSuccess.textContent = '';
+            formError.textContent = '';
+            btn.disabled = true;
 
-        setTimeout(() => {
-            formSuccess.textContent = "Thank you! We’ll get back to you soon.";
+            try {
+            const formData = new FormData(form);
+            const payload = Object.fromEntries(formData.entries());
 
-            inputs.forEach(input => {
-                input.classList.remove('filled');
-                input.value = '';
+            const resp = await fetch(form.getAttribute('action'), {
+                method: 'POST',
+                headers: {
+                'X-CSRF-TOKEN': csrfToken,
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload)
             });
-        }, 1000);
+
+            const data = await resp.json();
+
+            if (resp.ok && data.ok) {
+                formSuccess.textContent = data.message || "Thank you! We’ll contact you shortly.";
+                inputs.forEach(input => { input.classList.remove('filled'); input.value = ''; });
+            } else {
+                formError.textContent = (data && data.message) ? data.message : 'Submission failed. Please try again.';
+            }
+            } catch (err) {
+            formError.textContent = 'Network error. Please try again.';
+            } finally {
+            btn.disabled = false;
+            }
+        });
     });
-});
 </script>

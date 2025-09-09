@@ -6,7 +6,7 @@
     --theme-color3: #F4C430;
     --title-color: #fff;
     --title-black: #01000F;
-    --body-color: #bbbbbb;
+    --body-color: #e0e0e0;
     --body-bg: #272727;
     --smoke-color: #323232;
     --black-color: #000000;
@@ -919,7 +919,7 @@ textarea.is-invalid {
 .slick-dots {
     list-style-type: none;
     padding: 0 0;
-    margin: 38px 0 30px 0;
+    margin: 15px 0 30px 0;
     line-height: 0;
     text-align: center;
     height: -webkit-max-content;
@@ -4966,7 +4966,7 @@ header.th-header {
 
 .header-layout2 {
     position: absolute;
-    top: 50px;
+    top: 20px;
     left: 0;
     width: 100%;
     z-index: 1000;
@@ -5072,10 +5072,9 @@ header.th-header {
 }
 
 
-
 @media (max-width: 1399px) {
     .header-layout2 {
-        top: 30px
+        top: 10px
     }
 
     .header-layout2 .menu-area {
@@ -5236,7 +5235,7 @@ header.th-header {
 
 .sticky-wrapper.sticky .header-logo img {
     content: url("../img/krish-v-logo-Global.png");
-    height: 50px !important;
+    height: 65px !important;
 }
 
 
@@ -5294,7 +5293,7 @@ header.th-header {
 .sticky-wrapper .header-logo img{
     max-width: 160px;
     /* height: 50px; */
-    height: 40px;
+    height: 50px;
 }
 .mobile-logo img {
     max-width: 180px;
@@ -24819,12 +24818,12 @@ input[type="time"].white-icon::-webkit-calendar-picker-indicator {
     .img1.img-slider {
         height: 250px;
     }
-}
-@media (max-width: 500px) {
-    .img1.img-slider {
-        height: 150px;
     }
-}
+    @media (max-width: 500px) {
+        .img1.img-slider {
+            height: 150px;
+        }
+    }
 
   /* Base style */
   .img1.img-slider img {

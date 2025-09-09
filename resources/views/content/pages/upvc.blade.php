@@ -44,7 +44,6 @@
         </div>
     </div>
 
-
     {{-- Gallery Section --}}
     <section class="custom-gallery-section">
         <div class="container">
@@ -111,7 +110,6 @@
         </div>
     </section>
 
-
     {{-- Testimonial Section --}}
     <section class="testimonial-section" style="text-align: center;">
         <div class="container">
@@ -172,14 +170,13 @@
         </div>
     </section>
 
-
     {{-- CTA Section --}}
     <section class="krish-v-cta-section Reverse mb-20" >
         <div class="container">
             <div class="krish-v-cta-content">
                 <div class="krish-v-cta-text">
                     <h2>READY TO TRANSFORM YOUR SPACE?</h2>
-                    <a href="#" class="krish-v-cta-btn" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us Now <i class="fas fa-arrow-right"></i></a>
+                    <a href="javascript:void(0)" class="krish-v-cta-btn" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us Now <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="krish-v-cta-image upvc">
                     <img src="@assetPath('assets/img/team/graphical-image/upvc.png')" alt="Transform" />
@@ -192,40 +189,39 @@
     @include('content.forms.scripts.enquiry_script')
 
     @section('vendor-js')
-    {{-- Gallery Section --}}
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script>
-        new Swiper(".gallery-swiper", {
-        loop: true,
-        slidesPerView: 3,
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-        navigation: {
-            nextEl: ".gallery-button-next",
-            prevEl: ".gallery-button-prev",
-        },
-        breakpoints: {
-            0: {
-                slidesPerView: 1,
-                centeredSlides: false,
+        {{-- Gallery Section --}}
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script>
+            new Swiper(".gallery-swiper", {
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
             },
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 30,
-                centeredSlides: true,
+            navigation: {
+                nextEl: ".gallery-button-next",
+                prevEl: ".gallery-button-prev",
             },
-            992: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-                centeredSlides: true,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    centeredSlides: false,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                    centeredSlides: true,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                    centeredSlides: true,
+                },
             },
-        },
-    });
-    </script>
-
+        });
+        </script>
     @endsection
 @endsection

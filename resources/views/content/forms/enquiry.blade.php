@@ -7,7 +7,7 @@
                 <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form id="contactForm" >
+                <form id="contactForm" action="{{ route('enquiry-form') }}" method="POST">
                     <div class="mb-3">
                         <input type="text" id="fullName" name="fullName" class="form-control dark-input no-radius" placeholder="Full Name *" required>
                         <div class="text-danger small mt-1" id="errorFullName"></div>
@@ -19,7 +19,7 @@
                             <div class="text-danger small mt-1" id="errorPhone"></div>
                         </div>
                         <div class="col-md-6">
-                            <input type="email" id="email" name="email" class="form-control dark-input no-radius" placeholder="Your Email *" required>
+                            <input type="email" id="email" name="email" class="form-control dark-input no-radius" placeholder="Your Email">
                             <div class="text-danger small mt-1" id="errorEmail"></div>
                         </div>
                     </div>
@@ -28,12 +28,12 @@
                         <div class="col-md-6">
                             <select id="propertyType" name="propertyType" class="form-control dark-input no-radius" required>
                                 <option value="" disabled selected hidden>Property Type</option>
-                                <option>1 RK</option>
-                                <option>1 BHK</option>
-                                <option>2 BHK</option>
-                                <option>3 BHK</option>
-                                <option>4 BHK & More</option>
-                                <option>Commercial</option>
+                                <option value="1 RK">1 RK</option>
+                                <option value="1 BHK">1 BHK</option>
+                                <option value="2 BHK">2 BHK</option>
+                                <option value="3 BHK">3 BHK</option>
+                                <option value="4 BHK & More">4 BHK & More</option>
+                                <option value="Commercial">Commercial</option>
                             </select>
                             <div class="text-danger small mt-1" id="errorPropertyType"></div>
                         </div>
@@ -55,11 +55,12 @@
                         <button type="submit" class="btn btn-primary text-dark fw-bold">SUBMIT</button>
                     </div>
 
-                    <div id="formSuccess" class="mt-2 small"></div>
+                    <div id="enquiryFormSuccess" class="mt-2 small"></div>
+                    <div id="enquiryFormError" class="mt-2 text-red-500"></div>
 
                     <div class="form-footer text-center mt-3 small">
-                        <a href="Terms-conditions.html" class=" text-decoration-none">Terms & Conditions</a> |
-                        <a href="Privacy-policy.html" class=" text-decoration-none">Privacy Policy</a>
+                        <a href="{{ route('termsandconditions') }}" target="blank" class=" text-decoration-none">Terms & Conditions</a> |
+                        <a href="{{ route('privacy_policy')}}" target="blank" class=" text-decoration-none">Privacy Policy</a>
                     </div>
                 </form>
             </div>
