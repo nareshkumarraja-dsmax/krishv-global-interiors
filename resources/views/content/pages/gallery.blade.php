@@ -47,7 +47,7 @@
 
 
     {{-- CTA Section --}}
-    <section class="krish-v-cta-section Reverse mb-20" >
+    {{-- <section class="krish-v-cta-section Reverse mb-20" >
         <div class="container">
             <div class="krish-v-cta-content">
                 <div class="krish-v-cta-text">
@@ -59,7 +59,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     @include('content.forms.enquiry')
     @include('content.forms.scripts.enquiry_script')

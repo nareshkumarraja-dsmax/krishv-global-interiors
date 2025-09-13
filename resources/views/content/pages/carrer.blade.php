@@ -26,7 +26,7 @@
                 Crafting Careers, Crafting Spaces : Join <span> Krish-V Global Interiors </span>
             </h2>
             <div class="row g-4 justify-content-center no-equal">
-                <div class="col-lg-4 col-md-6">
+                {{-- <div class="col-lg-4 col-md-6">
                     <div class="custom-career-card">
                         <h4 class="custom-career-title">Interior Head</h4>
                         <p>
@@ -196,11 +196,11 @@
                             </button>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
                 <div class="col-lg-4 col-md-6">
                     <div class="custom-career-card">
-                        <h4 class="custom-career-title">Sales manager</h4>
+                        <h4 class="custom-career-title">Sales Executive</h4>
                         <p>
                             <span class="custom-career-icon"><i class="fas fa-hand-point-right"></i></span>
                             <strong>Experience :</strong> 1 - 3 years
@@ -241,7 +241,7 @@
 
                 <div class="col-lg-4 col-md-6">
                     <div class="custom-career-card">
-                        <h4 class="custom-career-title">Presales Executive </h4>
+                        <h4 class="custom-career-title">Presales Executive</h4>
                         <p>
                             <span class="custom-career-icon"><i class="fas fa-hand-point-right"></i></span>
                             <strong>Experience :</strong> 1 - 3 years
@@ -280,7 +280,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
+                {{-- <div class="col-lg-4 col-md-6">
                     <div class="custom-career-card">
                         <h4 class="custom-career-title">Manager Sales-Interior Fitout</h4>
                         <p>
@@ -363,7 +363,7 @@
                             </button>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>

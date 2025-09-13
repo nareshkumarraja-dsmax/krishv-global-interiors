@@ -6,7 +6,8 @@
     --theme-color3: #F4C430;
     --title-color: #fff;
     --title-black: #01000F;
-    --body-color: #e0e0e0;
+    /* --body-color: #e0e0e0; */
+    --body-color: #bbbbbb;
     --body-bg: #272727;
     --smoke-color: #323232;
     --black-color: #000000;
@@ -2165,7 +2166,33 @@ textarea.is-invalid {
     display: inline-block;
     font-weight: 500;
     letter-spacing: 0.5px;
-    font-size: 24px;
+    font-size: 18px;
+}
+.why-choose-inner .sub-title.gradient-text {
+    font-size: 18px;
+}
+.sub-title.gradient-text.faq {
+    font-size: 18px;
+}
+.channel-partner-section .sub-title.gradient-text {
+    font-size: 18px !important;
+}
+.sub-title.gradient-text.products {
+    background: linear-gradient(90deg, #fecc52 0%, #fecc52 20%, #cccccc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 0.5px;
+    font-size: 18px !important;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.sub-title.gradient-text.renovation {
+    background: linear-gradient(90deg, #fecc52 0%, #fecc52 30%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px !important;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 @media (max-width: 575px) {
     .sub-title.gradient-text-policy {
@@ -2176,7 +2203,10 @@ textarea.is-invalid {
     margin: 0 auto;
     text-transform: uppercase;
 }
-
+.krishv-usp-section .sub-title.gradient-text {
+    font-size: 18px;
+    font-weight: 500;
+}
 @media (max-width: 767px) {
     .sub-title.gradient-text {
         font-size: 20px;
@@ -2223,6 +2253,18 @@ textarea.is-invalid {
 @media (max-width: 480px) {
     .sub-title.gradient-text {
         font-size: 18px !important;
+    }
+    .sub-title.gradient-text.faq {
+        font-size: 16px !important;
+    }
+    .why-choose-inner .sub-title.gradient-text {
+        font-size: 16px !important;
+    }
+    .channel-partner-section .sub-title.gradient-text {
+        font-size: 16px !important;
+    }
+    .sub-title.gradient-text.renovation {
+        font-size: 26px !important;
     }
 }
 .sub-title.about-content {
@@ -2314,7 +2356,7 @@ textarea.is-invalid {
     }
 }
 .about-sec {
-    padding-left: 70px;
+    padding-left: 30px;
 }
 @media (max-width: 767px) {
     .about-sec {
@@ -5234,8 +5276,7 @@ header.th-header {
 }
 
 .sticky-wrapper.sticky .header-logo img {
-    content: url("../img/krish-v-logo-Global.png");
-    height: 65px !important;
+    height: 60px !important;
 }
 
 
@@ -5292,8 +5333,7 @@ header.th-header {
 
 .sticky-wrapper .header-logo img{
     max-width: 160px;
-    /* height: 50px; */
-    height: 50px;
+    height: 70px;
 }
 .mobile-logo img {
     max-width: 180px;
@@ -9381,7 +9421,15 @@ blockquote cite:before {
 .img-box3 .img1 img {
     -webkit-transform: translate(70px, 70px);
     -ms-transform: translate(70px, 70px);
-    transform: translate(70px, 70px)
+    transform: translate(70px, 70px);
+    height: 320px;
+    width: 480px;
+}
+
+@media (max-width: 776px) {
+    .img-box3 .img1 img {
+        height: auto;
+    }
 }
 
 .img-box3 .img2 {
@@ -16845,7 +16893,7 @@ html:not(html:hover) .th-cursor::after {
 }
 
 .step-accordion .step-number {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     color: var(--theme-color);
     display: flex !important;
@@ -16876,7 +16924,7 @@ html:not(html:hover) .th-cursor::after {
 .step-accordion .step-title {
     font-weight: 500;
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     display: flex;
     align-items: center;
     height: 40px;
@@ -16911,7 +16959,7 @@ html:not(html:hover) .th-cursor::after {
 .step-accordion .step-body p {
     color: #000;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 14px;
     margin-bottom: 0 !important;
     text-align: left;
 }
@@ -16930,10 +16978,10 @@ html:not(html:hover) .th-cursor::after {
         padding: 18px 20px;
     }
     .step-accordion.faq .step-title {
-        font-size: 15px;
+        font-size: 14px;
     }
     .step-accordion.faq .step-body p {
-        font-size: 14px;
+        font-size: 13px;
     }
     .step-accordion.faq.active .step-body {
         max-height: 150px;
@@ -16946,6 +16994,9 @@ html:not(html:hover) .th-cursor::after {
     }
     .step-accordion.faq.active .step-body {
         max-height: 170px;
+    }
+    .step-accordion .step-toggle {
+        font-size: 12px;
     }
 }
 
@@ -19174,7 +19225,7 @@ html:not(html:hover) .th-cursor::after {
     background: linear-gradient(135deg, #fecc52 30%, #fff2c2 100%);
     background: linear-gradient(135deg, #fecc52 20%, #ffeaa7 60%, #fff8dc 100%);
     /* background: transparent; */
-    padding: 40px 0;
+    padding: 26px 0;
     /* border-top: 3px solid #fecc52;
     border-bottom: 3px solid #fecc52; */
     border-radius: 5px 5px;
@@ -19215,7 +19266,7 @@ html:not(html:hover) .th-cursor::after {
     justify-content: center;
 }
 .logo-item img {
-    height: 60px;
+    height: 80px;
     /* width: auto; */
     max-width: 140px;
     object-fit: contain;
@@ -19256,35 +19307,13 @@ html:not(html:hover) .th-cursor::after {
 }
 
 
-/* @media (max-width: 991px) {
-    .partner-logos-section {
-        border-top: 0px solid #fecc52;
-    }
-    .logo-marquee-wrapper {
-        border-top: 5px solid #fecc52;
-    }
-} */
-
-/* @media (max-width: 991px) {
-    .partner-logos-section {
-        position: relative;
-        padding-top: 60px;
-        margin-top: 40px;
-    }
-
+@media (max-width: 575px) {
     .partner-logos-section h5 {
-        position: absolute;
-        top: -40px;
-        left: 20px;
-        font-size: 24px;
-        color: #fff;
-        background-color: transparent;
-        padding: 5px 10px;
-        z-index: 2;
-        margin: 0;
-        border-radius: 4px;
+        font-size: 26px;
     }
-} */
+}
+
+
 
 
 
@@ -19436,9 +19465,9 @@ html:not(html:hover) .th-cursor::after {
 
 
 /* -----------------privacy & policy ----------------*/
-/* .policy-section {
-    background: #1e1e1e;
-} */
+.policy-section {
+    margin-top: 30px;
+}
 .policy-title {
     text-transform: uppercase;
     color: transparent;
@@ -20072,7 +20101,7 @@ html:not(html:hover) .th-cursor::after {
 .testimonial-slider .testimonial-box {
     background: #2f2f2f;
     border-radius: 2px;
-    padding: 45px;
+    padding: 8px 20px;
     margin: 0 15px;
     position: relative;
     min-height: 200px;
@@ -20087,7 +20116,7 @@ html:not(html:hover) .th-cursor::after {
     margin-bottom: 30px;
     text-align: left;
     font-family: var(--body-font);
-    transform: translateY(10px);
+    transform: translateY(8px);
     transition: all 0.3s ease;
 }
 
@@ -20116,7 +20145,7 @@ html:not(html:hover) .th-cursor::after {
     /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); */
 }
 .testimonial-box_icon img {
-    width: 100px;
+    width: 50px;
     height: auto;
     display: block;
 }
@@ -20163,7 +20192,7 @@ html:not(html:hover) .th-cursor::after {
 .slick-dots li.slick-active button:before {
     color: #fecc52 !important;
     background: #fecc52 !important;
-    opacity: 1;
+    opacity: 0;
     border-radius: 50%;
 }
 /* .slick-dots .slick-active button {
@@ -24264,80 +24293,90 @@ input[type="time"].white-icon::-webkit-calendar-picker-indicator {
 
 /* ==== HARD RESET (kills the old width-based clipping) ==== */
 .krishv-before-img-wrapper{
-  position: absolute;
-  inset: 0;
-  width: 100% !important;   /* force full width */
-  height: 100%;
-  overflow: visible !important; /* don't clip here */
-  z-index: 2;
+    position: absolute;
+    inset: 0;
+    width: 100% !important;   /* force full width */
+    height: 100%;
+    overflow: visible !important; /* don't clip here */
+    z-index: 2;
 }
 
 /* Wrapper drives the position with a CSS var */
 .krishv-before-after-wrapper{
-  --pos: 50%;
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9;     /* or remove and give a fixed height */
-  overflow: hidden;
-  user-select: none;
-  touch-action: none;
+    --pos: 50%;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;     /* or remove and give a fixed height */
+    overflow: hidden;
+    user-select: none;
+    touch-action: none;
 }
 
 /* Both images fixed, full-bleed */
 .krishv-after-img,
 .krishv-before-img-wrapper img{
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  pointer-events: none;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    pointer-events: none;
 }
 
 /* Clip ONLY the before image (single source of truth) */
 .krishv-before-img-wrapper img{
-  clip-path: inset(0 calc(100% - var(--pos)) 0 0);
-  will-change: clip-path;
-  transform: translateZ(0);  /* avoids hairline seams on some GPUs */
+    clip-path: inset(0 calc(100% - var(--pos)) 0 0);
+    will-change: clip-path;
+    transform: translateZ(0);  /* avoids hairline seams on some GPUs */
 }
 
 /* Divider line follows --pos */
 .krishv-slider-line-wrapper{
-  position: absolute;
-  top: 0; bottom: 0;
-  left: var(--pos);
-  width: 0;
-  z-index: 3;
-  pointer-events: none;
-  transform: translateX(-1px);
+    position: absolute;
+    top: 0; bottom: 0;
+    left: var(--pos);
+    width: 0;
+    z-index: 3;
+    pointer-events: none;
+    transform: translateX(-1px);
 }
 .krishv-slider-line{
-  position: absolute;
-  top: 0; bottom: 0; left: 0;
-  width: 2px;
-  background: #fecc52;
+    position: absolute;
+    top: 0; bottom: 0; left: 0;
+    width: 2px;
+    background: #fecc52;
 }
 
 /* Handle follows --pos */
 .krishv-slider-handle{
-  position: absolute;
-  left: var(--pos);
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 56px; height: 56px;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  background: #fecc52;
-  box-shadow: 0 0 0 3px rgba(0,0,0,.15);
-  z-index: 4;
-  cursor: ew-resize;
-  display: grid; place-items: center;
+    position: absolute;
+    left: var(--pos);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 56px; height: 56px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    background: #fecc52;
+    box-shadow: 0 0 0 3px rgba(0,0,0,.15);
+    z-index: 4;
+    cursor: ew-resize;
+    display: grid; place-items: center;
 }
 .krishv-slider-icon{ pointer-events:none; }
 
 /* Labels (unchanged) */
-.krishv-label{ position:absolute; top:14px; padding:8px 12px; font-weight:700; font-size:13px; color:#ffd; background:#000; border-radius:8px; z-index:5; }
+.krishv-label{
+    position:absolute;
+    top:14px;
+    padding:8px 12px;
+    font-weight:700;
+    font-size:13px;
+    color:#ffd;
+    background:#000;
+    border-radius:8px;
+    z-index:5;
+}
 .krishv-before-label{ left:14px; }
 .krishv-after-label{ right:14px; }
 
@@ -24373,7 +24412,7 @@ input[type="time"].white-icon::-webkit-calendar-picker-indicator {
 }
 
 .krishv-slider-handle:hover {
-    background-color: #fdd042;
+    background-color: #fecc52;
     transform: translate(-50%, -50%) scale(1.05);
 }
 
@@ -25439,7 +25478,7 @@ input[type="time"].white-icon::-webkit-calendar-picker-indicator {
     animation: none;
 }
 .stage.active:not(:last-child)::after {
-    animation: drawLine 1s forwards;
+    animation: drawLine 0.3s forwards;
 }
 @keyframes drawLine {
     to {
@@ -25501,6 +25540,84 @@ input[type="time"].white-icon::-webkit-calendar-picker-indicator {
     0%   { left: -75%; }
     100% { left: 125%; }
 }
+
+
+
+
+
+
+
+
+
+
+.about-image-slider {
+    position: relative;
+    width: 80%;
+    max-width: 450px;
+    margin: 0 auto;
+    height: 300px;
+}
+
+.about-image-slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.6s ease-in-out;
+    z-index: 0;
+}
+
+.about-image-slider img.active {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+    z-index: 3;
+}
+
+.about-image-slider img.middle {
+    opacity: 0.8;
+    transform: rotate(-6deg) scale(0.95) translateY(15px);
+    z-index: 2;
+}
+
+.about-image-slider img.back {
+    opacity: 0.6;
+    transform: rotate(6deg) scale(0.9) translateY(30px);
+    z-index: 1;
+}
+
+.about-image-wrapper {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+@media (max-width: 991px) {
+    .about-image-wrapper {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-image-slider {
+        height: 220px;
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 

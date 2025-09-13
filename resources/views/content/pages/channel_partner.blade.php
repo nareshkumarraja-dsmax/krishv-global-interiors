@@ -1,5 +1,19 @@
 @extends('layouts.main')
 @section('main-container')
+    {{-- Banner Section --}}
+    <section class="gallery-banner" style="background-image: url(@assetPath('assets/img/Images/Channel-partner/Compressed/banner-more.webp'));">
+        <div class="gallery-banner-overlay">
+            <div class="gallery-banner-content">
+                <div class="breadcrumb-nav">
+                    <a href="index.html">Home</a>
+                    <span class="breadcrumb-divider">/</span>
+                    <span class="current-page">Chennel partner</span>
+                </div>
+                <h2 class="banner-text animate-fade">"Invite. Earn <span>Rewards</span>".</h2>
+            </div>
+        </div>
+    </section>
+
     {{-- Channel Partner Section --}}
     <section class="channel-partner-section" style="text-align: center;">
         <div class="container">

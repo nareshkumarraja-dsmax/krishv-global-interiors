@@ -23,7 +23,7 @@
             <h2 class="site-section-heading mb-3">
                 Frequently asked <span> questions </span>
             </h2>
-            <p class="sub-title gradient-text">Learn about our services, design approach, and how you can collaborate with us — all in one place.</p>
+            <p class="sub-title gradient-text faq">Learn about our services, design approach, and how you can collaborate with us — all in one place.</p>
 
             <div class="step-accordion faq">
                 <div class="step-header">

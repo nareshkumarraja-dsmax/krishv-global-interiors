@@ -147,24 +147,52 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    {{-- Testimonial section --}}
     <script>
-        $(document).ready(function(){
-            $('.testimonial-slider').slick({
-            slidesToShow: 2,
+        $('.testimonial-slider').on('init', function (event, slick) {
+        let $dots = $('.custom-dots-container');
+        $dots.empty();
+        for (let i = 0; i < 3; i++) {
+            $dots.append('<button class="custom-dot" data-dot="' + i + '"></button>');
+        }
+        $dots.find('.custom-dot').eq(1).addClass('active-dot');
+        }).slick({
+            infinite: true,
+            slidesToShow: 3,
             slidesToScroll: 1,
-            dots: true,
-            arrows: true,
             autoplay: true,
             autoplaySpeed: 4000,
+            arrows: false,
+            dots: false,
             responsive: [
                 {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1
-                }
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
                 }
             ]
-            });
+        });
+        $(document).on('click', '.custom-dot', function () {
+            let index = $(this).data('dot');
+            if (index === 0) {
+                $('.testimonial-slider').slick('slickPrev');
+            } else if (index === 2) {
+                $('.testimonial-slider').slick('slickNext');
+            }
+        });
+        $('.testimonial-slider').on('afterChange', function () {
+            let $dots = $('.custom-dots-container .custom-dot');
+            $dots.removeClass('active-dot');
+            $dots.eq(1).addClass('active-dot');
         });
     </script>
 </body>

@@ -7,7 +7,7 @@
                 <div class="breadcrumb-nav">
                     <a href="index.html">Home</a>
                     <span class="breadcrumb-divider">/</span>
-                    <span class="current-page">More</span>
+                    <span class="current-page">Refer & earn</span>
                 </div>
                 <h2 class="banner-text animate-fade">"Collaborate. Grow <span>Together</span>".</h2>
             </div>

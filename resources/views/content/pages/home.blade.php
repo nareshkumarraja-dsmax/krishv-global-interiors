@@ -100,13 +100,13 @@
                     <li><a href="{{route('carrer')}}">Careers</a></li>
                     <li class="menu-item-has-children">
                         <a class="{{ request()->routeIs('referandearn')
-                        || request()->routeIs('channelpartner')
+                        || request()->routeIs('channel_partner')
                             ? 'active' : '' }}" href="javascript:void(0)">
                             Refer & earn
                         </a>
                         <ul class="sub-menu">
                             <li><a href="{{route('referandearn')}}">Refer & Earn</a></li>
-                            <li><a href="{{route('channelpartner')}}">Channel Partner</a></li>
+                            <li><a href="{{route('channel_partner')}}">Channel Partner</a></li>
                         </ul>
                     </li>
                     <li class="menu-item-has-children">
@@ -147,7 +147,7 @@
                         <div class="d-flex align-items-center justify-content-between">
                             <div class="header-logo">
                                 <a href="index.html">
-                                    <img src="@assetPath('assets/img/krish1-removebg-preview.png')" alt="Krish-V"/>
+                                    <img src="@assetPath('assets/img/krish-v-logo-Global.png')" alt="Krish-V"/>
                                 </a>
                             </div>
 
@@ -184,13 +184,13 @@
                                     <li><a href="{{route('carrer')}}">Careers</a></li>
                                     <li class="menu-item-has-children">
                                         <a class="{{ request()->routeIs('referandearn')
-                                            || request()->routeIs('channelpartner')
+                                            || request()->routeIs('channel_partner')
                                             ? 'active' : '' }}" href="javascript:void(0)">
                                             Refer & earn
                                         </a>
                                         <ul class="sub-menu">
                                             <li><a href="{{route('referandearn')}}">refer & earn</a></li>
-                                            <li><a href="{{route('channelpartner')}}">channel partner</a></li>
+                                            <li><a href="{{route('channel_partner')}}">channel partner</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children">
@@ -255,51 +255,51 @@
     </div>
 
     {{-- About Section of home --}}
-    {{-- <div class="space" id="about-sec">
+    <div class="about-section space" id="about-sec">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-6 mb-5 mb-xl-0 wow fadeInLeft" data-wow-delay="0.2s" >
-                    <div class="img-box1">
-                        <div class="img1">
-                            <img src="@assetPath('assets/img/Images/About/Compressed/About.webp')" alt="About" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
-                    <h2 class="sec-title margin about-content"> Your Premier Interior Design Partner<span class="text-theme"> in Bengaluru</span>  </h2>
-                    <p class=""> At <b style="color: #fecc52;"> Krish-V Global Interiors,</b> we don't just design spaces; we craft the backdrop to your life's most precious moments. We believe a home is more than just walls—it’s where dreams, love, and memories come to life. Our vision is to create spaces that reflect your heart, enhance your lifestyle, and feel like home from the very first step. Krish-V Global Interiors is<b style="color: #fecc52;"> Bengaluru's premier interior design company,</b> dedicated to transforming your vision into reality. </p>
-                    <p class=""> With years of invaluable experience, Krish-V has successfully completed over  <b style="color: #fecc52;">30,000+  homes,</b> bringing countless dreams to life. Our reputation for reliability speaks for itself. </p>
-                </div>
-            </div>
-        </div>
-        <div class="shape-mockup jump" data-top="0" data-right="0">
-            <img src="@assetPath('assets/img/shape/shape_3.png')" alt="shape" />
-        </div>
-    </div> --}}
+        <div class="row align-items-center">
 
-    <div class="space" id="about-sec">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s" >
-                    <div class="img-box1">
-                        <div class="img1 img-slider">
-                            <img src="assets/img/Images/living-room/Images/Livingroom16.webp" alt="About" class="active" />
-                            <img src="assets/img/Images/kitchen/Images/Kitchen16.webp" alt="About 2" />
-                            <img src="assets/img/Images/Dining/Images/Dining12.webp" alt="About 3" />
-                            <img src="assets/img/Images/Work-space/Images/Workspace14.webp" alt="About " />
-                            <img src="assets/img/Images/Bed-room/Images/Bedroom9.webp" alt="About " />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
-                    <h2 class="sec-title margin about-content"> Your Premier Interior Design Partner<span class="text-theme"> in Bengaluru</span>  </h2>
-                    <p class=""> At <b style="color: #fecc52;"> Krish-V Global Interiors,</b> we don't just design spaces; we craft the backdrop to your life's most precious moments. We believe a home is more than just walls—it’s where dreams, love, and memories come to life. Our vision is to create spaces that reflect your heart, enhance your lifestyle, and feel like home from the very first step. Krish-V Global Interiors is<b style="color: #fecc52;"> Bengaluru's premier interior design company,</b> dedicated to transforming your vision into reality. </p>
-                    <p class=""> With years of invaluable experience, Krish-V has successfully completed over  <b style="color: #fecc52;">30,000+  homes,</b> bringing countless dreams to life. Our reputation for reliability speaks for itself. </p>
+            <!-- Image Area -->
+            <div class="col-xl-6 col-lg-6 col-md-12 wow fadeInLeft" data-wow-delay="0.2s">
+            <div class="about-image-wrapper">
+                <div class="about-image-slider">
+                <img src="assets/img/Images/living-room/Images/Livingroom16.webp" alt="Living Room" />
+                <img src="assets/img/Images/kitchen/Images/Kitchen16.webp" alt="Kitchen" />
+                <img src="assets/img/Images/Dining/Images/Dining12.webp" alt="Dining Area" />
+                <img src="assets/img/Images/Work-space/Images/Workspace14.webp" alt="Workspace" />
+                <img src="assets/img/Images/Bed-room/Images/Bedroom9.webp" alt="Bedroom" />
                 </div>
             </div>
+            </div>
+
+            <!-- Text Area -->
+            <div class="col-xl-6 col-lg-6 col-md-12 wow fadeInRight" data-wow-delay="0.2s">
+            <div class="about-content-wrapper">
+                <h2 class="sec-title margin about-content"> Your Premier Interior Design Partner<span class="text-theme"> in Bengaluru</span>  </h2>
+                <p>
+                At <b style="color: #fecc52;">Krish-V Global Interiors,</b> we don't just design spaces;
+                we craft the backdrop to your life's most precious moments.
+                We believe a home is more than just walls—it’s where dreams, love, and memories come to life.
+                Our vision is to create spaces that reflect your heart, enhance your lifestyle,
+                and feel like home from the very first step.
+                Krish-V Global Interiors is
+                <b style="color: #fecc52;">Bengaluru's premier interior design company,</b>
+                dedicated to transforming your vision into reality.
+                </p>
+                <p>
+                With years of invaluable experience, Krish-V has successfully completed over
+                <b style="color: #fecc52;">30,000+ homes,</b> bringing countless dreams to life.
+                Our reputation for reliability speaks for itself.
+                </p>
+            </div>
+            </div>
+
         </div>
-        <div class="shape-mockup jump" data-top="0" data-right="0">
-            <img src="assets/img/shape/shape_3.png" alt="shape" />
+        </div>
+
+        <!-- Shape Decoration -->
+        <div class="about-shape shape-mockup jump" data-top="0" data-right="0">
+        <img src="assets/img/shape/shape_3.png" alt="Decorative Shape" />
         </div>
     </div>
 
@@ -314,79 +314,79 @@
             <div class="slick-marquee" data-speed="0.25" data-pausable="true">
                 <div class="marque-item">
                     <div class="marque-text">
-                        <img src="@assetPath('assets/img/icon/white/costumer1.png')" style="width: 60px; height: 60px;" alt="Logo" />
+                        <img src="@assetPath('assets/img/icon/white/Filled/costumer1.png')" style="width: 60px; height: 60px;" alt="Logo" />
                         <a href="">30,000+ Happy Customers</a>
                     </div>
                 </div>
                 <div class="marque-item">
                     <div class="marque-text">
-                        <img src="@assetPath('assets/img/icon/white/warehouse1.png')" style="width: 60px; height: 60px;"  alt="Logo" />
+                        <img src="@assetPath('assets/img/icon/white/Filled/warehouse1.png')" style="width: 60px; height: 60px;"  alt="Logo" />
                         <a href="">In-house Production</a>
                     </div>
                 </div>
                 <div class="marque-item">
                     <div class="marque-text">
-                        <img src="@assetPath('assets/img/icon/white/blueprint1.png')" alt="Logo" />
+                        <img src="@assetPath('assets/img/icon/white/Filled/blueprint1.png')" alt="Logo" />
                         <a href="">Unlimited Designs</a>
                     </div>
                 </div>
                 <div class="marque-item">
                     <div class="marque-text">
-                        <img src="@assetPath('assets/img/icon/white/painting1.png')" alt="Logo" />
+                        <img src="@assetPath('assets/img/icon/white/Filled/painting1.png')" alt="Logo" />
                         <a href="">End-to-end Services</a>
                     </div>
                 </div>
                 <div class="marque-item">
                     <div class="marque-text">
-                        <img src="@assetPath('assets/img/icon/white/cabinet1.png')" alt="Logo" />
+                        <img src="@assetPath('assets/img/icon/white/Filled/cabinet1.png')" alt="Logo" />
                         <a href="">Modular Setup</a>
                     </div>
                 </div>
                 <div class="marque-item">
                     <div class="marque-text">
-                        <img src="@assetPath('assets/img/icon/white/support1.png')" alt="Logo" />
+                        <img src="@assetPath('assets/img/icon/white/Filled/support1.png')" alt="Logo" />
                         <a href="">24*7 Customer Support</a>
                     </div>
                 </div>
                 <div class="marque-item">
                     <div class="marque-text">
-                        <img src="@assetPath('assets/img/icon/white/good-quality1.png')" alt="Logo" />
+                        <img src="@assetPath('assets/img/icon/white/Filled/good-quality1.png')" alt="Logo" />
                         <a href="">Stringent Quality Checks</a>
                     </div>
                 </div>
                 <div class="marque-item">
                     <div class="marque-text">
-                        <img src="@assetPath('assets/img/icon/white/iso-certificate1.png')" alt="Logo" />
+                        <img src="@assetPath('assets/img/icon/white/Filled/iso-certificate1.png')" alt="Logo" />
                         <a href="">ISO Certified Standards</a>
                     </div>
                 </div>
                 <div class="marque-item">
                     <div class="marque-text">
-                        <img src="@assetPath('assets/img/icon/white/breakdown1.png')" alt="Logo" />
+                        <img src="@assetPath('assets/img/icon/white/Filled/breakdown1.png')" alt="Logo" />
                         <a href="">Advanced Machineries</a>
                     </div>
                 </div>
                 <div class="marque-item">
                     <div class="marque-text">
-                        <img src="@assetPath('assets/img/icon/white/24-hours-support1.png')" alt="Logo" />
+                        <img src="@assetPath('assets/img/icon/white/Filled/24-hours-support1.png')" alt="Logo" />
                         <a href="">Free Consultation</a>
                     </div>
                 </div>
                 <div class="marque-item">
                     <div class="marque-text">
-                        <img src="@assetPath('assets/img/icon/white/expert1.png')" alt="Logo" />
+                        <img src="@assetPath('assets/img/icon/white/Filled/expert1.png')" alt="Logo" />
                         <a href="">Skilled Workforce</a>
                     </div>
                 </div>
                 <div class="marque-item">
                     <div class="marque-text">
-                        <img src="@assetPath('assets/img/icon/white/transparency1.png')" alt="Logo" />
+                        <img src="@assetPath('assets/img/icon/white/Filled/transparency1.png')" alt="Logo" />
                         <a href="">100% Transparency</a>
                     </div>
                 </div>
                 <div class="marque-item">
                     <div class="marque-text">
-                        <img src="@assetPath('assets/img/icon/white/human-centered.png')" alt="Logo" />
+                        <img src="@assetPath('assets/img/icon/white/Filled/vr-goggles.png')" alt="Logo" />
                         <a href="">VR Experience</a>
                     </div>
                 </div>
@@ -419,7 +419,7 @@
                         <div class="service-content">
                             <img src="@assetPath('assets/img/icon/services/double-bed.svg')" alt="Bed Icon" class="service-icon svg-img">
                             <h3 class="service-title">Complete Home Interiors</h3>
-                            <a href="Complete-Home-Interiors.html" target="_blank" class="service-link">View More</a>
+                            <a href="{{ route('complete_home_interiors') }}" target="_blank" class="service-link">View More</a>
                         </div>
                     </div>
                 </div>
@@ -429,7 +429,7 @@
                         <div class="service-content">
                             <img src="@assetPath('assets/img/icon/services/house.svg')" alt="Bed Icon" class="service-icon svg-img">
                             <h3 class="service-title">Renovation</h3>
-                            <a href="Renovation.html" target="_blank" class="service-link">View More</a>
+                            <a href="{{route('renovation')}}" target="_blank" class="service-link">View More</a>
                         </div>
                     </div>
                 </div>
@@ -439,7 +439,7 @@
                         <div class="service-content">
                             <img src="@assetPath('assets/img/icon/services/smart-home.svg')" alt="Bed Icon" class="service-icon svg-img">
                             <h3 class="service-title">Home Automation</h3>
-                            <a href="Home-automation.html" target="_blank" class="service-link">View More</a>
+                            <a href="{{route('home_automation')}}" target="_blank" class="service-link">View More</a>
                         </div>
                     </div>
                 </div>
@@ -449,7 +449,7 @@
                         <div class="service-content">
                             <img src="@assetPath('assets/img/icon/services/living.svg')" alt="Bed Icon" class="service-icon svg-img">
                             <h3 class="service-title">Customized Interior Designs</h3>
-                            <a href="Customized-Interior-Designs.html" target="_blank" class="service-link">View More</a>
+                            <a href="{{route('customized_interior_designs')}}" target="_blank" class="service-link">View More</a>
                         </div>
                     </div>
                 </div>
@@ -459,7 +459,7 @@
                         <div class="service-content">
                             <img src="@assetPath('assets/img/icon/services/workspace.svg')" alt="Bed Icon" class="service-icon svg-img">
                             <h3 class="service-title">Commercial Interiors </h3>
-                            <a href="Work-space.html" target="_blank" class="service-link">View More</a>
+                            <a href="{{route('commercial_interiors')}}" target="_blank" class="service-link">View More</a>
                         </div>
                     </div>
                 </div>
@@ -469,7 +469,7 @@
                         <div class="service-content">
                             <img src="@assetPath('assets/img/icon/services/protection.svg')" alt="Bed Icon" class="service-icon svg-img">
                             <h3 class="service-title">Complete Turnkey Projects</h3>
-                            <a href="Turnkey-Projects.html" target="_blank" class="service-link">View More</a>
+                            <a href="{{route('turnkey_projects')}}" target="_blank" class="service-link">View More</a>
                         </div>
                     </div>
                 </div>
@@ -479,7 +479,7 @@
                         <div class="service-content">
                             <img src="@assetPath('assets/img/icon/services/tiles.svg')" alt="Bed Icon" class="service-icon svg-img">
                             <h3 class="service-title">Flooring Solutions</h3>
-                            <a href="Flooring-Solutions.html" target="_blank" class="service-link">View More</a>
+                            <a href="{{route('flooring')}}" target="_blank" class="service-link">View More</a>
                         </div>
                     </div>
                 </div>
@@ -489,7 +489,7 @@
                         <div class="service-content">
                             <img src="@assetPath('assets/img/icon/services/ceiling.svg')" alt="Bed Icon" class="service-icon svg-img">
                             <h3 class="service-title">False Ceiling</h3>
-                            <a href="False-Ceiling.html" target="_blank" class="service-link">View More</a>
+                            <a href="{{route('false_ceiling')}}" target="_blank" class="service-link">View More</a>
                         </div>
                     </div>
                 </div>
@@ -499,7 +499,7 @@
                         <div class="service-content">
                             <img src="@assetPath('assets/img/icon/services/windows.svg')" alt="Bed Icon" class="service-icon svg-img">
                             <h3 class="service-title">UPVC & Aluminium - Doors & Windows</h3>
-                            <a href="upvc.html" target="_blank" class="service-link">View More</a>
+                            <a href="{{route('upvc')}}" target="_blank" class="service-link">View More</a>
                         </div>
                     </div>
                 </div>
@@ -532,11 +532,10 @@
                                 <li><i class="fas fa-angle-double-right"></i>End-to-End Project Management</li>
                                 <li><i class="fas fa-angle-double-right"></i>Hassle-Free Installation</li>
                             </ul>
-                            <a href="Complete-Home-Interiors.html" target="_blank" class="btn-learn-more">View More</a>
+                            <a href="{{ route('complete_home_interiors') }}" target="_blank" class="btn-learn-more">View More</a>
                         </div>
                     </div>
                 </div>
-
                 <div class="flip-card-wrapper">
                     <div class="flip-card">
                         <div class="flip-card-front">
@@ -554,11 +553,10 @@
                                 <li><i class="fas fa-angle-double-right"></i>Flooring & Ceiling Works</li>
                                 <li><i class="fas fa-angle-double-right"></i>Modern Aesthetic Finishes</li>
                             </ul>
-                            <a href="Renovation.html" target="_blank" class="btn-learn-more">View More</a>
+                            <a href="{{route('renovation')}}" target="_blank" class="btn-learn-more">View More</a>
                         </div>
                     </div>
                 </div>
-
                 <div class="flip-card-wrapper">
                     <div class="flip-card">
                         <div class="flip-card-front">
@@ -576,11 +574,10 @@
                                 <li><i class="fas fa-angle-double-right"></i>Smart Lighting & Sensors</li>
                                 <li><i class="fas fa-angle-double-right"></i>App-Based Monitoring</li>
                             </ul>
-                            <a href="Home-automation.html" target="_blank" class="btn-learn-more">View More</a>
+                            <a href="{{route('home_automation')}}" target="_blank" class="btn-learn-more">View More</a>
                         </div>
                     </div>
                 </div>
-
                 <div class="flip-card-wrapper">
                     <div class="flip-card">
                         <div class="flip-card-front">
@@ -598,11 +595,10 @@
                                 <li><i class="fas fa-angle-double-right"></i>Easy to Maintain</li>
                                 <li><i class="fas fa-angle-double-right"></i>Sleek Modern Aesthetic</li>
                             </ul>
-                            <a href="Customized-Interior-Designs.html" target="_blank" class="btn-learn-more">View More</a>
+                            <a href="{{route('customized_interior_designs')}}" target="_blank" class="btn-learn-more">View More</a>
                         </div>
                     </div>
                 </div>
-
                 <div class="flip-card-wrapper">
                     <div class="flip-card">
                         <div class="flip-card-front">
@@ -620,11 +616,10 @@
                                 <li><i class="fas fa-angle-double-right"></i>Efficient Space Utilization</li>
                                 <li><i class="fas fa-angle-double-right"></i>Smart Tech Integration</li>
                             </ul>
-                            <a href="Work-space.html" target="_blank" class="btn-learn-more">View More</a>
+                            <a href="{{route('commercial_interiors')}}" target="_blank" class="btn-learn-more">View More</a>
                         </div>
                     </div>
                 </div>
-
                 <div class="flip-card-wrapper">
                     <div class="flip-card">
                         <div class="flip-card-front">
@@ -642,11 +637,10 @@
                                 <li><i class="fas fa-angle-double-right"></i>Hassle-Free Coordination</li>
                                 <li><i class="fas fa-angle-double-right"></i>Design to Handover</li>
                             </ul>
-                            <a href="Turnkey-Projects.html" target="_blank" class="btn-learn-more">View More</a>
+                            <a href="{{route('turnkey_projects')}}" target="_blank" class="btn-learn-more">View More</a>
                         </div>
                     </div>
                 </div>
-
                 <div class="flip-card-wrapper">
                     <div class="flip-card">
                         <div class="flip-card-front">
@@ -664,11 +658,10 @@
                                 <li><i class="fas fa-angle-double-right"></i>Durable & Low Maintenance</li>
                                 <li><i class="fas fa-angle-double-right"></i>Enhances Aesthetic Appeal</li>
                             </ul>
-                            <a href="Flooring-Solutions.html" target="_blank" class="btn-learn-more">View More</a>
+                            <a href="{{route('flooring')}}" target="_blank" class="btn-learn-more">View More</a>
                         </div>
                     </div>
                 </div>
-
                 <div class="flip-card-wrapper">
                     <div class="flip-card">
                         <div class="flip-card-front">
@@ -686,11 +679,10 @@
                                 <li><i class="fas fa-angle-double-right"></i>Illusion of Spaciousness</li>
                                 <li><i class="fas fa-angle-double-right"></i>Concealed Wiring & Fixtures</li>
                             </ul>
-                            <a href="False-Ceiling.html" target="_blank" class="btn-learn-more">View More</a>
+                            <a href="{{route('false_ceiling')}}" target="_blank" class="btn-learn-more">View More</a>
                         </div>
                     </div>
                 </div>
-
                 <div class="flip-card-wrapper">
                     <div class="flip-card">
                         <div class="flip-card-front">
@@ -708,43 +700,17 @@
                                 <li><i class="fas fa-angle-double-right"></i>Low Maintenance</li>
                                 <li><i class="fas fa-angle-double-right"></i>Sleek Modern Finish</li>
                             </ul>
-                            <a href="upvc.html" target="_blank" class="btn-learn-more">View More</a>
+                            <a href="{{route('upvc')}}" target="_blank" class="btn-learn-more">View More</a>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
     {{-- Experience Center Section --}}
-    {{-- <section class="krish-experience-modern" >
-        <div class="krish-experience-wrapper">
-            <div class="krish-experience-left">
-                <div class="experience-image" style="background-image: url(@assetPath('assets/img/Images/About/Experience-center/Experience-center2.jpeg');"></div>
-            </div>
-            <div class="krish-experience-right">
-                <h2 class="site-section-heading mb-4">
-                    Immerse Yourself in Design : Visit <span>  Our Experience Centre </span>
-                </h2>
-                <p style="font-size: 14px;">As Bangalore’s Leading Interior Design Firm, we have a strong market presence, serving clients across the city and beyond.
-                    Come visit our state-of-the-art Experience Centre at Thanisandra, Bangalore, to envision your future space.</p>
-                <ul class="experience-features">
-                    <li><i class="fas fa-columns"></i> Design Galleries</li>
-                    <li><i class="fas fa-cubes"></i> Material Library</li>
-                    <li><i class="fas fa-vr-cardboard"></i> Virtual Reality Experiences</li>
-                </ul>
-                <div class="experience-cta">
-                    <button class="krish-btn secondary" data-bs-toggle="modal" data-bs-target="#siteVisitModal">Schedule a Visit</button>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-
-
     <section class="experience-centre-slider">
         <div class="experience-centre-wrapper">
-
             <!-- Left side content -->
             <div class="experience-centre-left">
                 <h2 class="site-section-heading mb-4">
@@ -761,17 +727,18 @@
                     <button class="krish-btn secondary" data-bs-toggle="modal" data-bs-target="#siteVisitModal">Schedule a Visit</button>
                 </div>
             </div>
-
             <!-- Right side image slider -->
             <div class="experience-centre-right">
                 <div class="swiper centre-swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="assets/img/Images/About/Experience-center/Experience-center21.JPG" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/Images/About/Experience-center/Experience-center22.JPG" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/Images/About/Experience-center/Experience-center23.JPG" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/Images/About/Experience-center/Experience-center24.JPG" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/Images/living-room/Images/Livingroom14.webp" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/Images/living-room/Images/Livingroom11.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/Images/About/Experience-center/1.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/Images/About/Experience-center/2.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/Images/About/Experience-center/3.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/Images/About/Experience-center/4.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/Images/About/Experience-center/5.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/Images/About/Experience-center/6.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/Images/About/Experience-center/7.jpeg" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/Images/About/Experience-center/8.jpeg" alt=""></div>
                     </div>
                 </div>
             </div>
@@ -813,7 +780,7 @@
                                     alt="Before Image" class="krishv-before-img" />
                             </div>
 
-                            <div class="krishv-slider-line-wrapper" aria-hidden="true">
+                            {{-- <div class="krishv-slider-line-wrapper" aria-hidden="true">
                                 <div class="krishv-slider-line"></div>
                             </div>
 
@@ -821,11 +788,18 @@
                                     aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"
                                     aria-label="Comparison position">
                                 <span class="krishv-slider-icon">&#8596;</span>
-                            </button>
+                            </button> --}}
+
+                            <div class="krishv-slider-line-wrapper">
+                                <div class="krishv-slider-line"></div>
+                                <div class="krishv-slider-handle">
+                                    <span class="krishv-slider-icon">&#8596;</span>
+                                </div>
+                            </div>
 
                             <div class="krishv-label krishv-before-label">Before</div>
                             <div class="krishv-label krishv-after-label">After</div>
-                            </div>
+                        </div>
                     </div>
                     <div class="col-md-5 d-flex align-items-center order-1 order-md-2">
                         <div class="renovation-text-box text-center text-white w-100">
@@ -845,7 +819,7 @@
         <div class="container">
             <div class="tour-content text-center">
                 <h2 class="tour-title wow fadeInUp" data-wow-delay="0.2s"> Explore Our Interiors
-                    <span class="text-theme highlighted-text">Virtual Tour !</span>
+                    <span class="text-theme highlighted-text">360° view !</span>
                 </h2>
                 <a href="https://onetobeam.com/otb-vt/public/DSMax/QnXe06Gbxr/VT" class="tour-btn fill-hover wow fadeInUp" target="_blank">
                     <i class="fas fa-globe"></i> Virtual Tour
@@ -915,67 +889,53 @@
                     <p class="testimonial-text">Krish-V Global Interiors has an exceptional talent for flawlessly fusing beauty and practicality. They transformed my living area into a stylish and comfortable retreat. I’m really happy right now.</p>
                     <h3 class="testimonial-name">Rajeshwari S</h3>
                     <div class="testimonial-box_icon">
-                        <img src="@assetPath('assets/img/testimonial/transparent.svg')" alt="icon" class="testimonial-quote-icon"/>
+                        <img src="assets/img/testimonial/transparent.svg" alt="icon" class="testimonial-quote-icon"/>
                     </div>
                 </div>
                 <div class="testimonial-box">
                     <p class="testimonial-text">Krish-V Global Interiors not only grasped my concept for my home, but they also improved it beyond my wildest dreams. Their attention to detail and dedication to excellence are admirable.</p>
                     <h3 class="testimonial-name">Divya K</h3>
                     <div class="testimonial-box_icon">
-                        <img src="@assetPath('assets/img/testimonial/transparent.svg')" alt="icon" class="testimonial-quote-icon"/>
+                        <img src="assets/img/testimonial/transparent.svg" alt="icon" class="testimonial-quote-icon"/>
                     </div>
                 </div>
                 <div class="testimonial-box">
                     <p class="testimonial-text">I am thankful to Krish-V Global Interiors for their designs and execution to my new house in DS MAX SKYCITY. I am thankful to the team for their tireless support and patience hearing.</p>
                     <h3 class="testimonial-name">Muralidhar D</h3>
                     <div class="testimonial-box_icon">
-                        <img src="@assetPath('assets/img/testimonial/transparent.svg')" alt="icon" class="testimonial-quote-icon"/>
+                        <img src="assets/img/testimonial/transparent.svg" alt="icon" class="testimonial-quote-icon"/>
                     </div>
                 </div>
                 <div class="testimonial-box">
                     <p class="testimonial-text">Krish-V Global Interiors have done great job for our Interiors and executed on time. Staff listens to you very patiently and are supportive. I like to thank the entire team for their effort.</p>
                     <h3 class="testimonial-name">Shrikant P</h3>
                     <div class="testimonial-box_icon">
-                        <img src="@assetPath('assets/img/testimonial/transparent.svg')" alt="icon" class="testimonial-quote-icon"/>
+                        <img src="assets/img/testimonial/transparent.svg" alt="icon" class="testimonial-quote-icon"/>
                     </div>
                 </div>
                 <div class="testimonial-box">
                     <p class="testimonial-text">Thank you Krish-V Global and Senior Designers for giving a quality interior on right time, Good design, Good communication, Good patients What we are expecting, that what they given 100% Happy with Krish-V team.</p>
                     <h3 class="testimonial-name">Nismi</h3>
                     <div class="testimonial-box_icon">
-                        <img src="@assetPath('assets/img/testimonial/transparent.svg')" alt="icon" class="testimonial-quote-icon"/>
+                        <img src="assets/img/testimonial/transparent.svg" alt="icon" class="testimonial-quote-icon"/>
                     </div>
                 </div>
                 <div class="testimonial-box">
                     <p class="testimonial-text">I am happy with the work done by Krishv interiors and I should thank Mr. Ramesh sir who guided me so well and made the work completed within the given time. The work is neat and clean and any additional attachment to your interiors you can approach them.</p>
                     <h3 class="testimonial-name">Jerin J</h3>
                     <div class="testimonial-box_icon">
-                        <img src="@assetPath('assets/img/testimonial/transparent.svg')" alt="icon" class="testimonial-quote-icon"/>
+                        <img src="assets/img/testimonial/transparent.svg" alt="icon" class="testimonial-quote-icon"/>
                     </div>
                 </div>
                 <div class="testimonial-box">
                     <p class="testimonial-text">I have used the services of Krish-V Interiors for doing my flat interior work in DS-MAX SAGE project. They have done wonderful job and I am very happy with thier work. Thank you to the team for their responsiveness and getting the work done as promised.</p>
                     <h3 class="testimonial-name">Venugopal V</h3>
                     <div class="testimonial-box_icon">
-                        <img src="@assetPath('assets/img/testimonial/transparent.svg')" alt="icon" class="testimonial-quote-icon"/>
+                        <img src="assets/img/testimonial/transparent.svg" alt="icon" class="testimonial-quote-icon"/>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    {{-- CTA Section --}}
-    <section class="krish-v-cta-section Reverse mb-5" >
-        <div class="container">
-            <div class="krish-v-cta-content">
-                <div class="krish-v-cta-text">
-                    <h2>READY TO TRANSFORM YOUR SPACE?</h2>
-                    <a href="" class="krish-v-cta-btn" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us Now <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="krish-v-cta-image">
-                    <img src="@assetPath('assets/img/team/graphical-image/Dining.png')" alt="transform" />
-                </div>
-            </div>
+            <div class="custom-dots-container"></div>
         </div>
     </section>
 
@@ -997,7 +957,8 @@
             });
         </script>
 
-        {{-- For Service Card Section --}}
+
+        {{-- For Mobile Service Card Section --}}
         <script>
             document.addEventListener("DOMContentLoaded", function () {
                 const cards = document.querySelectorAll(".service-card");
@@ -1016,7 +977,8 @@
 
                 cards.forEach(card => observer.observe(card));
             });
-            </script>
+        </script>
+
 
         <!-- Form Popup -->
         <script>
@@ -1034,8 +996,6 @@
                 const contactModal = new bootstrap.Modal(document.getElementById('contactModal'));
                 contactModal.show();
                 }
-
-
                 scrollCooldown = true;
                 setTimeout(() => {
                 scrollCooldown = false;
@@ -1043,7 +1003,8 @@
             }, { passive: true });
         </script>
 
-        <!-- For Service Section -->
+
+        <!-- For Desktop Service Section -->
         <script>
             var swiper = new Swiper('.swiper-container', {
                 slidesPerView: 3,
@@ -1086,6 +1047,7 @@
             };
         </script>
 
+
         <!-- Before And After Slider -->
         <script>
             document.addEventListener('DOMContentLoaded', () => {
@@ -1095,12 +1057,10 @@
                     const handle = wrapper.querySelector('.krishv-slider-handle');
                     const beforeWrap = wrapper.querySelector('.krishv-before-img-wrapper');
 
-                    // ---- HARD RESET for old inline styles / listeners ----
                     if (beforeWrap) {
                     beforeWrap.style.width = '100%';
                     beforeWrap.style.overflow = 'visible';
                     }
-                    // Remove any old width setter you might still have:
                     wrapper.querySelectorAll('*').forEach(el => {
                     if (el._kvOldHandlers) { el._kvOldHandlers.forEach(fn => el.removeEventListener(...fn)); }
                     });
@@ -1152,6 +1112,8 @@
             });
         </script>
 
+
+        {{-- Experience center section --}}
         <script>
             var swiper = new Swiper(".centre-swiper", {
                 loop: true,
@@ -1165,28 +1127,31 @@
             });
         </script>
 
+
+        {{-- About Section --}}
         <script>
             document.addEventListener("DOMContentLoaded", function () {
-            const images = document.querySelectorAll(".img-slider img");
-            let current = 0;
+                const images = document.querySelectorAll(".about-image-slider img");
+                let current = 0;
 
-            function updateClasses() {
-                images.forEach((img) => img.className = ""); // reset
+                function updateClasses() {
+                    images.forEach((img) => img.className = "");
 
-                images[current].classList.add("active");
-                images[(current + 1) % images.length].classList.add("middle");
-                images[(current + 2) % images.length].classList.add("back");
-            }
+                    images[current].classList.add("active");
+                    images[(current + 1) % images.length].classList.add("middle");
+                    images[(current + 2) % images.length].classList.add("back");
+                }
 
-            function showNextImage() {
-                current = (current + 1) % images.length;
+                function showNextImage() {
+                    current = (current + 1) % images.length;
+                    updateClasses();
+                }
+
                 updateClasses();
-            }
-
-            updateClasses(); // show first stack
-            setInterval(showNextImage, 3000);
-            });
+                setInterval(showNextImage, 3000);
+                });
         </script>
+
     @endsection
 
     @include('layouts.footer')

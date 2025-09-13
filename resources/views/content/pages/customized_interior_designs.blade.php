@@ -52,15 +52,6 @@
                     </h2>
                 </div>
             </div>
-
-            <div class="row mb-3">
-                <div class="col-12 d-flex justify-content-end nav-buttons-container">
-                    <div class="gallery-nav-buttons d-flex gap-2">
-                        <div class="gallery-button-prev"><i class="fas fa-arrow-left"></i></div>
-                        <div class="gallery-button-next"><i class="fas fa-arrow-right"></i></div>
-                    </div>
-                </div>
-            </div>
             <div class="swiper gallery-swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -124,13 +115,14 @@
                     </div>
                 </div>
             </div>
+            <div class="custom-pagination"></div>
         </div>
     </section>
 
-    {{-- Testimonial Section --}}
+    {{-- Testimonial section --}}
     <section class="testimonial-section" style="text-align: center;">
         <div class="container">
-            <h2 class="site-section-heading mb-5">
+            <h2 class="site-section-heading mb-4">
                 Voices of Delight from <span> Krish-V Customers </span>
             </h2>
             <div class="testimonial-slider">
@@ -138,69 +130,56 @@
                     <p class="testimonial-text">Krish-V Global Interiors has an exceptional talent for flawlessly fusing beauty and practicality. They transformed my living area into a stylish and comfortable retreat. I’m really happy right now.</p>
                     <h3 class="testimonial-name">Rajeshwari S</h3>
                     <div class="testimonial-box_icon">
-                        <img src="@assetPath('assets/img/testimonial/transparent.svg')" alt="icon" class="testimonial-quote-icon"/>
+                        <img src="assets/img/testimonial/transparent.svg" alt="icon" class="testimonial-quote-icon"/>
                     </div>
                 </div>
                 <div class="testimonial-box">
                     <p class="testimonial-text">Krish-V Global Interiors not only grasped my concept for my home, but they also improved it beyond my wildest dreams. Their attention to detail and dedication to excellence are admirable.</p>
                     <h3 class="testimonial-name">Divya K</h3>
                     <div class="testimonial-box_icon">
-                        <img src="@assetPath('assets/img/testimonial/transparent.svg')" alt="icon" class="testimonial-quote-icon"/>
+                        <img src="assets/img/testimonial/transparent.svg" alt="icon" class="testimonial-quote-icon"/>
                     </div>
                 </div>
                 <div class="testimonial-box">
                     <p class="testimonial-text">I am thankful to Krish-V Global Interiors for their designs and execution to my new house in DS MAX SKYCITY. I am thankful to the team for their tireless support and patience hearing.</p>
                     <h3 class="testimonial-name">Muralidhar D</h3>
                     <div class="testimonial-box_icon">
-                        <img src="@assetPath('assets/img/testimonial/transparent.svg')" alt="icon" class="testimonial-quote-icon"/>
+                        <img src="assets/img/testimonial/transparent.svg" alt="icon" class="testimonial-quote-icon"/>
                     </div>
                 </div>
                 <div class="testimonial-box">
                     <p class="testimonial-text">Krish-V Global Interiors have done great job for our Interiors and executed on time. Staff listens to you very patiently and are supportive. I like to thank the entire team for their effort.</p>
                     <h3 class="testimonial-name">Shrikant P</h3>
                     <div class="testimonial-box_icon">
-                        <img src="@assetPath('assets/img/testimonial/transparent.svg')" alt="icon" class="testimonial-quote-icon"/>
+                        <img src="assets/img/testimonial/transparent.svg" alt="icon" class="testimonial-quote-icon"/>
                     </div>
                 </div>
                 <div class="testimonial-box">
                     <p class="testimonial-text">Thank you Krish-V Global and Senior Designers for giving a quality interior on right time, Good design, Good communication, Good patients What we are expecting, that what they given 100% Happy with Krish-V team.</p>
                     <h3 class="testimonial-name">Nismi</h3>
                     <div class="testimonial-box_icon">
-                        <img src="@assetPath('assets/img/testimonial/transparent.svg')" alt="icon" class="testimonial-quote-icon"/>
+                        <img src="assets/img/testimonial/transparent.svg" alt="icon" class="testimonial-quote-icon"/>
                     </div>
                 </div>
                 <div class="testimonial-box">
                     <p class="testimonial-text">I am happy with the work done by Krishv interiors and I should thank Mr. Ramesh sir who guided me so well and made the work completed within the given time. The work is neat and clean and any additional attachment to your interiors you can approach them.</p>
                     <h3 class="testimonial-name">Jerin J</h3>
                     <div class="testimonial-box_icon">
-                        <img src="@assetPath('assets/img/testimonial/transparent.svg')" alt="icon" class="testimonial-quote-icon"/>
+                        <img src="assets/img/testimonial/transparent.svg" alt="icon" class="testimonial-quote-icon"/>
                     </div>
                 </div>
                 <div class="testimonial-box">
                     <p class="testimonial-text">I have used the services of Krish-V Interiors for doing my flat interior work in DS-MAX SAGE project. They have done wonderful job and I am very happy with thier work. Thank you to the team for their responsiveness and getting the work done as promised.</p>
                     <h3 class="testimonial-name">Venugopal V</h3>
                     <div class="testimonial-box_icon">
-                        <img src="@assetPath('assets/img/testimonial/transparent.svg')" alt="icon" class="testimonial-quote-icon"/>
+                        <img src="assets/img/testimonial/transparent.svg" alt="icon" class="testimonial-quote-icon"/>
                     </div>
                 </div>
             </div>
+            <div class="custom-dots-container"></div>
         </div>
     </section>
 
-    {{-- CTA Section --}}
-    <section class="krish-v-cta-section Reverse mb-20" >
-        <div class="container">
-            <div class="krish-v-cta-content">
-                <div class="krish-v-cta-text">
-                    <h2>READY TO TRANSFORM YOUR SPACE?</h2>
-                    <a href="javascript:void(0)" class="krish-v-cta-btn" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us Now <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="krish-v-cta-image">
-                    <img src="@assetPath('assets/img/team/graphical-image/Kitchen.png')" alt="Transform" />
-                </div>
-            </div>
-        </div>
-    </section>
 
     @include('content.forms.enquiry')
     @include('content.forms.scripts.enquiry_script')
@@ -209,36 +188,66 @@
         {{-- Gallery Section --}}
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
         <script>
-            new Swiper(".gallery-swiper", {
-            loop: true,
-            slidesPerView: 3,
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            navigation: {
-                nextEl: ".gallery-button-next",
-                prevEl: ".gallery-button-prev",
-            },
-            breakpoints: {
-                0: {
+            document.addEventListener("DOMContentLoaded", () => {
+                const gallerySwiper = new Swiper(".gallery-swiper", {
+                    loop: true,
+                    autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
                     slidesPerView: 1,
-                    centeredSlides: false,
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 30,
+                    slidesPerGroup: 1,
+                    spaceBetween: 10,
                     centeredSlides: true,
+
+                    breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                        centeredSlides: false,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                        centeredSlides: false,
+                    },
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                        centeredSlides: true,
+                    },
+                    },
+                on: {
+                    init: function () {
+                        renderCustomDots(this);
+                    },
+                    slideChange: function () {
+                        updateActiveDot();
+                    },
                 },
-                992: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                    centeredSlides: true,
-                },
-            },
-        });
-    </script>
+            });
+            function renderCustomDots(swiper) {
+                const pagination = document.querySelector(".custom-pagination");
+                pagination.innerHTML = "";
+
+                ["prev", "current", "next"].forEach((type) => {
+                    const dot = document.createElement("span");
+                    dot.classList.add("custom-dot");
+                    if (type === "current") dot.classList.add("active");
+
+                    dot.addEventListener("click", () => {
+                        if (type === "prev") swiper.slidePrev();
+                        if (type === "next") swiper.slideNext();
+                    });
+
+                    pagination.appendChild(dot);
+                });
+            }
+            function updateActiveDot() {
+                const dots = document.querySelectorAll(".custom-dot");
+                dots.forEach((dot) => dot.classList.remove("active"));
+                if (dots[1]) dots[1].classList.add("active");
+                }
+            });
+        </script>
     @endsection
 @endsection

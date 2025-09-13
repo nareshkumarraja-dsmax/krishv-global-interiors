@@ -67,7 +67,7 @@
                             || request()->routeIs('commercial_interiors')
                             || request()->routeIs('turnkey_projects')
                             ? 'active' : '' }}" href="javascript:void(0)">
-                            Services
+                            Products
                         </a>
                         <ul class="sub-menu">
                             <li><a class="{{ request()->routeIs('complete_home_interiors')? 'active': ''}}" href="{{route('complete_home_interiors')}}">Complete Home Interiors</a></li>
@@ -85,13 +85,13 @@
                     <li><a class="{{ request()->routeIs('carrer')? 'active': ''}}" href="{{route('carrer')}}">Careers</a></li>
                     <li class="menu-item-has-children">
                         <a class="{{ request()->routeIs('referandearn')
-                            || request()->routeIs('channelpartner')
+                            || request()->routeIs('channel_partner')
                             ? 'active' : '' }}" href="javascript:void(0)">
                             Refer & earn
                         </a>
                         <ul class="sub-menu">
-                            <li><a class="{{ request()->routeIs('referandearn')? 'active': ''}}" href="{{route('carrer')}}">Refer & Earn</a></li>
-                            <li><a class="{{ request()->routeIs('channelpartner')? 'active': ''}}" href="{{route('blog')}}">Channel Partner</a></li>
+                            <li><a class="{{ request()->routeIs('referandearn')? 'active': ''}}" href="{{route('referandearn')}}">Refer & Earn</a></li>
+                            <li><a class="{{ request()->routeIs('channel_partner')? 'active': ''}}" href="{{route('channel_partner')}}">Channel Partner</a></li>
                         </ul>
                     </li>
                     <li class="menu-item-has-children">
@@ -102,7 +102,7 @@
                             More
                         </a>
                         <ul class="sub-menu">
-                            <li><a class="{{ request()->routeIs('gallery')? 'active': ''}}" href="{{route('carrer')}}">Careers</a></li>
+                            <li><a class="{{ request()->routeIs('gallery')? 'active': ''}}" href="{{route('gallery')}}">Gallery</a></li>
                             <li><a class="{{ request()->routeIs('blog')? 'active': ''}}" href="{{route('blog')}}">Blog</a></li>
                             <li><a class="{{ request()->routeIs('contact')? 'active': ''}}" href="{{route('contact')}}">Contact</a></li>
                         </ul>
@@ -131,7 +131,7 @@
                         <div class="d-flex align-items-center justify-content-between">
                             <div class="header-logo">
                                 <a href="index.html">
-                                    <img src="@assetPath('assets/img/krish1-removebg-preview.png')" alt="krish v"/>
+                                    <img src="@assetPath('assets/img/krish-v-logo-Global.png')" alt="krish v"/>
                                 </a>
                             </div>
                             <nav class="about main-menu d-none d-lg-inline-block">
@@ -149,7 +149,7 @@
                                             || request()->routeIs('commercial_interiors')
                                             || request()->routeIs('turnkey_projects')
                                             ? 'active' : '' }}" href="javascript:void(0)">
-                                            Services
+                                            Products
                                         </a>
                                         <ul class="sub-menu">
                                             <li><a class="{{ request()->routeIs('complete_home_interiors')? 'active': ''}}" href="{{route('complete_home_interiors')}}">Complete Home Interiors</a></li>
@@ -167,13 +167,13 @@
                                     <li><a class="{{ request()->routeIs('carrer')? 'active': ''}}" href="{{route('carrer')}}">Careers</a></li>
                                     <li class="menu-item-has-children">
                                         <a class="{{ request()->routeIs('referandearn')
-                                            || request()->routeIs('channelpartner')
+                                            || request()->routeIs('channel_partner')
                                             ? 'active' : '' }}" href="javascript:void(0)">
                                             Refer & earn
                                         </a>
                                         <ul class="sub-menu">
-                                            <li><a class="{{ request()->routeIs('referandearn')? 'active': ''}}" href="{{route('carrer')}}">refer & earn</a></li>
-                                            <li><a class="{{ request()->routeIs('channelpartner')? 'active': ''}}" href="{{route('blog')}}">channel partner</a></li>
+                                            <li><a class="{{ request()->routeIs('referandearn')? 'active': ''}}" href="{{route('referandearn')}}">refer & earn</a></li>
+                                            <li><a class="{{ request()->routeIs('channel_partner')? 'active': ''}}" href="{{route('channel_partner')}}">channel partner</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children">
@@ -184,7 +184,7 @@
                                             More
                                         </a>
                                         <ul class="sub-menu">
-                                            <li><a class="{{ request()->routeIs('carrer')? 'active': ''}}" href="{{route('carrer')}}">Gallery</a></li>
+                                            <li><a class="{{ request()->routeIs('gallery')? 'active': ''}}" href="{{route('gallery')}}">Gallery</a></li>
                                             <li><a class="{{ request()->routeIs('blog')? 'active': ''}}" href="{{route('blog')}}">Blog</a></li>
                                             <li><a class="{{ request()->routeIs('contact')? 'active': ''}}" href="{{route('contact')}}">Contact</a></li>
                                         </ul>

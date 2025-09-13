@@ -283,7 +283,7 @@
         </div>
     </div>
 
-     <!-- OUR SPECIALITY SECTION -->
+    <!-- OUR SPECIALITY SECTION -->
     <section class="stages-section" id="stages" style="text-align: center;">
         <div class="conatiner">
             <h2 class="site-section-heading mb-5">
@@ -297,7 +297,7 @@
                         </div>
                     </div>
                     <div class="number">01</div>
-                    <p>Consultation</p>
+                    <p>Free Design Consultation</p>
                 </div>
                 <div class="stage">
                     <div class="circle">
@@ -422,143 +422,131 @@
     </section>
 
     {{-- Testimonial Section --}}
-    <section class="space testimonial-section">
+    <section class="space video-testimonial-swiper" style="text-align: center;">
         <div class="container">
-            <div class="row testimonial-header-row  justify-content-lg-between align-items-end">
-                <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="title-area">
-                        <h2 class="sec-title video-testimoni">
-                            What Client <span class="text-theme">Say?</span>
-                        </h2>
-                        <div class="title-line"></div>
+            <h2 class="site-section-heading mb-5" >
+                What Client <span class="text-theme">Say?</span>
+            </h2>
+            <div class="swiper videoTestimonialSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="team-box">
+                            <div class="team-img position-relative">
+                                <img src="assets/img/Testimonials/Images/Testimonial1.webp" class="img-fluid rounded" alt="Customer Testimonial Video 1" />
+                                <a href="https://www.youtube.com/watch?v=m6qkkalb4MI" class="glightbox video-link position-absolute top-50 start-50 translate-middle" >
+                                <span class="icon">
+                                    <img src="assets/img/testimonial/play-button.svg" alt="Play Icon" style="width: 60px;" />
+                                </span>
+                                </a>
+                            </div>
+                            <div class="testimonial-name-strip-below">
+                                <span>Mr.Sourav Sharma & Mrs.Radha Sharma</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-auto wow fadeInUp">
-                    <div class="sec-btn">
-                        <div class="icon-box style2">
-                            <button data-slick-prev="#testimonialSlide1" class="slick-arrow default">
-                                <i class="fat fa-long-arrow-left"></i>
-                            </button>
-                            <button data-slick-next="#testimonialSlide1" class="slick-arrow default">
-                                <i class="fat fa-long-arrow-right"></i>
-                            </button>
+
+                    <div class="swiper-slide">
+                        <div class="team-box">
+                            <div class="team-img position-relative">
+                                <img src="assets/img/Testimonials/Images/Testimonial2.webp" class="img-fluid rounded" alt="Customer Testimonial Video 2" />
+                                <a href="https://www.youtube.com/watch?v=rfun3jia5xA" class="glightbox video-link position-absolute top-50 start-50 translate-middle" >
+                                <span class="icon">
+                                    <img src="assets/img/testimonial/play-button.svg" alt="Play Icon" style="width: 60px;" />
+                                </span>
+                                </a>
+                            </div>
+                            <div class="testimonial-name-strip-below">
+                                <span>Mr.Rajeev & Mrs.Radha</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="team-box">
+                            <div class="team-img position-relative">
+                                <img src="assets/img/Testimonials/Images/Testimonial3.webp" class="img-fluid rounded" alt="Customer Testimonial Video 3" />
+                                <a href="https://www.youtube.com/watch?v=4Wc4SNNG-1k" class="glightbox video-link position-absolute top-50 start-50 translate-middle" >
+                                <span class="icon">
+                                    <img src="assets/img/testimonial/play-button.svg" alt="Play Icon" style="width: 60px;" />
+                                </span>
+                                </a>
+                            </div>
+                            <div class="testimonial-name-strip-below">
+                                <span>Mr.Jayaprakash & Family</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="team-box">
+                            <div class="team-img position-relative">
+                                <img src="assets/img/Testimonials/Images/Testimonial4.webp" class="img-fluid rounded" alt="Customer Testimonial Video 1" />
+                                <a href="https://youtu.be/lFZ2AV2b1KE" class="glightbox video-link position-absolute top-50 start-50 translate-middle" >
+                                    <span class="icon">
+                                        <img src="assets/img/testimonial/play-button.svg" alt="Play Icon" style="width: 60px;" />
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="testimonial-name-strip-below">
+                                <span>Mr.Madhu Sudhan & Mrs.Pavithra</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="team-box">
+                            <div class="team-img position-relative">
+                                <img src="assets/img/Testimonials/Images/Testimonial5.webp" class="img-fluid rounded" alt="Customer Testimonial Video 2" />
+                                <a href="https://youtu.be/1VLaaxEF2WI" class="glightbox video-link position-absolute top-50 start-50 translate-middle" >
+                                    <span class="icon">
+                                        <img src="assets/img/testimonial/play-button.svg" alt="Play Icon" style="width: 60px;" />
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="testimonial-name-strip-below">
+                                <span>Mr.Partha Das & Mrs.Anupriya Raidas</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="team-box">
+                            <div class="team-img position-relative">
+                                <img src="assets/img/Testimonials/Images/Testimonial6.webp" class="img-fluid rounded" alt="Customer Testimonial Video 3" />
+                                <a href="https://youtu.be/vjqvYglo3gc" class="glightbox video-link position-absolute top-50 start-50 translate-middle" >
+                                    <span class="icon">
+                                        <img src="assets/img/testimonial/play-button.svg" alt="Play Icon" style="width: 60px;" />
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="testimonial-name-strip-below">
+                                <span>Mr.Praneeth & Mrs.Divya</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="team-box">
+                            <div class="team-img position-relative">
+                                <img src="assets/img/Testimonials/Images/Testimonial7.webp" class="img-fluid rounded" alt="Customer Testimonial Video 3" />
+                                <a href="https://www.youtube.com/embed/9ywm6zT0gDU?autoplay=1" class="glightbox video-link position-absolute top-50 start-50 translate-middle" >
+                                    <span class="icon">
+                                        <img src="assets/img/testimonial/play-button.svg" alt="Play Icon" style="width: 60px;" />
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="testimonial-name-strip-below">
+                                <span>Mr.Riyaz Ahmed & Mrs.Shamshad</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row th-carousel" id="testimonialSlide1" data-slide-show="3" data-lg-slide-show="2" data-md-slide-show="2">
-                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="team-box">
-                        <div class="team-img position-relative">
-                            <img src="@assetPath('assets/img/Testimonials/Compressed/1.webp')" class="img-fluid rounded" alt="Customer Testimonial Video 1" />
-                            <a href="https://www.youtube.com/watch?v=m6qkkalb4MI" class="glightbox video-link position-absolute top-50 start-50 translate-middle">
-                                <span class="icon">
-                                    <img src="@assetPath('assets/img/testimonial/play-button.svg')" alt="Play Icon" style="width: 60px;" />
-                                </span>
-                            </a>
-                        </div>
-                        <div class="testimonial-name-strip-below">
-                            <span>Mr.Sourav Sharma & Mrs.Radha Sharma</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-box">
-                        <div class="team-img position-relative">
-                            <img src="@assetPath('assets/img/Testimonials/Compressed/2.webp')" class="img-fluid rounded" alt="Customer Testimonial Video 2" />
-                            <a href="https://www.youtube.com/watch?v=rfun3jia5xA" class="glightbox video-link position-absolute top-50 start-50 translate-middle">
-                                <span class="icon">
-                                    <img src="@assetPath('assets/img/testimonial/play-button.svg')" alt="Play Icon" style="width: 60px;" />
-                                </span>
-                            </a>
-                        </div>
-                        <div class="testimonial-name-strip-below">
-                            <span>Mr.Rajeev & Mrs.Radha</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="team-box">
-                        <div class="team-img position-relative">
-                            <img src="@assetPath('assets/img/Testimonials/Compressed/3.webp')" class="img-fluid rounded" alt="Customer Testimonial Video 3" />
-                            <a href="https://www.youtube.com/watch?v=4Wc4SNNG-1k" class="glightbox video-link position-absolute top-50 start-50 translate-middle">
-                                <span class="icon">
-                                    <img src="@assetPath('assets/img/testimonial/play-button.svg')" alt="Play Icon" style="width: 60px;" />
-                                </span>
-                            </a>
-                        </div>
-                        <div class="testimonial-name-strip-below">
-                            <span>Mr.Jayaprakash & Family</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-box">
-                        <div class="team-img position-relative">
-                            <img src="@assetPath('assets/img/Testimonials/Compressed/4.webp')" class="img-fluid rounded" alt="Customer Testimonial Video 1" />
-                            <a href="https://youtu.be/lFZ2AV2b1KE" class="glightbox video-link position-absolute top-50 start-50 translate-middle">
-                                <span class="icon">
-                                    <img src="@assetPath('assets/img/testimonial/play-button.svg')" alt="Play Icon" style="width: 60px;" />
-                                </span>
-                            </a>
-                        </div>
-                        <div class="testimonial-name-strip-below">
-                            <span>Mr.Madhu Sudhan & Mrs.Pavithra</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-box">
-                        <div class="team-img position-relative">
-                            <img src="@assetPath('assets/img/Testimonials/Compressed/5.webp')" class="img-fluid rounded" alt="Customer Testimonial Video 2" />
-                            <a href="https://youtu.be/1VLaaxEF2WI" class="glightbox video-link position-absolute top-50 start-50 translate-middle">
-                                <span class="icon">
-                                    <img src="@assetPath('assets/img/testimonial/play-button.svg')" alt="Play Icon" style="width: 60px;" />
-                                </span>
-                            </a>
-                        </div>
-                        <div class="testimonial-name-strip-below">
-                            <span>Mr.Partha Das & Mrs.Anupriya Raidas</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="team-box">
-                        <div class="team-img position-relative">
-                            <img src="@assetPath('assets/img/Testimonials/Compressed/6.webp')" class="img-fluid rounded" alt="Customer Testimonial Video 3" />
-                            <a href="https://youtu.be/vjqvYglo3gc" class="glightbox video-link position-absolute top-50 start-50 translate-middle">
-                                <span class="icon">
-                                    <img src="@assetPath('assets/img/testimonial/play-button.svg')" alt="Play Icon" style="width: 60px;" />
-                                </span>
-                            </a>
-                        </div>
-                        <div class="testimonial-name-strip-below">
-                            <span>Mr.Praneeth & Mrs.Divya</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-box">
-                        <div class="team-img position-relative">
-                            <img src="@assetPath('assets/img/Testimonials/Compressed/7.webp')" class="img-fluid rounded" alt="Customer Testimonial Video 3" />
-                            <a href="https://www.youtube.com/embed/9ywm6zT0gDU?autoplay=1" class="glightbox video-link position-absolute top-50 start-50 translate-middle">
-                                <span class="icon">
-                                    <img src="@assetPath('assets/img/testimonial/play-button.svg')" alt="Play Icon" style="width: 60px;" />
-                                </span>
-                            </a>
-                        </div>
-                        <div class="testimonial-name-strip-below">
-                            <span>Mr.Riyaz Ahmed & Mrs.Shamshad</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="video-testimonial-dots">
+                <button class="prev-dot">●</button>
+                <button class="current-dot">●</button>
+                <button class="next-dot">●</button>
             </div>
         </div>
     </section>
@@ -661,30 +649,63 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
         <script>
-            const krishVideoSwiper = new Swiper('.krish-video-swiper', {
-                slidesPerView: 3,
-                centeredSlides: true,
+            document.addEventListener('DOMContentLoaded', function () {
+            const lightbox = GLightbox({
+                selector: '.glightbox',
+                touchNavigation: true,
+                autoplayVideos: true
+                });
+            const swiper = new Swiper('.videoTestimonialSwiper', {
                 loop: true,
-                spaceBetween: 30,
+                spaceBetween: 24,
+                slidesPerView: 3,
                 speed: 600,
-                navigation: {
-                    nextEl: '.krish-video-next',
-                    prevEl: '.krish-video-prev',
-                },
-                pagination: {
-                    el: '.krish-video-pagination',
-                    clickable: true,
-                },
+                autoplay: {
+                    delay: 3500,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true
+                    },
                 breakpoints: {
                     0: { slidesPerView: 1 },
                     768: { slidesPerView: 2 },
-                    992: { slidesPerView: 3 },
-                },
+                    992: { slidesPerView: 3 }
+                }
+            });
+                const prevDot = document.querySelector('.video-testimonial-dots .prev-dot');
+                const currentDot = document.querySelector('.video-testimonial-dots .current-dot');
+                const nextDot = document.querySelector('.video-testimonial-dots .next-dot');
+                function getTotalRealSlides() {
+                    return document.querySelectorAll('.videoTestimonialSwiper .swiper-slide:not(.swiper-slide-duplicate)').length;
+                }
+                function refreshDots() {
+                    const realIndex = swiper.realIndex;
+                    const total = getTotalRealSlides();
+                    const tip = currentDot.querySelector('.counter-tip');
+                    if (tip) tip.textContent = (realIndex + 1) + '/' + total;
+                    currentDot.classList.add('active-dot');
+                }
+                refreshDots();
+                swiper.on('slideChange', refreshDots);
+                prevDot.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    swiper.slidePrev();
                 });
-
-            const krishLightbox = GLightbox({
-                selector: '.glightbox',
-                type: 'video',
+                nextDot.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    swiper.slideNext();
+                });
+                currentDot.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    if (swiper.autoplay.running) {
+                    swiper.autoplay.stop();
+                    currentDot.classList.add('paused');
+                    currentDot.querySelector('.counter-tip').textContent = 'Paused';
+                    } else {
+                    swiper.autoplay.start();
+                    currentDot.classList.remove('paused');
+                    refreshDots();
+                    }
+                });
             });
         </script>
 
