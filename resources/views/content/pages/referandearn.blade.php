@@ -74,7 +74,7 @@
             <div class="row justify-content-between align-items-center">
                 <div class="col-lg-6 mb-lg-0 wow fadeInLeft">
                     <div class="refer-image">
-                        <img src="@assetPath('assets/img/more/4-removebg-preview.png')" alt="Referral" class="img-fluid reduced-img">
+                        <img src="@assetPath('assets/img/more/1.png')" alt="Referral" class="img-fluid reduced-img">
                     </div>
                 </div>
                 <div class="col-lg-6 mb-5 mb-lg-0 wow fadeInRight" data-wow-delay="0.2s">

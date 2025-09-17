@@ -121,7 +121,7 @@
                 </div>
                 <div class="col-lg-6 mb-xl-0 wow fadeInRight order-1 order-lg-2">
                     <div class="refer-image">
-                        <img src="@assetPath('assets/img/more/5-removebg-preview.png')">
+                        <img src="@assetPath('assets/img/more/2.png')">
                     </div>
                 </div>
             </div>

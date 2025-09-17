@@ -24844,16 +24844,16 @@ input[type="time"].white-icon::-webkit-calendar-picker-indicator {
     position: relative;
     /* margin-right: 60px; */
     margin-bottom: 40px;
-  }
+}
 
-  .img1.img-slider {
+.img1.img-slider {
     position: relative;
     width: 100%;
     max-width: 450px;
     height: 400px;
-  }
+}
 
-  @media(max-width: 767px) {
+@media(max-width: 767px) {
     .img1.img-slider {
         height: 250px;
     }
@@ -24865,7 +24865,7 @@ input[type="time"].white-icon::-webkit-calendar-picker-indicator {
     }
 
   /* Base style */
-  .img1.img-slider img {
+.img1.img-slider img {
     position: absolute;
     top: 0;
     left: 0;
@@ -24874,29 +24874,29 @@ input[type="time"].white-icon::-webkit-calendar-picker-indicator {
     box-shadow: 0 10px 25px rgba(0,0,0,0.25);
     opacity: 0;
     transition: all 0.8s ease-in-out;
-  }
+}
 
   /* Active card - front */
-  .img1.img-slider img.active {
+.img1.img-slider img.active {
     opacity: 1;
     transform: scale(1) translate(0, 0) rotate(0deg);
     z-index: 3;
     filter: brightness(1.15) contrast(1.1);
-  }
+}
 
   /* Middle card */
-  .img1.img-slider img.middle {
+.img1.img-slider img.middle {
     opacity: 0.8;
     transform: scale(0.92) translate(-25px, 20px) rotate(-6deg);
     z-index: 2;
-  }
+}
 
   /* Back card */
-  .img1.img-slider img.back {
+.img1.img-slider img.back {
     opacity: 0.6;
     transform: scale(0.85) translate(25px, 40px) rotate(6deg);
     z-index: 1;
-  }
+}
 
 
 
@@ -24997,7 +24997,7 @@ input[type="time"].white-icon::-webkit-calendar-picker-indicator {
 .video-testimonial-dots button {
     background: transparent;
     border: none;
-    font-size: 26px;
+    font-size: 22px;
     line-height: 1;
     cursor: pointer;
     color: #fff;
@@ -25013,7 +25013,6 @@ input[type="time"].white-icon::-webkit-calendar-picker-indicator {
     transform: scale(1.0);
 }
 .video-testimonial-dots button:hover {
-    color: var(--theme-color);
     transform: scale(1.0);
 }
 
@@ -25039,8 +25038,8 @@ input[type="time"].white-icon::-webkit-calendar-picker-indicator {
     margin-top: 20px;
 }
 .custom-dot {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background: #fff;
     cursor: pointer;
@@ -25054,7 +25053,10 @@ input[type="time"].white-icon::-webkit-calendar-picker-indicator {
     transform: scale(1.0);
 }
 
-
+.custom-dots-container .custom-dot {
+    width: 4px !important;
+    height: 10px !important;
+}
 
 
 
@@ -25491,36 +25493,6 @@ input[type="time"].white-icon::-webkit-calendar-picker-indicator {
 
 
 
-
-
-
-/* .stage.active .circle {
-    position: relative;
-    border-color: #fecc52;
-    background: rgba(254,204,82,0.05);
-    transform: scale(1.1);
-    overflow: visible;
-}
-
-.stage.active .circle::after {
-    content: "";
-    position: absolute;
-    border: 2px solid #fecc52;
-    border-radius: 50%;
-    top: -5px; left: -5px; right: -5px; bottom: -5px;
-    animation: ripple 1.8s infinite ease-out;
-}
-
-@keyframes ripple {
-    0%   { transform: scale(1); opacity: 0.8; }
-    100% { transform: scale(1.6); opacity: 0; }
-} */
-
-
-
-
-
-/* Right to left animation */
 .stage.active .inner-circle {
     background: #fecc52;
     position: relative;
@@ -25541,6 +25513,44 @@ input[type="time"].white-icon::-webkit-calendar-picker-indicator {
     100% { left: 125%; }
 }
 
+/* Default (desktop) – horizontal shine */
+.stage.active .inner-circle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.7), transparent);
+    animation: shineX 2.8s infinite;
+}
+
+@keyframes shineX {
+    0%   { left: -75%; }
+    100% { left: 125%; }
+}
+
+/* Mobile (vertical shine) */
+@media (max-width: 500px) {
+    .stage.active .inner-circle::before {
+        top: -75%;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background: linear-gradient(
+        120deg,
+        transparent 20%,
+        rgba(255,255,255,0.8) 50%,
+        transparent 80%
+    );
+        animation: shineY 2.8s infinite;
+    }
+
+    @keyframes shineY {
+        0%   { top: -75%; }
+        100% { top: 125%; }
+    }
+}
 
 
 
