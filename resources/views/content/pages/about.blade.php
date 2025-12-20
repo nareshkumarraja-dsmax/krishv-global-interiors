@@ -10,7 +10,7 @@
                 <div class="breadcrumb-nav">
                     <a href="index.html">Home</a>
                     <span class="breadcrumb-divider">/</span>
-                    <span class="current-page">About Us</span>
+                    <span class="current-page">About cOMPANY</span>
                 </div>
                 <h2 class="banner-text animate-fade">"Crafting Distinctive <span>Interiors"</span></h2>
             </div>
